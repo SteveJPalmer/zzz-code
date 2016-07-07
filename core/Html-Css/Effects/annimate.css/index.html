@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="lib/animate.css"</head>
+
+  <style>
+    #text {
+      color: darkorange;
+      font-size: 250%;
+      text-align: center;
+    }
+    #box {
+      width:75px;
+      height:75px;
+      background:pink;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* transition control */
+    #text {
+      /*include for each prefixes -webkit- -moz- -o- -ms- */
+      -webkit-animation-duration: 3s;                 /*typically 2-3s (1 too fast, 4 too slow) */
+      -webkit-animation-delay: 2s;                    /*slight delay good - give breathing space, else all too quick */
+      -webkit-animation-iteration-count: infinite;
+    }
+
+  </style>
+
+<body>
+  <!-- Demos: http://daneden.github.io/animate.css -->
+  <div id="text" class="animated flash">my flash</div>
+  <div id="text" class="animated fadeIn">my fadeIn</div>
+  <div id="text" class="animated zoomIn">my zoomIn</div>
+  <div id="text" class="animated bounceInRight">my bounceInRight</div>
+  <div id="text" class="animated lightSpeedIn">my lightSpeedIn</div>
+  <br>
+  <div id="box" class="animated infinite pulse">my pink box</div>
+</body>
+</html>
