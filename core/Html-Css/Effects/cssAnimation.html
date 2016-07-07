@@ -1,0 +1,152 @@
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.1/paper/bootstrap.min.css">
+  <style>
+
+    div {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: yellow;
+    }
+
+    /* ANIMATION - Colours */
+    /* define keyframe (from|to) name:myfirst */
+    @-webkit-keyframes myfirst {    /* Chrome & Safari */
+      from {
+        background: yellow;
+        color: black;
+      }
+      to {
+        background: pink;
+        color: red;
+      }
+    }
+
+    @-moz-keyframes myfirst {       /* firefox */
+      from {
+        background: yellow;
+        color: black;
+      }
+      to {
+        background: pink;
+        color: red;
+      }
+    }
+
+    @keyframes myfirst {           /* native */
+      from {
+        background: yellow;
+        color: black;
+      }
+      to {
+        background: pink;
+        color: red;
+      }
+    }
+
+    /* define keyframes (%) - name:mysecond */
+    @-webkit-keyframes mySecond {   /* Chrome & Safari */
+      0% {
+        background: yellow;
+      }
+      65% {
+        background: red;
+        left: 10px;
+      }
+      100% {
+        background: Yellow;
+        left: 0px;
+      }
+    }
+
+    @-moz-keyframes mySecond {      /* firefox */
+      0% {
+        background: yellow;
+      }
+      65% {
+        background: red;
+        left: 10px;
+      }
+      100% {
+        background: Yellow;
+        left: 0px;
+      }
+    }
+
+    @keyframes mysecond {           /* native */
+      0% {
+        background: yellow;
+      }
+      60% {
+        background: red;
+        left: 10px;
+      }
+      100% {
+        background: Yellow;
+        left: 0px;
+      }
+    }
+
+
+    /* bind animations to elem */
+    /* automatically starts on page load */
+    div.first {
+      -webkit-animation: myfirst 3s;   /* Chrome & Safari */
+      -moz-animation: myfirst 3s;      /* firefox */
+      animation: myfirst 3s;           /* native */
+    }
+
+    /* starts on hover */
+    div.second:hover {
+      -webkit-animation: mySecond 2s;  /* Chrome & Safari */
+      -moz-animation: mysecond 2s;     /* firefox */
+      animation: mysecond 2s;          /* native */
+    }
+
+    /* ANIMATION - Spinner */
+    /* define keyframes spin rule */
+    @-moz-keyframes spin {                  /* Safari, Chrome */
+      from {
+        -moz-transform: rotate(0deg);
+      }
+      to {
+        -moz-transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin {                /* firefox */
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {                        /* native */
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* bind animation to elem */
+    .spinner {
+      -webkit-animation: spin 1s infinite;   /* Chrome & Safari */
+      -moz-animation: spin 1s infinite;      /* firefox */
+      animation: spin 1s infinite;           /* native */
+    }
+
+  </style>
+</head>
+<body>
+<div class="first"><p>Starts on page load!!</p></div>
+<p>Hover to see the animation apply keyframe rule. From | To  <i>(note at end resets to original sytle)</i></p>
+<div class="second"><p>Hover over Me Again!!</p></div>
+<p>Hover to see the animation apply keyframe rule. % using multiple styles</p>
+
+<!-- spinner -->
+<button><span class="glyphicon glyphicon-repeat spinner"></span></button>
+</body>

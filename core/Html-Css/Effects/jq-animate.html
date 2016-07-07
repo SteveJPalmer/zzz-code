@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      //basic animation
+      $("button.a").click(function(){
+        $("div.a").animate({ left: '100px',             //or left: '+=100px'
+                             opacity: '0.1' }, 2000);   //2sec
+      });
+
+      //jq animation queue - chains
+      $("button.b").click(function(){
+        var div = $("div.b");
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+      });
+
+      //jq animation queue (option syntax) - chains (but removes 2nd from queue - so immediate)
+      $("button.c").click(function(){
+        var div = $("div.c");
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '3em'}, {queue: false,
+                                        duration: "slow"}
+        );
+      });
+
+    });
+  </script>
+
+</head>
+<body>
+
+<button class="a">Start Animation A</button>&nbsp;
+<button class="b">Start Animation B</button>&nbsp;
+<button class="c">Start Animation C</button>
+
+<p>By default, all HTML elements have static position & cannot be moved.
+   First set element position prope element: relative, fixed, or absolute!</p>
+
+A) basic animation
+<div class="a" style="background:orange; height:100px; width:100px; position:relative;"></div>
+B) jq animation queue - chains
+<div class="b" style="background:pink;height:100px;width:100px;position:relative;">Hi</div>
+C) jq animation queue (option syntax) - chains (but removes 2nd from queue - so immediate)
+<div class="c" style="background:pink;height:100px;width:100px;position:relative;">Hi</div>
+
+</body>
+</html>
