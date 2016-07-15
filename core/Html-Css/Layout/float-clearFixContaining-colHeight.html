@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Layout - Float Column Height</title>
+  <style>
+    /*********************************
+     * initial - float with clearfix *
+     *********************************/
+    #col-a { float:left;  width:30%; background-color:red; }
+    #col-b { float:left;  width:40%; background-color:blue; }
+    #col-c { float:right; width:30%; background-color:yellow; }
+    /*clearfix after container with float */
+    #original-container:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+
+    /**************************
+     * column height solution *
+     **************************/
+    /* remember(key): relative elems inside normal flow,  absolute elems outside normal flow */
+
+    /*add a wrapper (relative) around columns (absolute) */
+    #wrapper {
+      position: relative;
+      background: #eee;
+      z-index: 1;
+      width: 100%;
+      display: inline-block;
+    }
+    #wrapper .col {
+      position: relative;  /* so inside normal flow */
+      float: left;
+    }
+
+    /*position columns using left +/- (col order also becomes irrelevant) */
+    #wrapper #col1 { left: 30%;  width: 40%; background-color: blue; }
+    #wrapper #col2 { left: -40%; width: 30%; background-color: red;}
+    #wrapper #col3 { left: 0;    width: 30%; background-color: yellow;}
+
+    /*add background to columns & height 100% - note positioning now relative to wrapper */
+  #wrapper:before {    /*note: could spilt out the shared proterties - separated here for clarity*/
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100%;
+      background: red;
+    }
+    #wrapper:after {
+      content: " ";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 70%;
+      width: 30%;
+      height: 100%;
+      background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Intial - clearfix after but... <i>(diff height columns when float)  </i></p>
+  <div id="original-container">
+    <div id="col-a" class="col"><p>I am listed first in source order.</p></div>
+    <div id="col-b" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+      egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+    <div id="col-c" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+  </div>
+  <!--old fashioned clearfix -->
+  <!--<div style="clear:both"></div><br>-->
+
+  <p>Column height solution</p>
+  <div id="wrapper" class="group">
+    <div id="col1" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+     <div id="col2" class="col"><p>I am listed second in source order, but moved first - order  irrelevant with this technique</p></div>
+    <div id="col3" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+  </div>
+
+</body>
+</html>
