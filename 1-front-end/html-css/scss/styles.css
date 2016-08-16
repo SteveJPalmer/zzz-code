@@ -1,0 +1,64 @@
+/* imports & partials */
+/*
+@import 'core';					 //extension defaults to .scss
+@import '_my-partial';	 //imports - _my-partial file is not compiled to css
+*/
+/* variables */
+h1 {
+  color: #006699; }
+
+p {
+  color: #009900; }
+
+/* nesting - a basic list */
+nav {
+  color: darkred; }
+  nav ul {
+    background-color: #006699;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; }
+  nav li:hover {
+    background-color: #009900; }
+
+/* mixins - properties physically copied to target */
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+/* extend/inheritance - properties not copied, instead child selectors moved to parent */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/* operators - standard maths operators */
+.container {
+  width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 62.5%; }
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%; }
+
+/*# sourceMappingURL=styles.css.map */
