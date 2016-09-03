@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+    img {
+      width: 800px;
+      height: 600px;
+    }
+
+    /* scroll box */
+    #testbox {
+      border: 1px solid black;
+      width: 200px;
+      height: 100px;
+      overflow: scroll;
+    }
+
+    /* scroll position effects */
+    /* box colour */
+    .scrolling {
+      background-color: yellow;
+    }
+
+    /* image hide/show */
+    .img-hide {
+      visibility: hidden;
+    }
+
+    .img-show {
+      visibility: visible;
+    }
+
+    /* waypoints.js styles */
+    /* sticky */
+    #wp-myStickyHeader {
+      height: 50px;
+      background-color: orange;
+      width:100%;
+    }
+
+    .stuck {
+      position:fixed;
+      top:0;
+    }
+
+    /* scroll to elem */
+    #wp-myPopupInfo {
+      height: 20px;
+      color: white;
+      background-color: orange;
+      position:fixed;
+      top:50%;
+      right:0;
+      visibility: hidden;
+    }
+
+  </style>
+</head>
+
+<body>
+<section>
+  <p><b>onscroll Events</b></p>
+  <p>Note: onscroll is specific to element declared on</p>
+  <div id="testbox" onscroll="innerScroll(event)">
+    In my younger and more vulnerable years my father gave me some advice
+    that I've been turning over in my mind ever since.
+    <br>
+    'Whenever you feel like criticizing anyone,' he told me,
+    just remember that all the people in this world haven't had the advantages that you've had.'
+  </div>
+
+  <p>TextBox scroll cnt: <span id="i-seq">0</span> times ....Last scroll Time (ms) <span id="i-time"></span></p>
+  <p>Page scroll cnt: <span id="p-seq">0</span> times ....Last scroll Time (ms) <span id="p-time"></span></p>
+  <p>scroll down for first image to appear (jq > 200px)</p>
+
+  <div id="wp-myStickyHeader">my Sticky Line - waypoints.js</div>
+  <div ><span id="wp-myPopupInfo">scrolled to 2nd inage
+          <a href="//imakewebthings.com/waypoints/">waypoints.js</a>
+        </span></div>
+
+  <!-- image set -->
+  <img id="myImg1" class="img-hide" src="img/Meribel_01.jpg" alt="">
+  <img id="myImg2" src="img/Meribel_02.jpg" alt="">
+  <img id="myImg3" src="img/Meribel_03.jpg" alt="">
+
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+<script>
+  var x = 0;
+  /* inner scroll - html bind */
+  function innerScroll(e) {
+    //on inner scroll..
+    console.log('inner scroll event..');
+    document.getElementById("i-seq").innerHTML = x += 2;
+    document.getElementById("i-time").innerHTML = Date.now();
+  }
+
+  /* page scroll - jq bind */
+  $(function () {
+    console.log('!!event fired (Doc Ready)');
+    /* call via named fn */
+    $(window).scroll(pageScroll);  //note: name fn, don't call it pagesScroll() !!
+
+    /* or call via anonymous fn */
+//                $(window).scroll(function(evt){               //note: can call param anything
+//                    console.log('windows scroll event..');
+//                    pageScroll(evt);
+//                }
+//                );
+
+    /* or call via optimized technique.. */
+//                var didScroll;
+//
+//                $(window).scroll(function(event){
+//                    didScroll = true;
+//                });
+//
+//                setInterval(function() {
+//                    if (didScroll) {
+//                        pageScroll();
+//                        didScroll = false;
+//                    }
+//                }, 250);
+
+    /* Optimized technique.. testing, SET INTERVAL to 5sec (ie slow it down) */
+//                var lastScrollTop = 0;
+//                var didScroll;
+//
+//                $(window).scroll(function(event){
+//                    didScroll = true;
+//                    console.log('!!event fired (Scroll) ..set didScroll to true  - didScroll:' + didScroll );
+//                });
+//
+//                setInterval(function() {
+//                    console.log('!!event fired (Interval) - didScroll:' + didScroll );
+//                    if (didScroll) {
+//                        hasScrolled();
+//                        didScroll = false;
+//                        console.log('....reset didScroll to false - didScroll:' + didScroll );
+//                    }
+//                }, 5000);
+//
+//                function hasScrolled() {
+//                    console.log('>>fn hasScrolled start');
+//                    var st = $(this).scrollTop();
+//                    console.log('....scrollTop (st):' + st);
+//                    console.log('....Last scrollTop (lastScrollTop):' + lastScrollTop);
+//                    lastScrollTop = st;
+//                };
+    /* end Optimized technique.. test */
+
+  });
+
+  function pageScroll(jqe) {  //receives jq normalized event
+    //on page scroll..
+    console.log('>>fn hasScrolled start');
+    document.getElementById("p-seq").innerHTML = x += 2;
+    document.getElementById("p-time").innerHTML = Date.now();
+    console.log('scroll fired - jq.scrollTop(): ' + $(window).scrollTop());
+    console.log('scroll fired - document.documentElement.scrollTop: ' + document.documentElement.scrollTop);
+    console.log('scroll fired - document.body.scrollTop: ' + document.body.scrollTop);
+    console.log('event type: ' + jqe.type);
+
+    /* scroll position.. html scrollTop & jq scrollTop() */
+    // box colour
+    if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
+      document.getElementById("testbox").className = "scrolling";
+      console.log('scroll >50px fired');
+    } else {
+      document.getElementById("testbox").className = "";
+    }
+
+    // show image
+    if ($(window).scrollTop() > 200) {
+      $("#myImg1").addClass("img-show").removeClass("img-hide");
+      console.log('scroll >150px fired');
+    }
+    else {
+      $("#myImg1").addClass("img-hide").removeClass("img-show");
+    }
+  }
+
+</script>
+
+<!-- waypoints.js lib-->
+<script type="text/javascript" src="js/jquery.waypoints.js"></script>;
+<script src="js/sticky.js"></script>
+<script>
+
+  $(function () {
+    //waypoint script
+    var waypoint = new Waypoint({
+      element: document.getElementById('myImg2'),   //watch not js, no #
+      handler: function(direction) {
+        console.log('You have scrolled to myImg2');
+        //show message popup
+        $('#wp-myPopupInfo').css('visibility','visible');
+        //timeout to remove message
+        setTimeout( function() {
+          $('#wp-myPopupInfo').css('visibility','hidden');
+        },4000); //4s
+      }
+    });
+  });
+
+  //waypoint sticky shortcut adds - class="stuck"
+  var sticky = new Waypoint.Sticky({
+    element: $('#wp-myStickyHeader')[0]      //jq -can use # or . or tag
+  })
+
+</script>
+
+</body>
+</html>
