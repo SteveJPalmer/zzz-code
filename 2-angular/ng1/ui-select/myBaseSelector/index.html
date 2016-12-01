@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>Base ui-select</title>
+
+  <!--
+    IE8 support, see AngularJS Internet Explorer Compatibility http://docs.angularjs.org/guide/ie
+    For Firefox 3.6, you will also need to include jQuery and ECMAScript 5 shim
+  -->
+  <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.2.0/es5-shim.js"></script>
+    <script>
+      document.createElement('ui-select');
+      document.createElement('ui-select-match');
+      document.createElement('ui-select-choices');
+    </script>
+  <![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+
+
+  <!-- ui-select files -->
+  <script src="node_modules/ui-select/dist/select.js"></script>
+  <link rel="stylesheet" href="node_modules/ui-select/dist/select.css">
+
+  <script src="app.js"></script>
+
+  <style>
+    /* default selector styles */
+    body {
+      padding: 15px;
+    }
+
+    .select2 > .select2-choice.ui-select-match {
+      /* Because of the inclusion of Bootstrap */
+      height: 29px;
+    }
+
+    .selectize-control > .selectize-dropdown {
+      top: 36px;
+    }
+
+    /* app styles */
+    h1, h3 {
+      color:steelblue;
+    }
+    h3 {
+      text-decoration: underline;
+    }
+
+
+  </style>
+</head>
+
+<body ng-controller="ctrl as vm">
+
+  <h1>Base ui-select option</h1>
+
+  <h3>Items <i>(with highlighting, but no filtering)</i></h3>
+  <!-- extra field for tabbing tests -->
+  <input type="text" name="field1-before" placeholder="extra field for tabbing" width="50px"><br><br>
+
+  <!-- first selector -->
+  <span>Selected Item: name: <b>{{vm.item.selectedItem.name}}</b>  - id: <b>{{vm.item.selectedItem.id}}</b> </span>
+
+  <ui-select ng-model="vm.item.selectedItem" theme="bootstrap" ng-disabled="vm.disabled" style="width:300px;">
+  <!--<ui-select ng-model="vm.item.selectedItem" theme="bootstrap" ng-disabled="vm.disabled" my-open-close>-->
+    <ui-select-match placeholder="Select a value...">
+      {{$select.selected.name}}
+    </ui-select-match>
+    <ui-select-choices repeat="item in vm.itemArray">
+      <!--{{item.name}} (id:{{item.id}})-->
+      <span ng-bind-html="item.name | highlight:$select.search"></span> (id:{{item.id}})
+    </ui-select-choices>
+  </ui-select>
+
+
+  <!-- extra field for tabbing tests -->
+  <br><input type="text" name="field1-after" placeholder="extra field for tabbing" width="50px"><br><br>
+
+
+
+  <h3>Countries <i>(with filtering & highlighting)</i></h3>
+
+  <!-- extra field for tabbing tests -->
+  <br><input type="text" name="field2-before" placeholder="extra field for tabbing" width="50px"><br><br>
+
+  <!-- second selector -->
+  <span>Selected Country: <b>{{vm.country.selectedItem.name}}</b></span>
+
+  <ui-select ng-model="vm.country.selectedItem" theme="bootstrap" ng-disabled="vm.disabled" style="width:300px;">
+  <!--<ui-select ng-model="vm.item.selectedItem" theme="bootstrap" ng-disabled="vm.disabled">-->
+    <ui-select-match placeholder="Select a value...">
+      {{$select.selected.name}}
+    </ui-select-match>
+    <ui-select-choices repeat="country in vm.countries | filter:$select.search">
+      <span ng-bind-html="country.name | highlight:$select.search"></span> ({{country.code}})
+      <!--{{country.name}} (id:{{country.code}})-->
+    </ui-select-choices>
+  </ui-select>
+
+
+  <!-- extra field for tabbing tests -->
+  <br><input type="text" name="field2-after" placeholder="extra field for tabbing" width="50px"><br><br>
+
+
+
+  <h3>People <i>(custom filter for multiple individual field filtering)</i></h3>
+
+  <!-- extra field for tabbing tests -->
+  <br><input type="text" name="field3-before" placeholder="extra field for tabbing" width="50px"><br><br>
+
+  <ui-select ng-model="vm.person.selected" theme="bootstrap" ng-disabled="vm.disabled" style="width:300px;">
+    <ui-select-match placeholder="Select person via name or age...">{{$select.selected.name}}</ui-select-match>
+    <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search} ">
+      <div ng-bind-html="person.name | highlight: $select.search"></div>
+      <small>
+        email: {{person.email}}
+        age: <span ng-bind-html="person.age | highlight: $select.search"></span>
+      </small>
+    </ui-select-choices>
+  </ui-select>
+
+  <!-- extra field for tabbing tests -->
+  <br><input type="text" name="field3-after" placeholder="extra field for tabbing" width="50px"><br><br>
+
+
+
+  <br><br><br>
+  <!--<button class="btn btn-primary" ng-click="vm.item.selectedItem = {id: 5, name: 'fifth'}">Change Model</button>-->
+  <button class="btn btn-primary" ng-click="vm.item.selectedItem = vm.itemArray[4]">Manually Set</button>
+  <i>(manually set to last item in list)</i><br><br>
+
+
+  <button class="btn btn-default btn-xs" ng-click="vm.enable()">Enable selectors</button>
+  <button class="btn btn-default btn-xs" ng-click="vm.disable()">Disable selectors</button>
+  <button class="btn btn-default btn-xs" ng-click="vm.clear()">Clear models</button>
+
+
+</body>
+</html>
