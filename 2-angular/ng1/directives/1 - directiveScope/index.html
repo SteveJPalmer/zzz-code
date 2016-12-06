@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myBasket</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/vendor/angular.min.js"></script>
+  <script src="assets/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="app/app.js"></script>
+
+</head>
+<body>
+
+  <!-- Body content goes here -->
+  <div ng-app="app" ng-controller="ProductCtrl as vm" >
+
+    <div class="product-container">
+      <h2>Products</h2>
+      <div product info="{{vm.productCost}}"></div>
+      <div product2 info="vm"></div>
+    </div>
+
+
+
+    <my-binding-tests test="vm.steve" ng-model="vm.selectedValue" my-string-bind="{{vm.myString}}"></my-binding-tests>
+    <b>Parent Model Values <i>(cf console for directive isolated scope values)</i></b><br>
+    Test =general attr:  vm.steve: {{vm.steve}}<br>
+    Test =attr passed as ng-model: {{vm.selectedValue}}<br>
+    Test @string attr: {{vm.myString}}<br>
+
+  </div>
+
+</body>
+</html>
