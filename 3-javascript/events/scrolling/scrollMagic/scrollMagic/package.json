@@ -1,0 +1,15 @@
+{
+  "name": "audio-orange-github-pages",
+  "version": "1.0.0",
+  "description": "client libs - audio orange website",
+  "main": "index.js",
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "steve@audioorange.com",
+  "license": "MIT"
+}

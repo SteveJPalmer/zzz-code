@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <style type="text/css">
+
+    #home {
+      background: url('assets/img/keys3-1200.jpg') 50% 0 no-repeat fixed; min-height: 1000px;
+      height: 1000px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1920px;
+      position: relative;
+    }
+
+    #home article {
+      color: orange;
+      height: 458px;
+      position: absolute;
+      text-align: center;
+      top: 150px;
+      width: 100%;
+    }
+
+    #about {
+      background: url('assets/img/Steve.jpg') 50% 0 no-repeat fixed; min-height: 1000px;
+      height: 1000px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1920px;
+      position: relative;
+      -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    }
+
+    #about article {
+      height: 458px;
+      position: absolute;
+      text-align: center;
+      top: 150px;
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<!-- make  <section> background scroll slower than content <article> -->
+<!-- data attr server as the parameters  -->
+<section id="home" data-type="background" data-speed="10" class="pages">
+  <article>I am absolute positioned</article>
+</section>
+
+<section id="about" data-type="background" data-speed="10" class="pages">
+  <article>Simple Parallax Scroll</article>
+</section>
+
+
+<script>
+
+  $(document).ready(function(){
+   
+    //first data- attr used to identify the parallax sections
+    $('section[data-type="background"]').each(function(){
+      var $bgobj = $(this); // assigning the object
+
+      //ideally would throttle scrolling
+      $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $bgobj.data('speed'));
+
+        // Put together the final background position
+        var coords = '50% '+ yPos + 'px';
+
+        // Move the background
+        $bgobj.css({ backgroundPosition: coords });
+      });
+    });
+  });
+
+</script>
+
+
+</body>
+</html>
