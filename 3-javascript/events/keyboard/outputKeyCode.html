@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" size="50" onkeydown="downKeyCode(event)" onkeypress="pressKeyCode(event)" placeholder="press key..." autofocus>
+<p>onkeydown  >keyCode: <b style="color:orangered"><span id="down"></span></b>
+   <span style="color:orchid" id="downExtraKeys"></span></p>
+<p>onkeypress >keyCode: <b style="color:orangered"><span id="press"></span></b>
+  <span style="color:orchid" id="pressExtraKeys"></span></p>
+<p style="color:forestgreen"><small>Note: keypress event - doesn't detect non-printable,
+   function keys (like CAPS LOCK, CTRL, ESC, F12, etc..) - use keydown for these</small></p>
+<script>
+
+function downKeyCode(event) {
+  document.getElementById("down").innerHTML = '';
+  document.getElementById("down").innerHTML = event.keyCode;
+  document.getElementById("downExtraKeys").innerHTML = ' (shft:' + event.shiftKey + '  -  ctrl:' + event.ctrlKey + '  -  alt:' + event.altKey + ')';
+}
+function pressKeyCode(event) {
+  document.getElementById("press").innerHTML = '';
+  document.getElementById("press").innerHTML = event.keyCode;
+  document.getElementById("pressExtraKeys").innerHTML = ' (shft:' + event.shiftKey + '  -  ctrl:' + event.ctrlKey + '  -  alt:' + event.altKey + ')';
+}
+
+</script>
+
+</body>
+</html>
