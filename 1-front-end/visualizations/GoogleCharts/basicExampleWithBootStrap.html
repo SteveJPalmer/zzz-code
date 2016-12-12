@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--load google chart lib-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+    //load Visualization API & corechart package
+    google.charts.load('current', {'packages':['corechart']});
+    //set callback to run when  Google Visualization API loaded
+    google.charts.setOnLoadCallback(drawChart);
+
+
+
+    //callback - creates/populates data table, instantiates pie chart, associates data & draws
+    function drawChart() {
+      //create data table
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Country');
+      data.addColumn('number', 'Medals');
+      data.addRows([
+        ['GB', 3],
+        ['China', 2],
+        ['Poland', 1],
+        ['USA', 1],
+        ['Australia', 1]
+      ]);
+
+      //set chart options
+      var options = {'title':'Gold Medals by Country',
+        'width':500,
+        'height':400};
+
+      var optionsPie = {
+        'legend':'left',
+        'title':'My 3D Pie Chart',
+        'is3D':true,
+        'width':500,
+        'height':400
+      }
+
+      //instantiate & draw chart, passing in data & options
+      //note: pie slices in same order as underlying array
+      var chart = new google.visualization.PieChart(document.getElementById('pie-div'));
+      chart.draw(data, optionsPie);
+      //easily switch same data to bar chart
+      var chart = new google.visualization.BarChart(document.getElementById('bar-div'));
+      chart.draw(data, options);
+    };
+  </script>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<!--div's to hold charts-->
+<div class="container">
+  <!--<div class="container-fluid">-->
+  <div class="row">
+    <div class="col-xs-6 col1">
+      <h4>Column 1</h4>
+      <!--<div id="pie-div"></div>-->
+      <div id="pie-div"></div>
+    </div>
+    <div class="col-xs-6 col2">
+      <h4>Column 2</h4>
+      <div id="bar-div"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
