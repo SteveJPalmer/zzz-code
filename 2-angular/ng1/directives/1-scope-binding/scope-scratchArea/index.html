@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myBasket</title>
+
+  <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+  <script data-require="bootstrap@*" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body>
+
+  <div ng-app="app" ng-controller="ProductCtrl as vm" >
+
+    <my-binding-tests test="vm.steve" ng-model="vm.selectedValue" my-string-bind="{{vm.myString}}"></my-binding-tests>
+    <b>Parent Model Values <i>(cf console for directive isolated scope values)</i></b><br>
+    Test =general attr:  vm.steve: {{vm.steve}}<br>
+    Test =attr passed as ng-model: {{vm.selectedValue}}<br>
+    Test @string attr: {{vm.myString}}<br>
+
+  </div>
+
+</body>
+</html>
