@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-test-skeleton</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body ng-app="app">
+  <div ng-controller="Controller">
+    <span style="color:orangered">model var 'message': {{message}} <br><br></span>
+
+    <ao-dialog ng-hide="dialogIsHidden" on-close="hideDialog(message)">
+      Check out the contents, {{name}}!
+      <span>blar blar blar</span>
+      <br><span style="color:hotpink">current message inside transclusion markup: {{message}}!</span>
+    </ao-dialog>
+  </div>
+</body>
+</html>
