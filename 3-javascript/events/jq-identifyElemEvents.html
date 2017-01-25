@@ -1,0 +1,45 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>elems events</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+
+  <p>button with two click events attached <i>(view console)</i></p>
+  <button id="myButton">myButton</button>
+
+  <script>
+    var $btn = $('#myButton');
+    $btn.on('click', function() {
+      console.log('click handler 1');
+    });
+    $btn.on('click', function() {
+      console.log('click handler 2');
+    });
+    $btn.on('mouseover', function() {
+      console.log('mouseover handler 1');
+    });
+
+    /* access in Chrome via:
+      $._data($0, "events");                    //current selected in Chrome
+      $._data($('#myButton')[0], "events");     //specify elem & extract first elem from jq wrapped set
+    */
+
+    //output elem's event (& bound function)
+    //$._data returns obj with events in arrays per type
+    $.each($._data($('#myButton')[0], "events"), function(i, eventType) {
+      //each eventType
+      $.each(eventType, function(j, h) {
+        console.log(h.handler);
+        //alert(h.handler);
+      });
+    });
+
+  </script>
+
+</body>
+</html>
