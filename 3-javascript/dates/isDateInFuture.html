@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js test harness</h2>
+
+<button onclick="myFunction()">Test the fn</button>
+
+<h3>Output</h3>
+<p id="output"></p>
+
+  <script>
+  /* test prep */  
+  function myFunction() {
+    //inputs
+    var date = '23/01/2017';   //'22/01/2017'
+    var time = '15:45';        //'00:00'
+    
+    //test call 
+    var res = isDateInFuture(date, time);
+    
+    //outputs
+    document.getElementById("output").innerHTML = res;
+  }
+
+  
+  /* Function to Test */
+  function isDateInFuture(dateToCheck, timeToCheck) {
+    var date = dateToCheck.substring(0, 2);
+    var month = dateToCheck.substring(3, 5);
+    var year = dateToCheck.substring(6, 10);
+    var hr = timeToCheck.slice(0, 2);
+    var min = timeToCheck.slice(3, 6);
+    var actualDate = new Date(year, month - 1, date, hr,  min);
+    var today = new Date(); //https: localhost:453/SpecimenReception/ManualEntry/Create#
+    console.log('>>actualDate: ' + actualDate);
+    console.log('>>today:      ' + today);
+
+    if (actualDate > today) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  };
+
+  </script>
+
+  </body>
+  </html>
