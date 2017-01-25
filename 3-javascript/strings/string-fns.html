@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+
+<script type="text/javascript">
+     var str = 'https://www.youtube.com/watch?v=XFkzRNyygfk';
+     var pos = str.indexOf(".com/"); 
+     console.log('position: ' + pos);
+     startpos = pos + 4;
+     var res = str.slice(startpos);
+     console.log('position: ' + res);
+    
+     //works but not very elegant
+     var res2 = str.slice(str.indexOf(".com/") + 4);
+     console.log('position: ' + res2);
+    
+</script>
+
+<body>
+
+</body>
+</html>
