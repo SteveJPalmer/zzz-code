@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js test harness</h2>
+
+<button onclick="myHarness()">Test the fn</button>
+
+<h3>Output</h3>
+<p id="output"></p>
+
+  <script>
+  /* test prep */  
+  function myHarness() {
+    //inputs
+    var value1 = 'test';
+    var value2 = 'test2';
+
+    //test call
+    var res = testFn(value1, value2);
+    
+    //outputs
+    document.getElementById("output").innerHTML = res;
+  }
+
+  
+  /* Function to Test */
+  function testFn(a, b) {
+      var status = true;
+      return status;
+  };
+
+  </script>
+
+  </body>
+  </html>
