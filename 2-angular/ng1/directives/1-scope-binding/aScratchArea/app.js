@@ -24,7 +24,7 @@ angular.module('app', [])
   /* Link access to scope */
 
   /* testing the binding techniques - basic passing & setting of model scope */
-  .directive('myBindingTests', function() {
+  .directive('binding', function() {
     return {
       template: '<h2>Test Isolate Binding Techniques</h2> ',
       scope: {
