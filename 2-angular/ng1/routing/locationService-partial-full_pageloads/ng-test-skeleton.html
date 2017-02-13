@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-test-skeleton</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="ng-test-skeleton-app.js"></script>
+
+</head>
+<body >
+  <div ng-app="app" ng-controller="InvoiceController as invoice">
+    <h1>ng's services: $location & $window</h1>
+    <p>$location (partial page load)... </p>
+    <p>$window (full page refresh) services... </p>
+
+    <div>
+      <button class="partial" ng-click="invoice.partialPageRefresh()">partial page refresh</button>
+      <button class="full" ng-click="invoice.fullPageRefresh()">full refresh</button>
+    </div>
+  </div>
+
+  <script>
+    angular.element(document).ready(function() {
+      console.log('full page load happened...');
+    });
+  </script>
+
+</body>
+</html>
