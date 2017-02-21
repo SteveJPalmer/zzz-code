@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-test-skeleton</title>
+
+  <style>
+    div {
+      color: blue;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+
+  <script src="app.js"></script>
+
+</head>
+<body >
+<div ng-app="myApp" ng-controller="myController as ctrl">
+
+  <button ng-click="ctrl.push()">Enter Animation</button>
+  <button ng-click="ctrl.pop()">Leave Animation</button>
+
+    <div ng-repeat="item in ctrl.items" class="my-fade-animation">
+    {{ item.id }}
+  </div>
+
+</div>
+
+</body>
+</html>
