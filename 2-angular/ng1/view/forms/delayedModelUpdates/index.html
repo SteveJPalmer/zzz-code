@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-forms-custom-triggers-production</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body ng-app="customTriggerExample">
+  <div ng-controller="ExampleController">
+  <form>
+    Name1 (normal):
+    <input type="text" ng-model="user.name1" /><br />
+
+    Name2: (on blur)
+    <input type="text" ng-model="user.name2"
+           ng-model-options="{ updateOn: 'blur' }" /><br />
+
+    Name3: (timed: debounce 1000ms, blur immediate)
+    <input type="text" ng-model="user.name3"
+           ng-model-options="{ updateOn: 'default blur', debounce: { default: 1000, blur: 0 } }" /><br />
+
+  </form>
+
+  <pre>model: name1  = "{{user.name1}}"</pre>
+  <pre>model: name2  = "{{user.name2}}"</pre>
+  <pre>model: name3  = "{{user.name3}}"</pre>
+
+</div>
+</body>
+</html>
