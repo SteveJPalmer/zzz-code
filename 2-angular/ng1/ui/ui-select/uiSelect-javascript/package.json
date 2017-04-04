@@ -1,0 +1,15 @@
+{
+  "name": "uiselect-javascript",
+  "version": "1.0.0",
+  "description": "manually set selected value via Javascript:  1) via Angular directive,  2) via JQuery event",
+  "main": "app.js",
+  "dependencies": {
+    "ui-select": "^0.19.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

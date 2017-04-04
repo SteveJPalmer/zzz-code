@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>ui-select mock</title>
+
+  <!-- ** external js libs/styles ** -->
+  <!--pulled in app versions of js libs & css  - so no version issues -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <!--bootstrap 3.2.0-->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+  <!--ng 1.5.0-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+
+  <!-- ** app js libs/styles ** -->
+  <!-- ui-select files -->
+  <script src="node_modules/ui-select/dist/select.js"></script>
+  <link rel="stylesheet" href="node_modules/ui-select/dist/select.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- main angular app -->
+  <script src="app.js"></script>
+
+  <!-- mock data scripts -->
+  <script src="data/countryData.js"></script>
+  <script src="data/peopleData.js"></script>
+  <script src="data/itemData.js"></script>
+
+
+</head>
+
+<body >
+<div ng-controller="ctrl as vm">
+  <div class="container-fluid">
+    <h1>ui-select javascript</h1>
+
+    <div class="row">
+      <div class="col-xs-5 col-xs-offset-1" >
+
+        <h3>Countries Array</h3>
+        <!-- extra field for tabbing tests -->
+        <br><label for="field-before">extra field </label>
+        <input type="text" id="field-before" name="field-before" placeholder="extra field for tabbing" width="50px"><br><br>
+
+        <!-- second selector -->
+        <span class="lov-value">
+          Name: <b>{{vm.country.selectedItem.name}}</b>&nbsp;...
+          Code: <b>{{vm.country.selectedItem.code}}</b></span><br/>
+
+        <ui-select id="lov" ng-model="vm.country.selectedItem" theme="bootstrap" ng-disabled="vm.disabled" style="width:300px;">
+          <!--<ui-select ng-model="vm.item.selectedItem" theme="bootstrap" ng-disabled="vm.disabled">-->
+          <ui-select-match placeholder="Select a value...">
+            {{$select.selected.name}}
+          </ui-select-match>
+          <ui-select-choices repeat="country in vm.countries | filter:$select.search">
+            <span ng-bind-html="country.name | highlight:$select.search"></span> ({{country.code}})
+            <!--{{country.name}} (id:{{country.code}})-->
+          </ui-select-choices>
+        </ui-select>
+
+        <!-- extra field for tabbing tests -->
+        <br><label for="field-after">extra field </label>
+        <input type="text" id="field-after" name="field-after" placeholder="extra field for tabbing" width="50px"><br><br>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-warning" ng-click="vm.set(vm.countries[156]);">Auto Set to NZ</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-warning" ng-click="vm.set(vm.manualSet);">Manually Set</button>
+            <select id="manualSet" ng-model="vm.manualSet"
+                    ng-options="item.name for item in vm.countries" ng-required="true" style="width:130px;">
+              <option value="">select country ...</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-success" ng-click="vm.set();">Clear selection</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <button id="jq-btn" class="btn btn-secondary">Fire jq event</button><small><i> (& fire digest cycle)</i></small>
+          </div>
+          <div class="col-xs-6">
+            <button id="jq-btn2" class="btn btn-error">Fire jq event </button><small><i> (but outside digest cycle)</i></small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12"><h4>ng scope binding</h4>
+            <span>ng-model: &nbsp;&nbsp; <span class="debug">{{vm.country.selectedItem}}</span></span>
+            <div>$select.selected: <span id="debugSelected" class="debug"></span></div>
+          </div>
+        </div><br><br>
+      </div>
+    </div>
+    <br><br>
+  </div>
+</div>
+
+
+<script>
+  //monitor the state of widgets' $select obj
+  setInterval( function() {
+    $debugSelected = JSON.stringify( angular.element('#lov').scope().$select.selected,null,2);
+    $('#debugSelected').text($debugSelected);
+  },1000);
+
+  //jq event firing ng digest cycle
+  $('#jq-btn').on('click', function() {
+    console.log('>> jq event fired');
+    var scope = angular.element($(this)).scope();
+    scope.$apply(function() {
+      scope.vm.country.selectedItem = {name: 'Antarctica', code: 'AQ'};
+    });
+  })
+
+  //jq event outside of ng digest cycle  - DOESN'T APPEAR (but property has been set behine scene)
+  $('#jq-btn2').on('click', function() {
+    console.log('>> jq event fired');
+    angular.element('#jq-btn').scope().vm.country.selectedItem = {name: 'Antarctica', code: 'AQ'};
+  })
+
+</script>
+
+
+</body>
+</html>
