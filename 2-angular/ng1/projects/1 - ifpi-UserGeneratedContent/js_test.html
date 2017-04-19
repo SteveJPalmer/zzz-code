@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+
+<script type="text/javascript">
+//     var str = 'https://www.youtube.com/watch?v=XFkzRNyygfk';
+    
+     var str = 'http://soundcloud.com/2013housemusic/taylor-swift-blank-space-dj-dangerous-raj-desai-djdangerouscom-theremixcom';
+     var pos = str.indexOf(".com/");
+     console.log('position: ' + pos);
+     startpos = pos + 4;
+     var res = str.slice(startpos);
+     console.log('position: ' + res);
+
+     //works but not very elegant
+     var res2 = str.slice(str.indexOf(".com/") + 4);
+     console.log('position: ' + res2);
+
+     var iapsDate  = new Date();
+     console.log('Before format: ' + iapsDate);
+
+     var datestring = iapsDate.toLocaleFormat('%d-%m-%Y ');
+     console.log('Post format: ' + datestring);
+
+    //original UGC Monitoring url slice
+    //decompose the url
+	// var iapsUrl    = product.link.slice(product.link.indexOf(".com/") + 4);
+    // var iapsDomain = product.platform
+	//
+
+    //formatting date
+    //02-10-2015 09:50:28
+    //mm/dd/yyyy HH24:MI:SS
+	var d  = new Date(); 
+    var dy = d.getFullYear();
+    var dm = d.getMonth() + 1;
+    var dd = d.getDay();
+    var dt = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+    
+    var iapsDate = dm + '-' + dd + '-' + dy + ' ' + dt;     
+
+    
+    //regexp
+    var patt = /^(http|https)/i;   
+    var result = patt.exec(str);
+    console.log('result: ' + result);
+
+    
+    //extracting the url 
+    var url = document.createElement('a');
+    url.href = str;
+
+//    ['href','protocol','host','hostname','port','pathname','search','hash'].forEach(function(k) {
+//    console.log(k+':', a[k]);
+//    });
+
+//    iapsDomain = url['hostname'];
+//    iapsUrl    = url['pathname'] + url['search'];
+
+    iapsDomain = url.hostname;
+    iapsUrl    = url.pathname + url.search;
+
+    console.log('Log:iapsUpload- iapsDomain: ' + iapsDomain);
+	console.log('Log:iapsUpload- iapsUrl: ' + iapsUrl);
+
+    
+    
+</script>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+[{
+        "platform": "YouTube",
+        "link": "https://www.youtube.com/watch?v=XFkzRNyygfk",
+        "iframe": "yes",
+        "pagetitle": "Radiohead - Creep - Youtube",
+        "artist": {
+            "artist-id": 777001,
+            "artist": "RadioHead"
+        },
+        "title": {
+            "title-id": 12345001,
+            "titlename": "Radiohead - Creep",
+            "owner": "parlophone"
+        },
+        "uploader": "Test A",
+        "duration": "3:57"
+    },
+    {
+        "platform": "YouTube",
+        "link": "https://www.youtube.com/watch?v=u6d8eKvegLI",
+        "pagetitle": "Rolling Stones - Paint It Black - YouTube",
+        "artist": {
+            "artist-id": 888001,
+            "artist": "Rolling Stones"
+        },
+        "title": {
+            "title-id": 12345002,
+            "titlename": "Paint It Black",
+            "owner": "Universal Music Ltd"
+        },
+        "uploader": "Test C",
+        "duration": "4:01"
+    },
+    {
+        "platform": "YouTube",
+        "link": "https://www.youtube.com/watch?v=iUHjDJxkcSE",
+        "pagetitle": "stereophonics - dakota - YouTube",
+        "artist": {
+            "artist-id": 999001,
+            "artist": "Stereophonics"
+        },
+        "title": {
+            "title-id": 12345003,
+            "titlename": "Dakota",
+            "owner": "Sony"
+        },
+        "uploader": "Test B",
+        "duration": "4:06"
+    },
+    {
+      "platform": "Sound Cloud",
+      "link": "https://soundcloud.com/taiocruz/taio-cruz-feat-kylie-minougue-higher-wonderland-remix",
+      "pagetitle": "Taio Cruz feat Kylie Minougue 'Higher' - Wonderland Remix by TaioCruz on SoundCloud - Hear the world’s sounds",
+      "artist": {
+        "artist-id": 666001,
+        "artist": "Taio Cruz feat Kylie"
+      },
+      "title": {
+        "title-id": 12345004,
+        "titlename": "Higher - Wonderland Remix",
+        "owner": "Taio Cruz"
+      },
+      "uploader": "Test D",
+      "duration": "3:56"
+      }]
