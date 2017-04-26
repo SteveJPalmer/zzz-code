@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body>
+
+  <div ng-app="app" ng-controller="TodoCtrl as vm" >
+
+    <div class="todo-container">
+      <span id="title">{{vm.title}}</span>
+
+      <!-- as form -->
+      <form name="myToDo" ng-submit="vm.addToDo()" >
+        <input type="text" ng-model="vm.newItem" placeholder="new todo">
+        <input type="submit" value="Add (via form)">
+      </form>
+
+      <!-- as button -->
+      <input type="text" ng-model="vm.newItem2" placeholder="new todo2" ng-keyup="vm.addToDo2($event)" >
+      <input type="button" ng-click="vm.addToDo2($event)" value="Add (via button)">
+
+      <!-- display todo list -->
+      <div  ng-repeat="item in vm.todolist">
+        <input type="checkbox" ng-model="item.done">
+        <span>{{item.name}}</span>
+      </div>
+
+      <p><button ng-click="vm.remove()">Remove done</button></p>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
