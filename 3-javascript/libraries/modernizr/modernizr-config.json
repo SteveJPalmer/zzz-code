@@ -1,0 +1,13 @@
+{
+  "minify": true,
+  "options": [
+    "html5shiv",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/canvas",
+    "test/touchevents",
+    "test/css/transforms",
+    "test/window/matchmedia"
+  ]
+}
