@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue training</title>
+
+  <script src="https://unpkg.com/vue"></script>
+  <!--<script src="node_modules/vue/dist/vue.js"></script>-->
+  <!--<script src="node_modules/vue/dist/vue.min.js"></script>-->
+
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+  </div>
+
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!'
+      }
+    })
+  </script>
+
+</body>
+</html>
