@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOV - drop down list</title>
+
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body ng-app="ngvalueSelect">
+  <div ng-controller="ExampleController">
+  <h1>select elem - static with diff data types (plus multi select)</h1>
+  <form name="myForm">
+
+    <label for="ngvalueselect"> ngvalue datatypes: </label>
+    <select size="6" name="ngvalueselect" ng-model="data.model" multiple>
+      <option ng-repeat="option in data.availableOptions" ng-value="option.value">{{option.name}}</option>
+    </select>
+
+  </form>
+  <hr>
+  <pre>mgModel binding: <br> <span>{{data.model | json}}</span></pre><br/>
+</div>
+</body>
+</html>
