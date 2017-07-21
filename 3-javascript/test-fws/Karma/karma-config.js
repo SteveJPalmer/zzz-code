@@ -15,11 +15,12 @@ module.exports = function(config) {
 
     // list of code & test files/patterns to load in browser(s)
     files: [
-      '/Users/steve/work_area/Karma/test/*.js',
-      '/Users/steve/work_area/Karma/src/myCode.js'
+      'test/mySpecs.js',
+      'src/myCode.js'
       // '/Users/steve/work_area/Karma/test/PlayerSpec.js',
       // '/Users/steve/work_area/Karma/test/SpecHelper.js',
-      // '/Users/steve/work_area/Karma/src/*.js'
+      // 'src/**/*.js',
+      // 'test/**/*.js'
     ],
 
 
@@ -31,13 +32,35 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      // karma-coverage - source files, to generate coverage for (don't include tests or libs)
+      'src/**/*.js': ['coverage']
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    // Note: 'coverage' added as part of 'karma-coverage' plugin
+    reporters: ['progress', 'coverage'],
+
+    // optionally, configure the reporter (will create html report in prj/coverage folder)
+    // coverageReporter: {
+    //   type : 'html',
+    //   dir : 'coverage/'
+    // },
+
+    coverageReporter: {
+      // specify a common output directory
+      dir: 'coverage',
+      reporters: [
+        // reporters not supporting the `file` property
+        { type: 'html', subdir: 'report-html' },
+        // reporters supporting the `file` property, use `subdir` to directly
+        // output them in the `dir` directory
+        { type: 'text', subdir: '.', file: 'text.txt' },
+        { type: 'text-summary', subdir: '.', file: 'text-summary.txt' },
+      ]
+    },
 
 
     // web server port
