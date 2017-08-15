@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Percent Encoding</title>
+</head>
+<body>
+
+<p>URL (Percent) encode & decode</p>
+
+<button onclick="myFunction()">Click Me</button></br>
+
+<div>
+  <p>Original URL: <span id="original" style="color:dimgrey; font-weight:bold;">http://www.mywebite.com/spaces in file.htm?name=stevè&type=xy z</span></p>
+
+  <p>Encoding URL: <span id="encoded" style="color:mediumblue; font-weight:bold;"></span></p>
+  <p>Decoding URL: <span id="decoded" style="color:purple; font-weight:bold;"></span></p>
+
+  <p>Encoding just Query String: <span id="query" style="color:darkorange; font-weight:bold;"></span></p>
+
+  <p>Correct Technique: encodeURL(base URL), then concatenate on the encodeURIComponent(Query String) </br>
+    Final Result (ready for XHR call): <span id="finalUrl" style="color:hotpink; font-weight:bold;"></span></p>
+
+</div>
+<script>
+  function myFunction() {
+    /* Note: correct technique is encodeURL(base URL), then concatenate on the encodeURIComponent(Query String) ---cf final example--- */
+
+    //encode & decode URL's
+    var url = "http://www.mywebite.com/spaces in file.htm?name=stevè&type=xy z";      //contains spaces & french accent (non-ascii)
+    var encodeUrl = encodeURI(url);
+    var decodeUrl = decodeURI(encodeUrl);
+
+    //encode just params
+    var myQueryString = "name=stevè&type=xy z";                                       //contains spaces & french accent (non-ascii)
+    var encodeParams = encodeURIComponent(myQueryString);
+
+    document.getElementById("encoded").innerHTML = encodeUrl;
+    document.getElementById("decoded").innerHTML = decodeUrl;
+    document.getElementById("query").innerHTML = encodeParams;
+
+
+    //correct technique is encodeURL(base URL), then concatenate on the encodeURIComponent(Query String)
+    var prodURL = "http://www.mywebite.com/spaces in file.htm?";
+    var prodQueryString = "name=stevè&type=xy z";
+
+    var prodUrl = encodeURI(prodURL) + encodeURIComponent(prodQueryString);
+    document.getElementById("finalUrl").innerHTML = prodUrl;
+
+  }
+</script>
+
+</body>
+</html>
