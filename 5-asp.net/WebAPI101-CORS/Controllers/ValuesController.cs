@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 
-namespace TestApp.Controllers
+namespace WebAPI101.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-       
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -18,9 +17,9 @@ namespace TestApp.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5         or [DisableCors] 
-        [EnableCors("AllowSpecificOrigin")]
+        // GET api/values/5 
         [HttpGet("{id}")]
+        [EnableCors("myCORSPolicy")]
         public string Get(int id)
         {
             return "steves test data: param:" + id;

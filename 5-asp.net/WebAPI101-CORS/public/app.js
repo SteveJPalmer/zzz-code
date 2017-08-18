@@ -6,7 +6,7 @@ $(function() {
   console.log( ">> on ready event" );
 
   $.ajax({
-      url: "http://localhost:53359/api/values/2",
+      url: "http://localhost:29637/api/values/2",
       type: "GET"
     })
     .done(function(data) {

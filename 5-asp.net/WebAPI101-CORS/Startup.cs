@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace TestApp
+namespace WebAPI101
 {
     public class Startup
     {
@@ -27,25 +27,15 @@ namespace TestApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(
-              options =>
-              {
-                options.AddPolicy("AllowSpecificOrigin", builder =>
-                {
-                  builder.WithOrigins("http://localhost:63342", "https://www.microsoft.com");
-                });
-
-                //options.AddPolicy("AllowAllOrigins", builder => 
-                //{ 
-                //    builder.AllowAnyOrigin(); 
-                //    // or use below code 
-                //    //builder.WithOrigins("*"); 
-                //}); 
-              }
-             );
-
             // Add framework services.
             services.AddMvc();
+
+            services.AddCors(options =>
+            {
+              options.AddPolicy("myCORSPolicy",
+                  builder => builder.WithOrigins("http://localhost:63342"));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
