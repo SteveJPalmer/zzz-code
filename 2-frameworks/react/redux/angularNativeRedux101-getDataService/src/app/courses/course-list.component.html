@@ -1,0 +1,23 @@
+<article>
+  <h4>Original Courses</h4>
+
+  <ul class="courses">
+    <li *ngFor="let original of coursesOriginal">
+      <h2 >{{original.id}}.{{original.name}}</h2>
+    </li>
+  </ul>
+</article>
+<article>
+  <h4>Redux Store Courses</h4>
+
+  <ul class="courses">
+    <li *ngFor="let course of courses">
+      <h2 >{{course.id}}.{{course.name}}</h2>
+    </li>
+  </ul>
+
+  <p>
+    <button id="1" (click)="addCourse()">Add</button>
+  </p>
+
+</article>
