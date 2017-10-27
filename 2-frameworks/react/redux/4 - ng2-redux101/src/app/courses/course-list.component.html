@@ -1,0 +1,39 @@
+<article>
+  <h4>Courses - local Comp state</h4>
+
+  <ul class="courses">
+    <li *ngFor="let original of coursesOriginal">
+      <h3>{{original.id}}.{{original.name}}</h3>
+    </li>
+  </ul>
+</article>
+
+<article>
+  <h4>Courses - native redux (disabled for this example - code left for comparison)</h4>
+
+  <ul class="courses-native-redux">
+    <li *ngFor="let course of courses">
+    <h3>{{course.id}}.{{course.name}}</h3>
+    </li>
+  </ul>
+
+  <p>
+    <!--<button id="1" (click)="addCourse()">Add Course</button>-->
+  </p>
+</article>
+
+<article>
+  <h4>Courses - ng2-redux</h4>
+
+  <ul class="courses-ng-redux">
+    <li *ngFor="let ngCourse of coursesNgRedux$ | async">
+      <h3>{{ngCourse.id}}.{{ngCourse.name}}  ({{ngCourse.topic}}) </h3>
+    </li>
+  </ul>
+
+  <p>
+    <button id="2" (click)="addNgCourse()">Add Course</button>
+  </p>
+</article>
+
+
