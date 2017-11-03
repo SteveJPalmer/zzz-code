@@ -1,0 +1,61 @@
+<div class="card">
+  <div class="card-header">
+    {{ header }}
+    
+    <!--example 6: multislot transclusion -->
+    <!--<ng-content select="card-header"></ng-content>-->
+  </div>
+
+<!-- --------------------------------------------------- -->
+<!--    basic single slot                                -->
+<!-- --------------------------------------------------- -->
+  <!--example basic: single slot transclusion -->
+  <!--<ng-content></ng-content>-->
+
+
+
+<!-- --------------------------------------------------- -->
+<!--    attribute select slots    - square brackets [] means attribute  -->
+<!-- --------------------------------------------------- -->
+
+  <!-- example 1: attribute slot select, to match content -->
+  <!--<ng-content select="[card-body]"></ng-content>-->
+
+  <!-- example 1b: multiple attributes, to match content -->
+  <!--<ng-content select="[card-body][attr2]"></ng-content>-->
+
+  <!-- example 1c: attribute with value, to match content-->
+  <!--<ng-content select="[card-type=body]"></ng-content>-->
+
+
+
+<!-- --------------------------------------------------- -->
+<!--    class select slots        - dot . means class    -->
+<!-- --------------------------------------------------- -->
+
+  <!-- example 2: css class, to match content -->
+  <!--<ng-content select=".card-body"></ng-content>-->
+
+  <!-- example 2b: multiple classes, to match content -->
+  <!--<ng-content select=".card-body.class2"></ng-content>-->
+
+
+
+<!-- --------------------------------------------------- -->
+<!--    html tag select slots    - just string means tag -->
+<!-- --------------------------------------------------- -->
+
+  <!--example 3: html tag -->
+  <ng-content select="card-body"></ng-content>
+
+
+
+  <!--example 6: multislot transclusion -->
+  <!-- <ng-content select="card-body"></ng-content> -->
+  
+  <div class="card-footer">
+    {{ footer }}
+    <!--example 6: multislot transclusion -->
+    <!--<ng-content select="card-footer"></ng-content>-->
+  </div>
+</div>
