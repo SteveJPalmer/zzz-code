@@ -9697,21 +9697,23 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\work_area\\Projects\\ordersAPI\\ordersAPI\\ordersAPI.csproj",
+      "projectUniqueName": "C:\\zzz-Code\\5-asp.net core\\ordersWebAPI\\ordersAPI\\ordersAPI.csproj",
       "projectName": "ordersAPI",
-      "projectPath": "C:\\work_area\\Projects\\ordersAPI\\ordersAPI\\ordersAPI.csproj",
+      "projectPath": "C:\\zzz-Code\\5-asp.net core\\ordersWebAPI\\ordersAPI\\ordersAPI.csproj",
       "packagesPath": "C:\\Users\\stephen.palmer\\.nuget\\packages\\",
-      "outputPath": "C:\\work_area\\Projects\\ordersAPI\\ordersAPI\\obj\\",
+      "outputPath": "C:\\zzz-Code\\5-asp.net core\\ordersWebAPI\\ordersAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\stephen.palmer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },

@@ -36,6 +36,7 @@ namespace WebAPI101.Controllers
     // <param name = "id" > Unique identifier</param>
     // <returns>A single order or null</returns>
     [HttpGet("{id}")]
+    [EnableCors("myCORSPolicy")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
     [ProducesResponseType((int)HttpStatusCode.Forbidden)]
