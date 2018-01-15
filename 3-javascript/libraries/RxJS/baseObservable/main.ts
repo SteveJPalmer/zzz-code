@@ -9,6 +9,9 @@ import "rxjs/add/observable/from";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/filter";
 
+//events
+import "rxjs/add/observable/fromEvent";
+
 
 /**************
  * Observable *
@@ -49,3 +52,32 @@ class MyObserver {	                                // defines our Observer (wait
 }
 
 source.subscribe(new MyObserver);
+
+
+
+
+/**********
+ * events *
+ **********/
+let source2 = Observable.fromEvent(document, 'click');    // creates Observable from DOM event (async data delivery)
+
+source2.subscribe(														      // defines our Observer (listens for data)
+  value => console.log(value),		              // data arrives via next method (logs out event)
+  e => console.log(`error: ${e}`),
+  () => console.log("complete")
+);
+
+
+let source3 = Observable.fromEvent(document, 'click')    // creates Observable from DOM event (async data delivery)
+                .map((evt: MouseEvent) => {              // TypeScript needs TypeDefined so can ref the event props
+                  return {
+                    x: evt.clientX,
+                    y: evt.clientY
+                  };
+                });
+
+source3.subscribe(														      // defines our Observer (listens for data)
+  value => console.log(value),		               // data arrives via next method (logs out event)
+  e => console.log(`error: ${e}`),
+  () => console.log("complete")
+);
