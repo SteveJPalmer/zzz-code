@@ -1,0 +1,90 @@
+<br/>
+<cl-panel title="Patient" class="panel">
+  <div panel-body class="body">
+    dummy patient
+  </div>
+</cl-panel>
+
+<cl-panel title="Request Details" class="panel">
+  <div #request panel-body class="body">
+    Order Number: {{orderNumber$ | async}}
+    <!--Lab Number: {{order.labNumber}}-->
+
+  </div>
+</cl-panel>
+
+
+<br/>
+<cl-panel title="Results" class="results">
+  <div #results panel-body class="body">
+
+    <div class="grid">
+      <div class="container">
+
+        <div class="col type">
+          <span class="col-t">HLA Type</span>
+
+          <div *ngFor="let type of HLATypes; let i=index">
+            <input id="{{type}}" class="hla-types" value="{{type}}" readonly/>
+          </div>
+        </div>
+
+        <div class="col allele">
+          <span class="col-a1">Allele 1</span>
+          <span class="col-a2">Allele 2</span>
+
+          <div *ngFor="let values of PCRResults; let i=index">
+            <input id="PCR-Allede1-{{i}}" [(ngModel)]="PCRResults[i].value1" type="text"/>
+            <input id="PCR-Allede2-{{i}}" [(ngModel)]="PCRResults[i].value2" type="text"/>
+          </div>
+        </div>
+
+        <div class="col antigen" *ngIf="CDCTest">
+          <span class="col-c1">Antigen 1</span>
+          <span class="col-c2">Antigen 2</span>
+
+          <div *ngFor="let values of CDCResults; let i=index">
+            <input id="CDC-Def1-{{i}}" [(ngModel)]="CDCResults[i].value1" type="text"/>
+            <input id="CDC-Def2-{{i}}" [(ngModel)]="CDCResults[i].value2" type="text"/>
+          </div>
+        </div>
+
+        <div class="col definitive" *ngIf="DEFTest">
+          <span class="col-d1">Definitive 1</span>
+          <span class="col-d2">Definitive 2</span>
+
+          <div *ngFor="let values of DEFResults; let i=index">
+            <input id="PER-Def1-{{i}}" [(ngModel)]="DEFResults[i].value1" type="text"/>
+            <input id="PER-Def2-{{i}}" [(ngModel)]="DEFResults[i].value2" type="text"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button id="cdc" (click)="addCytotoxic();" *ngIf="!CDCTest"
+            class="cl-button primary">
+      Add Cytotoxic
+    </button>
+
+  </div>
+</cl-panel>
+
+
+<div>
+  <button id="saveResults" (click)="saveResults();"
+          class="cl-button primary">
+    Save
+  </button>
+  <button id="cancelResults"
+          routerLink="/home" routerLinkActive="requestSearch"
+          class="cl-button primary">
+    Cancel
+  </button>
+</div>
+
+
+<br/>
+<!--<p class='toast saved' style="color:steelblue; margin-left: 150px; align-content: center;" *ngIf="isSaved">Saved Results for Lab Number: {{labNumber$ | async}}</p>-->
+<!--<p class='toast notSaved' style="color:indianred; margin-left: 150px; align-content: center;" *ngIf="isError">Unable to save results for Lab Number: {{labNumber$ | async}}</p>-->
+

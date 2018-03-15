@@ -1,0 +1,41 @@
+﻿<cl-panel title="Order Search" class="panel">
+  <div #body panel-body>
+    <input [(ngModel)]="search.orderNumber" #onum value=""
+           id="inputOrder" placeholder="Order Number"
+           class="cl-input">
+    <button id="findOrder" (click)="findOrderByOrderNumber();"
+            class="cl-button primary">
+      Search
+    </button>
+    <button id="resetOrder" (click)="resetOrderSearch();"
+            class="cl-button primary">
+      Clear
+    </button>
+    <br/>
+    <p class='noOrder' style="color:indianred" *ngIf="noOrderFound">No order found for Order Number {{lastSearch}}</p>
+  </div>
+</cl-panel>
+
+<br/>
+<br/>
+<cl-panel #panelOrderResults title="Order Search Results" *ngIf="isData">
+
+  <div #body panel-body>
+    <div class="order-results">
+
+          <div class="grid">
+            <div class="grid-heading">
+              <span>Order Number</span>
+            </div>
+            <div class="grid-row" routerLink="/acceptOrder" routerLinkActive="active">
+              <span class="grid-onum">{{order.orderNumber}}</span>  <a routerLink="/acceptOrder" routerLinkActive="active">Link</a>
+            </div>
+          </div>
+
+        <p style="height:40px"></p>
+    </div>
+
+  </div>
+
+</cl-panel>
+

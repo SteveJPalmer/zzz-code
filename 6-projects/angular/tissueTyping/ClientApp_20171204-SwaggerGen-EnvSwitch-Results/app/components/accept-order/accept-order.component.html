@@ -1,0 +1,36 @@
+﻿<br/>
+<cl-panel title="Patient Details" class="patient">
+    <div #body panel-body class="body">
+        dummy patient
+    </div>
+</cl-panel>
+<br/>
+<cl-panel title="Request Details" class="request">
+    <div #request panel-body class="body">
+        Order Number: {{orderNumber$ | async}} &nbsp;&nbsp;&nbsp; Status: {{order.status}}  &nbsp;&nbsp;&nbsp; Lab Number: {{order.labNumber}}
+    </div>
+</cl-panel>
+<br/>
+<cl-panel title="Sample Details" class="samples">
+    <div #body panel-body class="body">
+        <span class="orderable-header">Orderables</span>
+        <div *ngFor="let orderable of orderables$ | async">
+          <div class="orderable-row">
+              <span>{{orderable.testCode}}</span>
+          </div>
+        </div>
+    </div>
+</cl-panel>
+<br/>
+<button id="acceptOrder" (click)="acceptOrder();"
+        class="cl-button primary">
+    Accept Order
+</button>
+<button id="cancelOrder"
+        routerLink="/home" routerLinkActive="active"
+        class="cl-button primary">
+     Cancel
+</button>
+<br/>
+<p class='accepted' style="color:steelblue" *ngIf="isAccepted">Accepted Order Number: {{orderNumber}} (Lab Number: {{labNumber}} )</p>
+<p class='notAccepted' style="color:indianred" *ngIf="isError">Unable to accepted Order Number: {{orderNumber}}</p>

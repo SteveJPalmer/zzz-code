@@ -1,0 +1,18 @@
+﻿<cl-panel title="Request Search" class="panel">
+  <div #body panel-body>
+    <input [(ngModel)]="search.labNumber" #onum value=""
+           id="inputLabNo" placeholder="Lab Number"
+           class="cl-input">
+    <button id="findRequest" (click)="findRequestByLabNumber();"
+            class="cl-button primary">
+      Search
+    </button>
+    <button id="resetRequest" (click)="resetRequestSearch();"
+            class="cl-button primary">
+      Clear
+    </button>
+    <br/>
+    <p class='noRequest' style="color:indianred" *ngIf="noRequestFound">No request found for Lab Number: {{lastSearch}}</p>
+  </div>
+</cl-panel>
+
