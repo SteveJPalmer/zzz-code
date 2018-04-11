@@ -1,7 +1,6 @@
 //load libs
 var _ = require('lodash');
 
-
 //array of objs  -- Ng1 $$hashKey can cause matching issues (good test)
 var myArray = [ {"code": "A",
                  "desc": "Test A"
@@ -28,7 +27,7 @@ var myObj = {"code": "Z",
 // };
 
 //search for a match
-var index = _.findIndex(myArray, myObj);    //returns index of first match
+var index = _.findIndex(myArray, myObj);    //returns index of first match, else -1
 
 
 //manage array
@@ -40,4 +39,3 @@ else {
 }
 
 console.log( JSON.stringify(myArray, undefined, 2) );
-

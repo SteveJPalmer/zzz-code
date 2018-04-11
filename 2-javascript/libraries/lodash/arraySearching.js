@@ -1,6 +1,4 @@
-/**
- * Created by Steve on 13/03/2016.
- */
+// LoDash searching: _.find() & _.findIndex()
 
 var _ = require('lodash');
 var res;
@@ -32,15 +30,15 @@ var users = [
 
 //find() returns first matching obj,  for given prop
 res = _.find(users, {'name':'Bob'});
-console.log('_.find -1- ' + JSON.stringify(res));        //returns first matching Bob
+console.log('_.find -1- ' + JSON.stringify(res));        //returns "Bob" - first Obj matching Bob
 
 //find() returns first matching obj,  for multiple props
 res = _.find(users, {'is_premium':false, 'age':22});
-console.log('_.find -2- ' + JSON.stringify(res));        //returns first matching false & 22
+console.log('_.find -2- ' + JSON.stringify(res));        //returns "Bob" - first Obj matching false & 22
 
 //findLast() - as find() but reversed (from end)
 res = _.findLast(users, {'is_premium':false, 'age':22});
-console.log('_.find -3- ' + JSON.stringify(res));        //returns matching false & 22 from end
+console.log('_.find -3- ' + JSON.stringify(res));        //returns "Bob2" - first matching false & 22 from end
 
 
 
@@ -48,11 +46,11 @@ console.log('_.find -3- ' + JSON.stringify(res));        //returns matching fals
 
 //like _.find, but returns the array index (rather than element itself)
 res = _.findIndex(users, {name: 'Bob', age: 22});
-console.log('_.findIndex -1- ' + JSON.stringify(res));        //returns 1,  the array index of Bob
+console.log('_.findIndex -1- ' + JSON.stringify(res));        //returns 1,  the array index of first Bob
 
 //
 res = _.findIndex(users, {age: 22});
-console.log('_.findIndex -2- ' + JSON.stringify(res));        //
+console.log('_.findIndex -2- ' + JSON.stringify(res));        //returns 1,  the array index of first Bob
 
 //as findIndex() but reversed (from end)
 res = _.findLastIndex(users, {age: 22});
