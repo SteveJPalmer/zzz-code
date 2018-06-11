@@ -48,6 +48,7 @@
     @-webkit-keyframes mySecond {   /* Chrome & Safari */
       0% {
         background: yellow;
+        left: 0px;
       }
       65% {
         background: red;
@@ -62,6 +63,7 @@
     @-moz-keyframes mySecond {      /* firefox */
       0% {
         background: yellow;
+        left: 0px;
       }
       65% {
         background: red;
@@ -76,8 +78,9 @@
     @keyframes mysecond {           /* native */
       0% {
         background: yellow;
+        left: 0px;
       }
-      60% {
+      65% {
         background: red;
         left: 10px;
       }
@@ -139,14 +142,43 @@
       animation: spin 1s infinite;           /* native */
     }
 
+    /* linear will make smooth, stop the default easing fn */
+    .spinner1 {
+      -webkit-animation: spin 1s linear infinite;   /* Chrome & Safari */
+      -moz-animation: spin 1s linear infinite;      /* firefox */
+      animation: spin 1s linear infinite;           /* native */
+    }
+
+
+    /* tbc... add the css prefix @keyframes */
+    @keyframes spin2 {                        /* native */
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(720deg);
+      }
+    }
+
+    /* bind animation to elem */
+    .spinner2 {
+      -webkit-animation: spin2 2s infinite;   /* Chrome & Safari */
+      -moz-animation: spin2 2s infinite;      /* firefox */
+      animation: spin2 2s infinite;           /* native */
+    }
+
+
   </style>
 </head>
 <body>
-<div class="first"><p>Starts on page load!!</p></div>
-<p>Hover to see the animation apply keyframe rule. From | To  <i>(note at end resets to original sytle)</i></p>
-<div class="second"><p>Hover over Me Again!!</p></div>
-<p>Hover to see the animation apply keyframe rule. % using multiple styles</p>
+  <!-- aminations -->
+  <div class="first"><p>Starts on page load!!</p></div>
+  <p>Hover to see the animation apply keyframe rule. From | To  <i>(note at end resets to original sytle)</i></p>
+  <div class="second"><p>Hover over Me Again!!</p></div>
+  <p>Hover to see the animation apply keyframe rule. % using multiple styles</p>
 
-<!-- spinner -->
-<button><span class="glyphicon glyphicon-repeat spinner"></span></button>
+  <!-- spinners -->
+  <button><span class="glyphicon glyphicon-repeat spinner"></span></button><br/>
+  <button><span class="glyphicon glyphicon-repeat spinner1"></span></button> add linear easing<br/>
+  <button><span class="glyphicon glyphicon-repeat spinner2"></span></button> can really start to see easing fn<br/>
 </body>
