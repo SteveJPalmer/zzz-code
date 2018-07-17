@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positioning Props</title>
+
+  <style>
+  .setup {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    color: black;
+  }
+
+  #two {
+    position: relative;
+    top: 30px;
+    left: 15px;
+    background: lightblue;
+  }
+
+  #four {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background: yellow;
+  }
+
+
+  /*****************************************************
+   * relative container with absolute child positioned *
+   *****************************************************/
+  #five {
+    position: relative;
+    /* container */
+    background-color: lightgray;
+    width: 400px;
+    height: 400px;
+  }
+
+  .setup-six {
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+  }
+
+  #six-a {
+    position: absolute;
+    /* child     */
+    /* top-right */
+    top: 10px;
+    right: 10px;
+
+  }
+
+  #six-b {
+    position: absolute;
+    /* child       */
+    /* bottom-left */
+    bottom: 10px;
+    left: 10px;
+  }
+
+  #six-c {
+    position: absolute;
+    /* child  */
+    /* center */
+    top: 35.7%;     /* calc to allow for size of child (200-50)/400  */
+    left: 35.7%;
+  }
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <div class="setup" id="one">One - static</div>
+  <div class="setup" id="two">Two - relative</div>
+  <div class="setup" id="three">Three - static</div>
+
+  <div class="setup" id="four">Four - fixed</div>
+
+  <div style="height:6em"></div>
+  <div id="five">Five - relative - Container
+    <div class="setup-six" id="six-a">- Six-a - absolute child  top-right</div>
+    <div class="setup-six" id="six-b">- Six-b - absolute child  bottom-left</div>
+    <div class="setup-six" id="six-c">- Six-c - absolute child  center</div>
+  </div>
+  <div style="height:1000px"></div>
+</body>
+</html>
