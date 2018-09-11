@@ -1,0 +1,44 @@
+@import url(../node_modules/@angular/material/prebuilt-themes/indigo-pink.css);
+@import url(../node_modules/material-design-icons/iconfont/material-icons.css);
+@import "https://fonts.googleapis.com/css?family=Roboto:400,300";
+body {
+  background-color: aliceblue; }
+
+.wip {
+  font-size: 16px;
+  color: orangered;
+  font-style: italic;
+  margin-left: 30px; }
+
+.initialise {
+  text-align: center;
+  margin-top: 200px;
+  color: #336699;
+  font-size: 1.4em;
+  font-weight: 700; }
+
+/* Rules for icon sizes: */
+.material-icons {
+  /* Default */ }
+  .material-icons .md-18 {
+    font-size: 18px; }
+  .material-icons .md-24 {
+    font-size: 24px; }
+  .material-icons .md-36 {
+    font-size: 36px; }
+  .material-icons .md-48 {
+    font-size: 48px; }
+
+/* ToDO - remove all prototype styles from markup */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%; }
+
+.cl-font-large {
+  font-size: 1.5em; }
+
+.cl-font-xlarge {
+  font-size: 2em; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+﻿
+<div class="cl-panel"
+     [ngClass]="{'mat-elevation-z4': !isCollapsed, 'mat-elevation-z2': isCollapsed}"
+     id="mat-container" style="margin-left:20px; background-color:white; width:1200px;" >
+
+  <div class="cl-panel-header"
+       [ngClass]="{'mat-elevation-z6': !isCollapsed, 'mat-elevation-z2': isCollapsed}"
+       style="font-size:20px; height:40px; background-color:steelblue; color:white">
+
+    <span *ngIf="isCollapsable" class="panel-collapse-icon">
+        <i class="fa" [ngClass]="{'fa-chevron-down': !isCollapsed, 'fa-chevron-up': isCollapsed}" (click)="togglePanel()"></i>
+    </span>
+    <span *ngIf="!isCollapsable" class="panel-collapse-icon">
+        <i class="fa fa-chevron-right"></i>
+    </span>
+    <span class="panelTitle">
+        {{panelTitle}}
+    </span>
+    <span style="float:right; margin-right:10px;"><ng-content select="[panel-header=right]"></ng-content></span>
+
+  </div>
+        <!--<div #summary class="card-block" [ngbCollapse]="!isSummaryMode()">-->
+            <!--<ng-content select=".cl-panel-summary"></ng-content>-->
+        <!--</div>-->
+  <div #body class="cl-panel-body">
+      <!--<ng-content select=".cl-panel-body"></ng-content>-->
+      <ng-content select="[panel-body]" *ngIf="!isCollapsed"></ng-content>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+

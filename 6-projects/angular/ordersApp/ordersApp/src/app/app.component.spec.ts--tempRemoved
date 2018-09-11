@@ -1,0 +1,58 @@
+//ES6 imports
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+// import { By }              from '@angular/platform-browser';
+import { DebugElement }    from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+//feature components
+import { OrderSearchComponent } from './orderSearch/orderSearch.component';
+// import { CourseListComponent } from './courses/course-list.component';
+//
+
+
+//base test
+describe('app.component suite - test env', () => {
+  it('true is true', () => expect(true).toBe(true));
+});
+
+describe('app.component suite (inline template)', () => {
+
+  let fixture: ComponentFixture<AppComponent>;
+  let comp:    AppComponent;
+  // let de:      DebugElement;
+  // let el:      HTMLElement;
+
+  beforeEach(async( ()=> {
+      TestBed.configureTestingModule({
+        declarations: [ AppComponent,
+                        OrderSearchComponent
+                        // CourseListComponent,
+                      ],
+      })
+        .compileComponents();
+    }
+  ));
+
+  beforeEach(() => {
+
+    fixture = TestBed.createComponent(AppComponent);
+
+    comp = fixture.componentInstance;
+
+    // de = fixture.debugElement.query(By.css('h3'));
+    // el = de.nativeElement;
+  });
+
+
+  //test cases
+  it('should create component', () => expect(comp).toBeDefined() );
+
+  it('should set correct app name', () => {
+    fixture.detectChanges();
+    expect(comp.appName).toEqual('Tissue Typing');
+    // expect(el.innerText).toMatch(/angular/i);   //alternative regexp
+  });
+
+});
+
