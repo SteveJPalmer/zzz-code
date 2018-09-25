@@ -1,0 +1,9 @@
+﻿<h1>Home page</h1>
+<p>Successful Login in!!</p>
+<div>
+    Connected Users:
+    <ul>
+        <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+    </ul>
+</div>
+<p><a [routerLink]="['/login']">Logout</a></p>
