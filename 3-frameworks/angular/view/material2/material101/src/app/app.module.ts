@@ -1,33 +1,33 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule }      from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {AppRoutingModule} from './app-routing.module';
 
-import { AppComponent }  from './app.component';
+import {AppComponent} from './app.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+/* Material2 */
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-//import individual material modules
-// import { MdInputModule, MdButtonModule } from '@angular/material';
-// or create separate NgModule that imports all Material components required by app
+//add Material comps via separate NgModule
 import { AppMaterialModules } from './app.material.module';
+//or add individually
+// import { MatButtonModule, MatCheckboxModule } from '@angular/material';   //ensure import after BrowserModule
 
-//RWD css fw
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
+  declarations: [
+    AppComponent,
+//    MatButtonModule,            // add Material Comps - individually
+//    MatCheckboxModule
+  ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModules,
-    // MdInputModule,
-    // MdButtonModule
-    FlexLayoutModule,
+    AppMaterialModules            // add Material Comps - via separate NgModule
   ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

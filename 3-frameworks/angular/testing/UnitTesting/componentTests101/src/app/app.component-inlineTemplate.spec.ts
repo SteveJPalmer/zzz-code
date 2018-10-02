@@ -25,11 +25,11 @@ describe('app.component suite (inline template)', () => {
 
     fixture = TestBed.createComponent(AppComponent);
 
-    comp = fixture.componentInstance; // Component test instance
+    comp = fixture.componentInstance;     // Component test instance - gives access (get & set) to all comp props
 
     // query for h3 elem via CSS element selector
-    de = fixture.debugElement.query(By.css('h3'));
-    el = de.nativeElement;
+    de = fixture.debugElement.query(By.css('h3'));   // returns: DebugElement
+    el = de.nativeElement;                                  // returns: HTMLElement
   });
 
 

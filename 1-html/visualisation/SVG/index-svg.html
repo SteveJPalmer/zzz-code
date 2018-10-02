@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>SVG - Scalable Vector Graphics</h1>
+
+  <h2>Rectangle</h2>
+  <svg width="500" height="100">
+    <rect x="50" y="0" width="300" height="100" fill="pink"></rect>
+  </svg>
+
+  <h2>Line</h2>
+  <svg width="500" height="100">
+    <line x1="50" y1="0" x2="200" y2="25" stroke="black"></line>
+  </svg>
+
+  <h2>Circle & Ellipse</h2>
+  <svg width="500" height="100">
+    <circle cx="75" cy="50" r="25" fill="lightblue"></circle>
+    <ellipse cx="200" cy="50" rx="50" ry="25" fill="lightgreen"></ellipse>
+  </svg>
+
+  <h2>Text</h2>
+  <svg width="500" height="100">
+    <text x="50" y="25">add some text content..</text>
+  </svg>
+
+
+  <h1>Group</h1>
+  <svg width="500" height="200">
+    <!-- START svg group elem  - think: a Container - allows transforming/moving svg elems together -->
+    <!-- group attrs inherited by children -->
+    <g fill="lightblue" stroke="orange" stroke-width="1"
+       transform="translate(200 0)">
+      <rect x="0" y="0" width="180" height="50" opacity="0.5"></rect>
+      <text x="10" y="20" stroke="steelblue">Text moves with group!</text>
+    </g>
+    <!-- END svg group -->
+  </svg>
+
+
+</body>
+</html>

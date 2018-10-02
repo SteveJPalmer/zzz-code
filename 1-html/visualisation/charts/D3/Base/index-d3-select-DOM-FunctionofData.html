@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+  <script src="js/d3/d3.min.js"></script>
+
+
+</head>
+<body>
+  <p>x</p>
+  <p>y</p>
+  <p>z</p>
+
+  <script>
+    var data = [1, 2, 3];
+
+    var paragraph = d3.select("body")
+      .selectAll("p")
+      .data(data)
+      .text(function (d, i) {
+        console.log("d: " + d);
+        console.log("i: " + i);
+        console.log("this: " + this.innerText);
+        return 'Paragraph ' + d;
+      });
+
+  </script>
+
+  <script>
+    d3.selectAll("p")
+      .style("color", function(d, i) {
+        var text = this.innerText;
+
+        if (text.indexOf("Paragraph 2") >= 0) {
+          return "red";
+        } else {
+          return "blue";
+        }
+      });
+  </script>
+
+
+
+</body>
+</html>

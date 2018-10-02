@@ -164,8 +164,8 @@ export class HlaResultsEntryComponent implements OnInit {
   ngOnInit() {
     this.ngRedux.select<string>('request')
       .subscribe(request => {
-        this.request = request;
-        this.setTestFlags();
+          this.request = request;
+          this.setTestFlags();
       });
 
     this.HLATypes = this.helperService.getHLATypes();

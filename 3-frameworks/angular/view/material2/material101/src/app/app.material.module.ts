@@ -1,32 +1,20 @@
 import {NgModule} from '@angular/core';
 
-import {MdInputModule,
-        MdButtonModule,
-        MdIconModule,
-        MdProgressSpinnerModule
+import { MatButtonModule,
+         MatProgressSpinnerModule,
+         MatProgressBarModule,
 } from '@angular/material';
 
 @NgModule({
-  imports: [
-    MdInputModule,
-    MdButtonModule,
-    MdIconModule,
-    MdProgressSpinnerModule
-  ],
-  exports: [
-    MdInputModule,
-    MdButtonModule,
-    MdIconModule,
-    MdProgressSpinnerModule
-  ],
+  imports: [MatButtonModule,
+            MatProgressSpinnerModule,
+            MatProgressBarModule
+           ],
+  exports: [MatButtonModule,
+            MatProgressSpinnerModule,
+            MatProgressBarModule
+           ],
   declarations: [],
   providers: [],
 })
 export class AppMaterialModules {}
-
-
-
-
-
-
-

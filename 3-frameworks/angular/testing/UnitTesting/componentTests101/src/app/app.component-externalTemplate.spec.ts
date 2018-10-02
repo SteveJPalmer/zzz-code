@@ -18,15 +18,13 @@ describe('app.component suite (external template)', function () {
   let comp: AppComponent;
   let de: DebugElement;
 
-  beforeEach(async(() => {
+  beforeEach(async(() => {                      // async ensures this beforeEach() completes first
     TestBed.configureTestingModule({
       declarations: [ AppComponent ]            // declare the test component
-    })
-    .compileComponents();                       // compile template and css
+    }).compileComponents();                     // then.. compile template & css
   }));
   
   beforeEach(() => {
-  
     fixture = TestBed.createComponent(AppComponent);
     comp = fixture.componentInstance;
   
@@ -39,7 +37,8 @@ describe('app.component suite (external template)', function () {
   //   TestBed.configureTestingModule({
   //     declarations: [ AppComponent ]
   //   })
-  //     .compileComponents().then( ()=> {
+  //     .compileComponents()
+  //     .then( ()=> {
   //        fixture = TestBed.createComponent(AppComponent);
   //        comp = fixture.componentInstance;
   //        de = fixture.debugElement.query(By.css('h3'));

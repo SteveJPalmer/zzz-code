@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modernizr</title>
+  <script src="modernizr.js"></script>
+</head>
+<body>
+
+  <script>
+    /* Modernizr add test for mobile */
+    Modernizr.addTest('ismobile', function() {
+      return window.matchMedia("(max-width: 479px)").matches
+    });
+  </script>
+
+  <script>
+    if(Modernizr.ismobile) {
+      console.info('Modernizr.ismobile: true');
+    }
+    else {
+      console.info('Modernizr.ismobile: false');
+    };
+  </script>
+
+
+
+  <!-- or Modernizr.mq() -->
+  <script>
+    var query = Modernizr.mq('(min-width: 900px)');			// check browser current width against a Media Query
+    if (query) {
+      // the browser window is larger than 900px
+      console.info('Modernizr.mq() - window is larger that 900px');
+    }
+    else {
+      console.info('Modernizr.mq() - window is smaller that 900px');
+    }
+
+  </script>
+
+
+</body>
+</html>

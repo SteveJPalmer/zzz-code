@@ -1,0 +1,23 @@
+<h2>Bypass Security Component</h2>
+
+<h3>Html:</h3>
+<p><i>cant use interpolation - must use binding (Angular sanitizes): </i> <span>{{evilSVG}}</span></p>
+<p><i>evilSVG (Angular sanitizes): </i> <span [innerHtml]="evilSVG"></span></p>
+<p><i>safeSVG innerHtml:</i> <span [innerHtml]="safeSVG"></span></p>
+
+<p><i>nice! via a | pipe: </i> <span [innerHtml]="evilSVG | safeHtml"></span></p>
+
+
+<br/><h3>JavaScript code:</h3>
+<h5>An untrusted URL (Angular sanitizes):</h5>
+<p><a class="e2e-dangerous-url" [href]="dangerousUrl">Click me</a></p>
+<h5>A trusted URL:</h5>
+<p><a class="e2e-trusted-url" [href]="trustedUrl">Click me</a></p>
+
+<br/><h3>Resource URL:</h3>
+<p>Showing: {{dangerousVideoUrl}}</p>
+<h5>Untrusted (Angular sanitizes):</h5>
+<iframe class="untrusted-src" width="300" height="200" [src]="dangerousVideoUrl"></iframe>
+<h5>Trusted:</h5>
+<iframe class="trusted-src" width="300" height="200" [src]="videoUrl"></iframe>
+

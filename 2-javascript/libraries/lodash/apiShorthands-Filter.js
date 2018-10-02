@@ -6,51 +6,51 @@ var res, res1, res2;
 var users = [
   {
     name: 'Fred',
-    family: 'Flintstones',
+    family: 'Flintstone',
     age: 35,
     isPet: false
   },
   {
     name: 'Wilma',
-    family: 'Flintstones',
+    family: 'Flintstone',
     age: 29,
     isPet: false
   },
   {
     name: 'Pebbles',
-    family: 'Flintstones',
+    family: 'Flintstone',
     age: 5,
     isPet: false
   },
   {
     name: 'Dino',
-    family: 'Flintstones',
+    family: 'Flintstone',
     age: 9,
     isPet: true,
     petType: 'dinosaur'
   },
   {
     name: 'Barney',
-    family: 'Rubbles',
+    family: 'Rubble',
     age: 33,
     isPet: false
   },
   {
     name: 'Betty',
-    family: 'Rubbles',
+    family: 'Rubble',
     age: 27,
     isPet: false
   },
   {
     name: 'Bamm-Bamm',
-    family: 'Rubbles',
+    family: 'Rubble',
     age: 7,
     isPet: false
   },
   {
     name: 'Hoppy',
-    family: 'Rubbles',
-    age: 9,
+    family: 'Rubble',
+    age: 1,
     isPet: true,
     petType: 'kangaroo'
   }

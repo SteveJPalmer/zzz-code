@@ -10,7 +10,7 @@
 
     it("mySum should add correctly", function() {
       //var a = 12;
-      expect(mySum(1,2)).toEqual(3,'test mgs');
+      expect(mySum(1,2)).toEqual(3,'test mgs');         //will pass
     });
   });
 

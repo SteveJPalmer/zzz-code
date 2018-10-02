@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+  <script src="js/d3/d3.min.js"></script>
+
+  <style>
+    .error {color:red;}
+    .initial {color:green;}
+  </style>
+
+</head>
+<body>
+  <h1>Select fns</h1>
+  <p id="p1" class="open">First paragraph</p>
+  <p id="p2">Second paragraph</p>
+
+  <div>nested list items
+    <ul id="pacs">
+      <li>Clyde</li>
+      <li>Inky</li>
+      <li class="active">Blinky</li>
+      <li>Pinky</li>
+    </ul>
+  </div>
+
+  <h1>Manipulate fns</h1>
+  <div id="p3" class="initial">Initial text
+    <div id="n1" class="existingClass">first nested div</div>
+    <div id="n2">second nested div</div>
+  </div>
+  <div id="p4">Initial text to be replaced</div>
+
+  <script>
+    /* D3 DOM Selector fns */
+    d3.select('p')                    //css selector  - returns 1st <p> elem
+      .style("color", "green");       //sets color 'green'
+
+    d3.select('#p2')                  //via id
+      .style("color", "blue");
+
+    d3.select('.open')                //via class
+      .style('font-size','1.5em');
+
+    d3.selectAll('p')
+      .style('font-weight', 'bold');  //returns ALL <p> elem
+
+    //nested elems
+    d3.select('div ul li.active')           //nested	(adds style to Blinky)
+      .style('color','orange');
+
+    d3.select('div ul').selectAll('li')     //alternative via Chaining D3 fns'
+      .style('font-style','italic');          //  (adds style to ALL <li>’s)
+
+    //examine select obj  - can see D3 methods in __proto__
+    console.info(d3.select('p'));
+
+
+  </script>
+
+  <script>
+    /* D3 DOM Manipulation fns */
+    //prop changes
+    d3.select("#p3 div").classed("error",true);         //adds class error to selected elem
+    d3.select("#p3").classed("initial",false);          //removes class
+
+    d3.select("#p3 div").attr("name","dyn prop");       //adds attr
+
+    //structural changes
+    d3.select('#p3').insert('div', '#n2').text('>> insert div betweens 1st & 2nd ');
+    d3.select('#p3').append('div').text('>> append div at end ');
+
+    //uncomment to see effects
+    d3.select('#p4').text(' - text changed - ');
+    // d3.select('#p4').html('<span>This was added in HTML</span>');
+    // d3.select('#p4').remove();
+
+  </script>
+
+
+
+</body>
+</html>

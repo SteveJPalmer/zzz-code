@@ -1,0 +1,3 @@
+To generate new modernizr.js file, update config & run...
+
+.\node_modules\.bin\modernizr -c modernizr-config.json

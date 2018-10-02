@@ -1,6 +1,8 @@
 {
   "minify": true,
   "options": [
+    "addTest",
+    "mq",
     "html5shiv",
     "setClasses"
   ],

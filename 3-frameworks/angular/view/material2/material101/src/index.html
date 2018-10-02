@@ -1,31 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Material101</title>
-    <base href="/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  <base href="/">
 
-    <!-- material2 theme & material icons - include via <link> or @import CSS at-rule in styles.css -->
-    <!--<link rel="stylesheet" href="../node_modules/@angular/material/prebuilt-themes/indigo-pink.css">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >-->
-    <!--<link rel="stylesheet" href="../node_modules/material-design-icons/iconfont/material-icons.css">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="/node_modules/core-js/client/shim.min.js"></script>
+  <!--material2-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300">
 
-    <script src="/node_modules/zone.js/dist/zone.js"></script>
-    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+</head>
+<body class="mat-app-background">
+  <app-root>loading...</app-root>
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
-    </script>
-  </head>
+  <p>Material integration test</p>
+  <div class="mat-elevation-z16 test-boot" ></div><br>
 
-  <body>
-    <my-app>Loading AppComponent content here ...</my-app>
-  </body>
+  <p>Bootstrap integration test</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">.col-4</div>
+      <div class="col-md-4">.col-4</div>
+      <div class="col-md-4">.col-4</div>
+    </div>
+  </div>
+  <style>
+    .row div {
+      background-color:lightblue;
+      border: 1px solid grey;
+    }
+    .test-boot {
+      background-color:lightblue;
+      width: 300px;
+      height:100px;
+      margin-left:50px;
+    }
+  </style>
+
+</body>
 </html>

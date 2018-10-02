@@ -6,11 +6,11 @@
        
         //data records models
 		store.products = [];
-        store.selectedrow = null;
-        //player models
-        store.playerlink;
-        store.playerurl;
-        store.playerurldown;
+		store.selectedrow = null;
+		//player models
+		store.playerlink;
+		store.playerurl;
+		store.playerurldown;
 		//Filter
 		store.results = 'false';
 		store.platform = 'YouTube';

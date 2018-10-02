@@ -2,7 +2,7 @@
 <html>
 <style>
   div {
-    transition: all linear 0.5s;
+    transition: all linear 0.5s;     /* Note: animation on Div, not class */
     background-color: lightblue;
     height: 100px;
     width: 100%;
@@ -12,6 +12,7 @@
   }
 
   .ng-hide {
+    /* transition: all linear 0.5s; */    /* adding to class, will affect only if class present */
     height: 0;
     width: 0;
     background-color: transparent;

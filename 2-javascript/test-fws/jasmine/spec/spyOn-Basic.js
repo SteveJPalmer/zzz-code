@@ -26,7 +26,7 @@ describe("A spy", function() {
     expect(foo.setBar).toHaveBeenCalled();
   });
 
-  it("tracks that spy was called x times", function() {
+  it("tracks that spy was called 2 times", function() {
     expect(foo.setBar).toHaveBeenCalledTimes(2);
   });
 
@@ -36,16 +36,12 @@ describe("A spy", function() {
   });
 
   it("no call made to original fn", function() {
-    expect(bar).toBeNull();      //bar never set as spy stubs fn (cf and.callThrough)
+    expect(bar).toBeNull();         //bar never set as spy stubs fn (cf and.callThrough)
     // expect(bar).toEqual(456);    //if chained to .and.callThrough() will equal last call
   });
 
   it("spy returns specified value", function() {
     expect(fetchedBar).toEqual(111);    //if chained to .and.returnValue() will equal specified value
-  });
-
-  it("calls property assertion examples", function() {
-    
   });
 
 });

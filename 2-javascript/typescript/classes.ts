@@ -258,7 +258,7 @@ if (myStaticClass.MAGIC_STRING == '12345') {	//can ref var without first creatin
 class Concatenator<T> {										              //generic type < T > syntax
 
   concatenateArray(inputArray: Array<T>): string {			//inputArray arg must be array of type used to construct instance
-    var returnString = "";
+    var returnString = "";                              //Note: we always want return type to be a string
     for (var i = 0; i < inputArray.length; i++) {
       if (i > 0)
         returnString += ",";

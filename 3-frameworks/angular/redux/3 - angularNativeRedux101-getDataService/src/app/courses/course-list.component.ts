@@ -97,7 +97,7 @@ export class CourseListComponent implements OnInit {
 
     //need bind to store - so comp gets notified of store state changes
     store.subscribe( () => {    //when state changes
-      this.updateFromState();
+        this.updateFromState();
     });
 
   };

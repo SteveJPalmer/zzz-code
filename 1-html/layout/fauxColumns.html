@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Layout - Float Column Height</title>
+  <style>
+    /*********************************
+     * initial - float with clearfix *
+     *********************************/
+    #col-a { float:left;  width:30%; background-color:red; }
+    #col-b { float:left;  width:40%; background-color:blue; }
+    #col-c { float:right; width:30%; background-color:yellow; }
+    /*clearfix after container with float */
+    #original-container:after {
+      content: " ";
+      clear: both;
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      height: 0;
+    }
+
+
+
+    /************************
+     * Faux column solution *
+     ************************/
+
+    /*add a wrapper (relative) around columns */
+    #faux-cols {
+      position: relative;
+      background: #eee;
+      z-index: 1;
+      width: 100%;
+      display: inline-block;
+      overflow: hidden;
+    }
+    #faux-cols .col {
+      position: relative;  /* so can position */
+      float: left;
+    }
+
+    /*position columns (col order also becomes irrelevant) */
+    #faux-cols #col1 { left: 30%;  width: 40%; background-color: blue; }
+    #faux-cols #col2 { left: -40%; width: 30%; background-color: red;}
+    #faux-cols #col3 { left: 0;    width: 30%; background-color: yellow;}
+
+    /* full-height cols produced by creating, sizing & positioning pseudo-elements with backgrounds
+       think: background layer behind the columns - height 100% */
+    #faux-cols:before {
+      content: "";
+      position: absolute;     /* absolute so can position */
+      z-index: -1;            /* sits behind & fills in background color to height 100% */
+      top: 0;
+      left: 0;                /* positioning - absolute positioning within the relative container */
+      width: 30%;
+      height: 100%;
+      background: red;        /* colour same as column */
+    }
+    #faux-cols:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 70%;
+      width: 30%;
+      height: 100%;
+      background: yellow;
+    }
+
+
+    /**************************
+    * column height solution *
+    **************************/
+
+    /* col order now irrelevant - as no relative positioning */
+    #col11 { width:30%; background-color:red; }
+    #col12 { width:40%; background-color:blue; }
+    #col13 { width:30%; background-color:yellow; }
+
+    #table-container {
+      display: table;
+      width: 100%;
+    }
+
+    #table-container .col {
+      display: table-cell;
+      /*padding: 16px;*/
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <p>Intial - clearfix after but... <i>(diff height columns when float)  </i></p>
+  <div id="original-container">
+    <div id="col-a" class="col"><p>I am listed first in source order.</p></div>
+    <div id="col-b" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+      egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+    <div id="col-c" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+  </div>
+  <!--old fashioned clearfix -->
+  <!--<div style="clear:both"></div><br>-->
+
+  <p>Faux Column solution</p>
+  <div id="faux-cols">
+    <div id="col1" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+     <div id="col2" class="col"><p>I am listed second in source order, but moved first - order  irrelevant with this technique</p></div>
+    <div id="col3" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+  </div>
+
+
+  <p>Table container solution</p>
+  <div id="table-container">
+    <div id="col11" class="col"><p>I am listed second in source order, but moved first - order  irrelevant with this technique</p></div>
+    <div id="col12" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+      egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+    <div id="col13" class="col"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+  </div>
+
+</body>
+</html>

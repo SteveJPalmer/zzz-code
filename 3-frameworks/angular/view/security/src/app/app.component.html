@@ -1,0 +1,22 @@
+
+<h2>Security - XSS tests</h2>
+<code style="color:rebeccapurple">evilTitle = 'Template &lt;script&gt;alert("evil never sleeps")&lt;/script&gt; &lt;	b&gt;syntax&lt;/b&gt;';   // !!! XSS attack !!!</code>
+
+<!-- ng generates warnings for following as it sanitizes them - WARNING: sanitizing strips out some content -->
+<p><span>"{{evilTitle}}" is the <i>interpolated</i> evil title.</span></p>
+<p>"<span [innerHTML]="evilTitle"></span>" is the <i>innerHTML property bound</i> evil title.</p>
+<p>"<span [innerText]="evilTitle"></span>" is the <i>innerText/textContent property bound</i> evil title.</p>
+
+
+<br/><hr>
+
+Name {{'{'}} <input type="text" name="" id="" [(ngModel)]="name">  &#123;  &#125;
+
+<p><i>interpolated:</i> <span>{{name}}</span></p>
+<p><i>innerHtml:</i> <span [innerHtml]="name"></span></p>
+<p><i>innerText: </i><span [innerText]="name"></span></p>
+<p><i>textContent:</i><span [textContent]="name"></span></p>
+
+
+<br/><hr>
+<app-bypass-security></app-bypass-security>

@@ -1,11 +1,30 @@
-@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
-@import '../node_modules/material-design-icons/iconfont/material-icons.css';
-/*@import 'https://fonts.googleapis.com/icon?family=Material+Icons';*/
-@import 'https://fonts.googleapis.com/css?family=Roboto:400,300';
+/*@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";*/
+/*@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";*/
+/*@import "../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css";*/
+/*@import "../node_modules/@angular/material/prebuilt-themes/purple-green.css";*/
 
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
 }
 
+.basic-container {
+  padding: 5px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+/* Material Theme */
+/* target Progress Bar colours */
+/*.mat-progress-bar-buffer {  background-color: cadetblue; }*/
+/*.mat-progress-bar-fill::after {  background-color: orange; }*/
+/*pattern circle { fill: lightgrey; }*/
+
+/* target Spinner colours */
+/*.mat-progress-spinner circle, .mat-spinner circle {*/
+  /*stroke: orange !important;*/
+/*}*/
