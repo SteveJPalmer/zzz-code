@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toastr</title>
+  <!-- toastr -->
+  <script src="jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <!-- font-awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+  <style>
+    #toast-container > .toast {
+      background-image: none !important;
+    }
+
+    #toast-container > .toast:before {
+      position: absolute;
+      font-family: FontAwesome;
+      font-size: 24px;
+      line-height: 18px;
+      float: left;
+      color: #FFF;
+      padding-right: 0.5em;
+      /*top: 1.5em;   !* if title & message can adjust top *!*/
+      margin: auto 0.5em auto -1.5em;
+    }
+
+    #toast-container > .toast-success:before {
+      content: "\f072";
+    }
+    #toast-container > .toast-warning:before {
+      content: "\f2b7";
+    }
+  </style>
+
+</head>
+<body>
+  <p>Toastr usage examples</p>
+  <button onclick="notify();">click me</button>
+  <button onclick="toastr.clear();">Clear (with animations)</button>   <!-- remove current toasts using animation-->
+  <button onclick="toastr.remove();">Remove (immediately)</button>     <!--    ,,     ,,     ,,   immediately without using animation-->
+  <script>
+    function notify() {
+      toastr.success('Warning msg...');
+      // Override global options
+      toastr.warning('Title', 'Message', {timeOut: 1000})
+    };
+  </script>
+
+</body>
+</html>

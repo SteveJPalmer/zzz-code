@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Toastr</title>
-
   <!-- toastr -->
   <script src="jquery-3.1.1.js"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -17,19 +16,29 @@
   <button onclick="toastr.remove();">Remove (immediately)</button>     <!--    ,,     ,,     ,,   immediately without using animation-->
   <script>
     function notify() {
+      /* options */
+      //global technique
+      toastr.options.closeButton = true;
+      //or
+      toastr.options = {
+        "closeButton": true,
+        "positionClass": "toast-bottom-full-width"
+      };
+
       // Display an info toast with no title
       toastr.info('Basic Info Toastr...');
-      //or syntax
-      toastr['info']('Basic Info - diff syntax...');
 
-      //success, info, warning & error
-      toastr.success('Success msg...');
-      toastr.warning('Warning msg...');
-      toastr.error('Error msg...');
+      // Override globals via passed options obj
+      toastr.success('Title', 'Message', { closeButton: true, timeOut: 1000});
 
-      // Override global options
-      toastr.success('Title', 'Message', {timeOut: 1000})
 
+      // animations
+      toastr.options.showMethod = 'slideDown';
+      toastr.options.hideMethod = 'fadeOut';
+      toastr.options.closeMethod = 'fadeOut';
+
+      toastr.error('Error1 with animations...');
+      toastr.error('Error2 with animations...');
     };
   </script>
 
