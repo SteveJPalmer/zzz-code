@@ -1,0 +1,125 @@
+@import 'assets/css/themes/_hl-palette.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* ---------------------------
+   --   Global App styles   --
+   --------------------------- */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: $hl-bg-grey;
+  overflow-x: hidden;
+  font-family: "Roboto", Arial, sans-serif !important;
+  outline-style:none !important;
+  box-shadow:none !important;
+}
+
+.bg {
+  background-color: $hl-bg-grey;
+  height: 100%;
+
+  &.bg-image {
+    background: url("/plane2.png") no-repeat center;  /* main background image - Full height, centered*/
+    background-size: cover;
+    background-color: $hl-blue;
+    //background-color: $hl-blue;
+  }
+}
+
+
+/* override Bootstraps container edge padding */
+.container-fluid {
+  &.hl-container-fluid {
+    padding-right:0;
+    padding-left:0;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0; }
+}
+
+.fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+//focus management
+input:focus, .ui-inputtext.ui-state-focus, .ui-inputtext:focus {
+  box-shadow: none !important;
+  background-color: #e1f6ef !important;
+}
+
+.ui-dropdown {
+  outline-style:none !important;
+  box-shadow:none !important;
+
+  .ui-dropdown-label:hover {
+    background-color: #e1f6ef !important;
+  }
+}
+
+
+/* styling dialog */
+p-dialog.hl-modal {
+  .ui-dialog-titlebar.ui-widget-header {
+    color: $hl-white;
+    background: none !important;
+    background-color: $hl-blue !important;
+  }
+  .ui-dialog-content.ui-widget-content {
+    background-color: $hl-light-blue;
+  }
+}
+
+.ui-widget-overlay.ui-dialog-mask {
+  opacity: 0.8 !important;
+}
+
+/* table styling */
+.ui-sortable-column i.ui-sortable-column-icon, .ui-sortable-column i.ui-sortable-column-icon:before {
+  color:$hl-blue;
+}
+
+
+/* ---------------------------
+   --    Error handling     --
+   --------------------------- */
+#toast-container {
+  margin-top: 3.2rem;
+}
+
+.error-req {
+  .error-req-code {
+    display: block;
+    margin-top: 2px;
+    color: #630000;
+    font-weight: 700;
+  }
+  .error-req-msg {
+    display: block;
+  }
+  .error-req-footer {
+     display: block;
+     font-size: 0.75em;
+     font-style: italic;
+     color: darkgrey;
+     padding-top: 2px;
+   }
+}
+
+
+/* ---------------------------
+   -- Device specific rules --
+   --------------------------- */
+
+/* mobile first - adjust page layout for desktop */
+@media screen and (min-width: 992px) {
+  #hl-body {
+    padding-right:10%;
+    padding-left:10%;
+  }
+}

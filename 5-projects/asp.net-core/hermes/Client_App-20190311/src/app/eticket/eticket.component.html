@@ -1,0 +1,163 @@
+<div class="d-flex flex-column mt-4">
+
+  <div class="d-flex justify-content-center" *ngIf="!detailView && ghFetched && !ghDefaulted" [@hlList]="detailView">
+    <div class="card special-card">
+      <div *ngIf="groundHandlers" class="d-flex mt-2 mb-1 ml-3 mr-4 flex-wrap justify-content-center">
+        <h4 class="card-subtitle m-2 pl-2 text-muted">Ground Handler</h4>
+        <p-dropdown [options]="groundHandlers"
+                    [(ngModel)]="selectedGroundHandler"
+                    optionLabel="val"
+                    placeholder="Select..."
+                    autoDisplayFirst="false"
+                    (onChange)="ghChanged($event)"
+                    appendTo="body"
+                    class="mt-1">
+        </p-dropdown>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mt-4" *ngIf="!detailView && noGroundHandlerWarning" [@hlList]="detailView">
+    <div class="card special-card">
+      <section class="hl-gh-warning mt-4 mb-3 ml-4 mr-4">
+        <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
+        <span class="ml-2">No GroundHandlers found for your user.</span>
+        <span class="hl-gl-warn-nav">(Please contact support desk)</span>
+      </section>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mt-4" *ngIf="!detailView && !filterActive && noVctsMsg" [@hlList]="detailView">
+    <div class="card special-card ">
+      <section class="hl-gh-info mt-4 mb-3 ml-5 mr-5">
+        <i class="fa fa-info-circle fa-lg ml-2" aria-hidden="true"></i>
+        <span class="ml-2 mr-2">No E-Ticket(s) currently exist.</span>
+      </section>
+    </div>
+  </div>
+
+  <div class="card special-card mt-3 mb-4" *ngIf="!detailView && (dataFetched || filterActive)" [@hlList]="detailView">
+    <section class="card special-card">
+      <div class="mt-4 mb-4 ml-3 mr-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div *ngIf="ghDefaulted" class="hl-gh-default-container d-flex flex-column flex-wrap justify-content-center align-items-center mr-1 mr-lg-4">
+              <span class="hl-gh-default-label mr-1">Ground Handler</span>
+              <span class="hl-gh-default-value">{{selectedGroundHandler.val}}</span>
+            </div>
+          </div>
+          <div class="hl-vct-filter-items">
+            <span>Start Date</span>
+            <p-calendar [(ngModel)]="stime" [showIcon]="true" dateFormat="dd/mm/yy" [inputStyle]="{'width':'100px'}" class="hl-cal-filter"></p-calendar>
+            <span class="ml-5">End Date</span>
+            <p-calendar [(ngModel)]="etime" [showIcon]="true" dateFormat="dd/mm/yy" [inputStyle]="{'width':'100px'}"></p-calendar>
+            <button pButton type="button" class="hl-button-filter"
+                    (click)="onFilter()" icon="fa fa-filter" iconPos="left" label="Filter"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex justify-content-center mt-3" *ngIf="!detailView && filterActive && noVctsMsg" [@hlList]="detailView">
+      <div class="hl-vct-warning mt-2 mb-4">
+        <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+        <span class="ml-2">No E-Ticket(s) returned for filter criteria.</span>
+      </div>
+    </section>
+
+    <section class="mb-2 hl-eticket-vcts" *ngIf="!noVctsMsg">
+      <p-table [value]="vctRequests" [columns]="listCols" [resizableColumns]="true"
+               (sortFunction)="customSort($event)" [customSort]="true">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field" pResizableColumn
+                [style.width.%] ="col.width">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+            </th>
+            <th [style.width.%] ="16"></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-vct let-rowIndex="rowIndex">
+          <tr>
+            <td [ngClass]="{'hl-vct-no':true, 'hl-awaiting':(vct.vctRequestStatus <= 2)}">
+              {{(vct.vctRequestStatus <= 2) ? "&#60;awaiting..&#62;" : vct.vctNumber }}
+            </td>
+            <td>Drop-Off</td>
+            <td>{{vct.vehicleInfo.registrationNumber}}</td>
+            <td>{{vct.requestDateTime*1000 | date:'dd MMM yyyy' }}</td>
+            <td [hlVctStatus]="vct.vctRequestStatus" class="hl-vct-status">{{vct.vctRequestStatus | VctStatus }}</td>
+            <td>
+              <div class="hl-row hl-view-btn">
+                <button pButton type="button" class="ui-button-info hl-view mt-2 mb-2"
+                        (click)="viewVctRequest(rowIndex, vct.vctNumber)" icon="fa fa-eye" iconPos="left" label="View"></button>
+              </div>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+      <div class="d-flex justify-content-start mt-3 mb-2 ml-3">
+        <div class="flex-placeholder"></div>
+        <button pButton type="button" class="hl-button-refresh"
+                (click)="onRefresh()" icon="fa fa-refresh" iconPos="left" label="Refresh"></button>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="card special-card" *ngIf="detailView" [@hlDetail]="detailView">
+    <div class="mb-3">
+      <!--<div style="color:red">Display VCT Request: In Progress... <i>Selected Row Index: {{selectedVctIndex}}</i></div>-->
+      <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
+        <div>
+          <button pButton type="button" class="ui-button-info hl-back ml-3"
+                  (click)="back()" icon="fa fa-chevron-left" iconPos="left" label="Back"></button>
+        </div>
+        <div class="d-flex flex-column align-items-center hl-table-header">
+            <div>VCT Number: <span
+              [ngClass]="{'hl-vct-no':true, 'hl-awaiting':(selectedVctRequest.vctRequestStatus == 1)}">{{selectedVctNumber}}</span>
+            </div>
+            <div>
+              <ngx-qrcode *ngIf="showQRCode"
+                          [qrc-element-type]="'img'"
+                          [qrc-value]="codeValue"
+                          qrc-errorCorrectionLevel="L" qrc-class="aclass" >
+              </ngx-qrcode>
+            </div>
+
+        </div>
+        <div class="mr-4">
+          <div>Driver: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.driver }}</span></div>
+          <div>Driver Id: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.driverId }}</span></div>
+          <div>Vehicle Reg: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.registrationNumber}}</span></div>
+          <div>Trailor Reg: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.registrationTrailorNumber}}</span></div>
+        </div>
+       </div>
+
+        <p-table [value]="selectedVctRequest.manifestInfo.looseCargoInfo[0].userProvidedAWBs"
+                 [columns]="detailCols">
+          <ng-template pTemplate="header" let-columns>
+            <tr>
+              <th *ngFor="let col of columns">
+                {{col.header}}
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-awb>
+            <tr>
+              <td class="hl-awb-no hl-tbl-pad">{{awb.prefix}}-{{awb.serial}}</td>
+              <td>Drop-Off</td>
+              <td>{{awb.bookingInfo.airline}}</td>
+              <td>{{awb.bookingInfo.pieces}}</td>
+              <td>{{awb.bookingInfo.weight | number:'1.0-2' }}</td>
+              <td>{{awb.bookingInfo.destination}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      <div>
+        <button pButton type="button" class="ui-button-warning hl-print ml-3 mt-3 mb-1"
+                (click)="onPrint()" icon="fa fa-print" iconPos="left" label="Print"></button>
+      </div>
+
+    </div>
+  </div>
+</div>
