@@ -1,0 +1,214 @@
+<ngx-spinner color="#569392" size="large"></ngx-spinner>
+<div class="d-flex flex-column mt-4">
+
+  <div class="d-flex justify-content-center mt-4" *ngIf="!driverDetailView && navMenu.noGroundHandlerWarning" [@hlList]="driverDetailView">
+    <div class="card special-card ">
+      <section class="hl-gh-warning mt-4 mb-3 ml-4 mr-4">
+        <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
+        <span class="ml-2">No GroundHandlers found for your user.</span>
+        <span class="hl-gl-warn-nav">(Please contact support desk)</span>
+      </section>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mt-3" [class.driverDetailView]="driverDetailView" [@hlList]="driverDetailView" *ngIf="!noGroundHandlerWarning && navMenu.selectedGH">
+    <div class="card special-card">
+
+      <div class="d-flex mt-2 mb-2 ml-3 mr-4 pt-2 flex-wrap justify-content-between align-items-center">
+        <div class="flex-placeholder">
+          <div *ngIf="false"
+               class="hl-gh-default-container d-flex flex-column flex-wrap justify-content-center align-items-center mr-1 mr-lg-4">
+            <span class="hl-gh-default-label mr-1">Ground Handler</span>
+            <span class="hl-gh-default-value">{{navMenu.selectedGH}}</span>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center" >
+          <h4 class="card-subtitle m-2 pl-2 text-muted">Find your AWB/HAWB</h4>
+          <div>
+            <input pInputText type="text" size="22" class="hl-awb-input"
+                   [(ngModel)]="awbNumber"
+                   (keydown.enter)="onSearchAWBs()" hlAutofocus
+                   (keyup)="validateSearchStr()" />
+            <button pButton type="button" class="ui-button-info hl-awb-search" [class.hl-invalid-search]="!isValidSearchStr"
+                    (click)="onSearchAWBs()" icon="fa fa-search" iconPos="left" label="Search"></button>
+          </div>
+        </div>
+        <div class="flex-placeholder"></div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-3 mb-4" *ngIf ="searchClicked && searchReturned && !airwayBills?.length && !errorRaised" [@hlList]="driverDetailView">
+        <div class="hl-awb-search-msg">
+          <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
+          <span class="ml-2">No AWB's matching the Search Criteria. </span>
+        </div>
+      </div>
+
+      <div class="card-body p-0 mt-3" *ngIf ="selectedAWBs?.length || airwayBills?.length" [@hlList]="driverDetailView">
+        <p-table #mainTable *ngIf ="airwayBills?.length" [columns]="cols" [value]="airwayBills" [(selection)]="selectedAWBs"
+                 selectionMode="multiple" [scrollable]="true" scrollHeight="20vh">
+          <ng-template pTemplate="header" let-columns>
+            <tr>
+              <th class="text-center" *ngFor="let col of columns">
+                {{col.header}}
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-rowData let-columns="columns" let-rowIndex="rowIndex">
+            <tr [pSelectableRow]="rowData" [pSelectableRowIndex]="rowIndex" [@hlData]="driverDetailView">
+              <td class="text-center" *ngFor="let col of columns">
+                <span *ngIf="col.field === 'awbNumber' && isSelected(rowData)">
+                  <i class="fa fa-check-square"></i>
+                </span>
+                {{rowData[col.field]}}
+              </td>
+            </tr>
+          </ng-template>
+        </p-table>
+        <div class="d-flex justify-content-center mt-3 mb-1" *ngIf="searchClicked && paginationFlag" [@hlData]="driverDetailView">
+          <div class="hl-awb-pagination-bar">
+            <div *ngIf="paginationFlag">
+              <span *ngIf="paginationIndex > 1" (click)="onContinuation('prev')"><i class="fa fa-angle-double-left fa-lg mr-2"></i></span>
+              <span *ngIf="paginationIndex <= 1"><i class="fa fa-angle-double-left fa-lg hl-icon-disable mr-2"></i> </span>
+              <span *ngFor="let token of continuationTokens; let i=index" class="hl-pages-container" [@hlData]="driverDetailView">
+                <span *ngIf="i != 0" class="hl-pages" id="page-{{i}}" (click)="onContinuation(i)" [ngClass]="{'hl-cur-page': i==paginationIndex }">{{ i }}</span>
+              </span>
+              <span *ngIf="nextContinuationToken" (click)="onContinuation('next')"><i class="fa fa-angle-double-right fa-lg ml-2"></i></span>
+              <span *ngIf="!nextContinuationToken"><i class="fa fa-angle-double-right fa-lg hl-icon-disable ml-2"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column mb-2">
+          <div class="text-center">
+            <h2 class="hl-shipments">
+              <span class="badge badge-info mt-3 fa fa-arrow-circle-down" *ngIf="selectedAWBs?.length" [@hlList]="driverDetailView">
+                {{selectedAWBs.length}} Selected shipment(s)
+              </span>
+            </h2>
+          </div>
+
+          <!--Selected AWBs table-->
+          <p-table [value]="selectedAWBs" [scrollable]="true" scrollHeight="25vh" class="mb-2">
+            <ng-template pTemplate="body" let-awb let-rowData let-rowIndex="rowIndex">
+              <tr>
+                <td class="text-center hl-selected-rows">
+                  <div class="d-flex justify-content-center" [@hlList]="driverDetailView">
+                    <div class="hl-row hl-sel-text">
+                      <span style="color:#2b5f59"><b>{{awb.userProvidedAirwayBill.awbNumber}}</b>, &nbsp;Weight: <b>{{awb.weight | number:'.1-1'}}</b>kg, &nbsp;
+                        Number of Pieces: <b>{{awb.pieces}}</b> <i>(of {{awb.expectedNumberOfPieces}})</i></span>
+                    </div>
+                    <div class="hl-row hl-edit-btn">
+                      <button pButton type="button" class="ui-button-warning hl-awb-edit"
+                              (click)="editSelection(awb.awbNumber, rowData, rowIndex)" icon="fa fa-pencil" iconPos="left" label="Edit"></button>
+                    </div>
+                    <div class="hl-row hl-remove-btn">
+                      <button pButton type="button" class="ui-button-danger hl-awb-remove"
+                              (click)="removeSelection(awb.awbNumber)" icon="fa fa-trash-o" iconPos="left" label="Remove"></button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </ng-template>
+          </p-table>
+
+          <div *ngIf="selectedAWBs?.length" class="d-flex flex-wrap justify-content-around hl-awb-footer">
+            <div class="d-flex m-2">
+              <div>
+                <h3><span class="badge badge-info">ETA: </span></h3>
+              </div>
+              <div class="mt-1 ml-1">
+                <p-calendar [(ngModel)]="dateValue" showTime="true" hourFormat="24" [showIcon]="true" [hideOnDateTimeSelect]="true"></p-calendar> <!--[touchUI]="true" : only in ver 6-->
+              </div>
+            </div>
+            <div></div>
+            <div class="mt-2 mb-3">
+              <button pButton type="button" class="ui-button-info hl-awb-next"
+                      (click)="next()" icon="fa fa-chevron-right" iconPos="right" label="Next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--driver details card-->
+  <div class="card special-card" *ngIf ="driverDetailView" [@hlDetail]="driverDetailView">
+    <div class="mb-3">
+
+      <div class="d-flex justify-content-center mt-4 mb-4 mr-lg-5">
+        <div>
+          <p class="driverDetails">Enter driver details... </p>
+          <div>
+            <form #vehicleForm="ngForm">
+              <span class="hl-mandatory-label">*</span><span class="hl-label">Driver Name</span>
+              <div class="ui-inputgroup driverInput">
+                <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+                <input type="text" pInputText [(ngModel)]="driverInfo.driverFirstName" name="driver" #driver="ngModel"
+                       size="30" maxlength="50" hlAutofocus required autocomplete="off"
+                       [ngClass]="{'hl-mandatory': driver.invalid && driver.touched}">
+              </div>
+              <span class="hl-mandatory-label">*</span>D<span class="hl-label">river Id</span>
+              <div class="ui-inputgroup driverInput">
+                <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+                <input type="text" pInputText [(ngModel)]="driverInfo.driverId" name="id"  #id="ngModel"
+                       size="30" maxlength="50" required autocomplete="off"
+                       [ngClass]="{'hl-mandatory': id.invalid && id.touched}">
+              </div>
+              <span class="hl-mandatory-label">*</span><span class="hl-label">Vehicle Reg</span>
+              <div class="ui-inputgroup driverInput">
+                <span class="ui-inputgroup-addon"><i class="fa fa-truck"></i></span>
+                <input type="text" pInputText [(ngModel)]="vehicleInfo.registrationNumber" name="reg" #reg="ngModel"
+                       size="12" maxlength="10" required autocomplete="off"
+                       [ngClass]="{'hl-mandatory': reg.invalid && reg.touched}" class="hl-upper" >
+              </div>
+              <span class="hl-label">Trailer Reg</span>
+              <div class="ui-inputgroup driverInput">
+                <span class="ui-inputgroup-addon"><i class="fa fa-truck"></i></span>
+                <input type="text" pInputText [(ngModel)]="vehicleInfo.registrationTrailorNumber" name="trailer"
+                       size="12" maxlength="10" autocomplete="off" class="hl-upper">
+              </div>
+              <span class="hl-mandatory-label">*</span><span class="hl-label">Door</span>
+              <div class="ui-inputgroup driverInput">
+                <span class="ui-inputgroup-addon"><i class="fa fa-hand-o-right"></i></span>
+                <p-dropdown [options]="doorOptions"
+                            [(ngModel)]="selectedDeliveryMethod"
+                            placeholder="Select..."
+                            required
+                            name="door">
+
+                </p-dropdown>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="d-flex justify-content-around mt-4 mb-1">
+        <button pButton type="button" class="ui-button-info ml-2 hl-awb-back"
+                (click)="back()" icon="fa fa-chevron-left" iconPos="left" label="Back"></button>
+        <button pButton type="button" class="ui-button-warning mr-3 hl-awb-export"
+                (click)="exportVCTRequest()" icon="fa fa-chevron-right" iconPos="right" label="Request VCT"
+                [disabled]="!vehicleForm.form.valid"></button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal - edit number of pieces-->
+<p-dialog id="hl-modal-pieces" class="hl-modal" [(visible)]="displayEditModal" styleClass="hl-modal-active"
+          [modal]="true" [closable]="false" [closeOnEscape]="true"
+          [responsive]="true" [breakpoint]="575"
+          [focusOnShow]="false" (onShow)="setFocus();">
+  <p-header>AWB: <b>{{selectedAWB}}</b></p-header>
+  <div class="hl-pieces-dialog-content">
+    Adjust Pieces
+    <p-spinner id="hl-pieces-input" [(ngModel)]="adjustedNumberOfPieces" [min]="1" [max]="maxValue" size="6" required ngDefaultControl
+               inputStyleClass="centered"></p-spinner>
+  </div>
+  <p-footer>
+    <button pButton type="button" class="ui-button-secondary hl-awb-cancel"
+            (click)="cancel()" icon="fa fa-times-circle" iconPos="left" label="Cancel"></button>
+    <button pButton type="button" class="ui-button-warning hl-awb-update"
+            (click)="updatePieces()" icon="fa fa-check-circle" iconPos="left" label="Update"></button>
+  </p-footer>
+</p-dialog>

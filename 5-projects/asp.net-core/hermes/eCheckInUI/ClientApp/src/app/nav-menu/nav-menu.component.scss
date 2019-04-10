@@ -1,0 +1,135 @@
+@import '../../assets/css/themes/_hl-palette.scss';
+
+.navbar {
+  background-color: $hl-bg-black !important;
+  padding: 0 0.25rem;
+  a.navbar-brand {
+    padding: 0;
+  }
+}
+
+/* center Navbar Page Title */
+.navbar-text.navbar-center {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translatex(-50%);
+  
+  color: $hl-white;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.active {
+  color: $hl-light-blue !important;
+  font-weight: 700;
+}
+
+#navbarSupportedContent ul li {
+  font-weight: 500;
+}
+
+.navbar>button.navbar-toggler {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    box-shadow: 0 0 6px $hl-blue;
+  }
+}
+
+.dropdown-menu {
+  background-color: $hl-bg-black !important;
+  min-width:250px;
+  .dropdown-item.nav-link {
+    color: rgba(255,255,255,.5) !important;
+    padding-left: 1rem;
+    &:hover {
+      background-color: $hl-bg-black !important;
+      color: rgba(255,255,255,.75) !important;
+    }
+  }
+  .dropdown-divider {
+    &.logoff-divider {
+      margin: 0.5rem 0.75rem;
+      border-top: 0.5px solid rgba(255,255,255,.75);
+    }
+    &.settings-divider {
+      margin: 0.5rem 1.0rem 0.5rem 0;
+      border-top: 0.5px solid rgba(255,255,255,.75);
+    }
+  }
+}
+
+.hl-nav-item {
+  padding-top: 3px;
+}
+
+.dropdown-toggle:hover:after {
+  color: $hl-blue !important;
+}
+
+.hl-user-container {
+  font-size:0.8rem;
+  color: $hl-blue;
+  padding-left: 1rem;
+  .hl-username {
+    font-size:0.85rem;
+    font-weight: 700;
+  }
+  .hl-gh-title {
+    font-size:0.8rem;
+    font-style: italic;
+    color: rgba(255,255,255,.5);
+    font-weight: 300;
+    cursor:default
+  }
+  .hl-gh {
+    font-size:1rem;
+    color: rgba(255,255,255,.5);
+    font-weight: 300;
+    cursor: pointer;
+    &:hover {
+      margin-right: 15px;
+      background-color: rgb(48, 48, 48);
+    }
+  }
+  .hl-gh-selected {
+    font-size:1rem;
+    color: $hl-blue;
+    font-weight: 700;
+  }
+}
+
+/* ---------------------------
+   -- Device specific rules --
+   --------------------------- */
+/* indentation for nested menu items when via hamburger */
+@media screen and (max-width: 992px) {
+  .dropdown-menu .dropdown-item.nav-link {
+    padding-left: 1.5rem;
+  }
+  .hl-user-container {
+    padding-left: 1.5rem;
+  }
+}
+
+/* remove animation for mobile */
+@media screen and (min-width: 992px){
+  .sliding-u-l-r {
+    display: inline-block;
+  }
+  .sliding-u-l-r:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.7s ease;
+  }
+  .sliding-u-l-r:hover:after {
+    width: 100%;
+    background: $hl-blue;
+  }
+}
