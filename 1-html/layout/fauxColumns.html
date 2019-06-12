@@ -7,9 +7,9 @@
     /*********************************
      * initial - float with clearfix *
      *********************************/
-    #col-a { float:left;  width:30%; background-color:red; }
-    #col-b { float:left;  width:40%; background-color:blue; }
-    #col-c { float:right; width:30%; background-color:yellow; }
+    #col-a { float:left;  width:30%; background-color: #ff979e; }
+    #col-b { float:left;  width:40%; background-color: #add5ff; }
+    #col-c { float:right; width:30%; background-color: #fff9a0; }
     /*clearfix after container with float */
     #original-container:after {
       content: " ";
@@ -41,9 +41,9 @@
     }
 
     /*position columns (col order also becomes irrelevant) */
-    #faux-cols #col1 { left: 30%;  width: 40%; background-color: blue; }
-    #faux-cols #col2 { left: -40%; width: 30%; background-color: red;}
-    #faux-cols #col3 { left: 0;    width: 30%; background-color: yellow;}
+    #faux-cols #col1 { left: 30%;  width: 40%; background-color: #add5ff; }
+    #faux-cols #col2 { left: -40%; width: 30%; background-color: #ff979e;}
+    #faux-cols #col3 { left: 0;    width: 30%; background-color: #fff9a0;}
 
     /* full-height cols produced by creating, sizing & positioning pseudo-elements with backgrounds
        think: background layer behind the columns - height 100% */
@@ -55,7 +55,7 @@
       left: 0;                /* positioning - absolute positioning within the relative container */
       width: 30%;
       height: 100%;
-      background: red;        /* colour same as column */
+      background: #ff979e;        /* colour same as column */
     }
     #faux-cols:after {
       content: "";
@@ -65,7 +65,7 @@
       left: 70%;
       width: 30%;
       height: 100%;
-      background: yellow;
+      background: #fff9a0;
     }
 
 
@@ -74,9 +74,9 @@
     **************************/
 
     /* col order now irrelevant - as no relative positioning */
-    #col11 { width:30%; background-color:red; }
-    #col12 { width:40%; background-color:blue; }
-    #col13 { width:30%; background-color:yellow; }
+    #col11 { width:30%; background-color:#ff979e; }
+    #col12 { width:40%; background-color:#add5ff; }
+    #col13 { width:30%; background-color:#fff9a0; }
 
     #table-container {
       display: table;
