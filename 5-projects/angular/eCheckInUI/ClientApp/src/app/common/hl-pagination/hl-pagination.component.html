@@ -1,0 +1,9 @@
+<div class="hl-awb-pagination-bar">
+  <span *ngIf="index > 1" (click)="onClick('prev')"><i class="fa fa-angle-double-left fa-lg mr-2"></i></span>
+  <span *ngIf="index <= 1"><i class="fa fa-angle-double-left fa-lg hl-icon-disable mr-2"></i></span>
+  <span *ngFor="let token of continuationTokens; let i=index" class="hl-pages-container" [@hlFadeIn]="true">
+      <span *ngIf="i != 0" class="hl-pages" id="page-{{i}}" (click)="onClick(i)" [ngClass]="{'hl-cur-page': i==index}">{{ i }}</span>
+  </span>
+  <span *ngIf="next" (click)="onClick('next')"><i class="fa fa-angle-double-right fa-lg ml-2"></i></span>
+  <span *ngIf="!next"><i class="fa fa-angle-double-right fa-lg hl-icon-disable ml-2"></i></span>
+</div>

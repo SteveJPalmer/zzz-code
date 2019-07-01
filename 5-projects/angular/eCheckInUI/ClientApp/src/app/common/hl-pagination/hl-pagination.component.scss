@@ -1,0 +1,26 @@
+@import '../../../assets/css/themes/_hl-palette.scss';
+
+//pagination bar
+.hl-awb-pagination-bar {
+  color: $hl-blue;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.hl-icon-disable {
+  color: lightgrey;
+  font-weight: 500;
+}
+
+.hl-pages {
+  display:inline-block;
+  padding: 0 6px 0 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: $hl-light-blue;
+  border: 1px solid $hl-light-blue;
+  &.hl-cur-page {
+    color: $hl-blue;
+    border: 1px solid $hl-blue;
+  }
+}

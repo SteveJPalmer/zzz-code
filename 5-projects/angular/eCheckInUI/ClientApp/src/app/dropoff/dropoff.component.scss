@@ -1,0 +1,140 @@
+@import '../../assets/css/themes/hl-palette';
+
+.special-card {
+  background-color: $hl-white;
+  /*opacity: .8;*/
+}
+
+.hl-awb-search {
+  width:110px;
+  height:40px;
+  margin-left:6px;
+}
+
+.hl-awb-search-msg {
+  color: $hl-warning;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hl-awb-input {
+  height:40px;
+}
+
+.hl-invalid-search {
+  opacity: 0.5;
+}
+
+.hl-gh-default-container {
+  border: 0.6px solid #b7e7ed;
+  padding: 2px 2px 0 3px;
+  .hl-gh-default-label {
+    font-size: 0.9rem;
+    color: $hl-bg-grey;
+  }
+  .hl-gh-default-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $hl-blue;
+    line-height: 0.94;
+    padding-bottom: 2px;
+  }
+}
+
+
+.hl-awb-remove, .hl-awb-edit {
+  height: 90%;
+  font-size: 80%;
+}
+
+.hl-awb-next, .hl-awb-back, .hl-awb-export {
+  height:40px;
+}
+
+.hl-awb-footer {
+  margin-top: 1rem ;
+}
+
+.hl-selected-rows .hl-row {
+  padding: 6px;
+  &.hl-edit-btn {
+    padding-left: 20px;
+  }
+  button{
+    border-radius: 3px;
+  }
+}
+
+.hl-shipments {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  span {
+    background-color:#a2a2a2;
+    opacity: 0.5;
+  }
+}
+
+.hl-app-date {
+  color: $hl-blue;
+  margin-top: 7px;
+  padding-right: 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+//modals
+.hl-pieces-dialog-content {
+  margin: 5% 0 5% 24%;
+}
+
+//driver details
+.driverDetailView {
+  display: none !important;
+}
+
+.driverDetails {
+  color: $hl-blue;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.driverInput {
+  margin-bottom: 0.8rem;
+}
+
+.hl-upper {
+  text-transform: uppercase;
+}
+
+.hl-label {
+  color: grey;
+}
+
+.hl-mandatory {
+  box-shadow: 0.25px 0.25px 5px red;
+  &.ng-dirty {
+    border-bottom-color: lightgrey;
+  }
+}
+
+.hl-mandatory-label {
+  color: red;
+  &:after {
+    content: ' ';
+  }
+}
+
+//warning msg
+.hl-gh-warning {
+  color: $hl-warning;
+  font-size: 1.2rem;
+  font-weight: 700;
+  .hl-gl-warn-nav {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+  }
+}
