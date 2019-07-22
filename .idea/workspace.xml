@@ -1,204 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/.angular-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/dashboard/dashboard.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/dashboard/dashboard.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/dashboard/dashboard.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/dashboard/dashboard.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-detail/hero-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-search/hero-search.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-search/hero-search.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-search/hero-search.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero-search/hero-search.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/hero.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/heroes/heroes.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/heroes/heroes.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/heroes/heroes.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/heroes/heroes.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/in-memory-data.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/message.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/message.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/messages/messages.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/messages/messages.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/messages/messages.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/messages/messages.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/app/mock-heroes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/angular/ng - angular-tour-of-heroes/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/Tech Notes.docx" beforeDir="false" afterPath="$PROJECT_DIR$/5-projects/angular/Tech Notes.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/.angular-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/awb.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/http-encode-params-interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/http-interceptor.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/mock-xhr-interceptor.data.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/mock-xhr-interceptor.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/service-base.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/user.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/vct.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/Services/vct.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/counter/counter.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/counter/counter.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/counter/counter.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/dropoff/IDropoffList.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/dropoff/dropoff.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/dropoff/dropoff.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/dropoff/dropoff.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/dropoff/dropoff.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eCheckIn/echeckin.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eCheckIn/echeckin.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eCheckIn/echeckin.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eticket/eticket.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eticket/eticket.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eticket/eticket.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/eticket/eticket.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/home/home.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/Ishipment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/agent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/airline.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/airwaybill.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/applicationuser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/appointment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/awbstatusinfo.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/commodity.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/consignment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/container.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/delivery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/driver.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/enums.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/exportvctrequest.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/flightleg.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/importvctrequest.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/location.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/loose.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/userawb.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/vctbooking.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/vctmanifest.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/vctrequest.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/models/vehicle.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/nav-menu/nav-menu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/nav-menu/nav-menu.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/nav-menu/nav-menu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/nav-menu/nav-menu.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/nav-menu/nav-menu.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/pickup/IPickupList.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/pickup/pickup.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/pickup/pickup.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/pickup/pickup.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/pickup/pickup.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/autofocus.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/hl-animations.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/map-to-iterable.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/vct-status.directive.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/vct-status.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/vct-status.pipe.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/app/shared/vct-status.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/_hl-palette.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/_theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/fonts/roboto-v15-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/fonts/roboto-v15-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/fonts/roboto-v15-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/fonts/roboto-v15-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/fonts/roboto-v15-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/icons_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/slider_handles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/slider_handles@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/assets/css/themes/custom-hermes/theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/environments/environment.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/ClientApp/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/wwwroot/HermesLogo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/wwwroot/awbs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/wwwroot/plane.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/wwwroot/plane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI/wwwroot/plane2.png" beforeDir="false" />
-    </list>
+    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -228,7 +31,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="46">
               <caret line="2" column="61" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="61" />
             </state>
           </provider>
@@ -320,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,6 +153,56 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="componentTests101" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="componentTests101" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="componentTests101" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -467,7 +321,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -569,11 +422,12 @@
       <workItem from="1560851901050" duration="4516000" />
       <workItem from="1560932438056" duration="800000" />
       <workItem from="1561017169855" duration="1246000" />
+      <workItem from="1563809943620" duration="630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132817000" />
+    <option name="totallyTimeSpent" value="133447000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,9 +440,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="135" width="1635" height="866" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.20380953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.28825396" />
       <window_info id="Favorites" order="1" sideWeight="0.5022727" side_tool="true" weight="0.2012894" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1223,7 +1076,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="46">
           <caret line="2" column="61" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="61" />
         </state>
       </provider>
