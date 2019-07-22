@@ -1,0 +1,19 @@
+<div class="hl-fill hl-accept-container" [@adminRoute]="state">
+  <main class="d-flex flex-column justify-content-center align-items-center hl-fill ml-3 mr-3">
+    <div class="mt-5 ">{{_invite.invitedBy}} has invited you to be a {{organizationType[_invite.invitedAs]}} in their Org.</div>
+    <div>Enter Passcode to accept the invite.</div>
+    <nav class="mt-4 mb-4">
+      <span class="hl-label">Passcode: </span>
+      <input pInputText type="text" size="10" class="" #accept
+             [(ngModel)]="passcode"
+             (keydown.enter)="acceptInvite()" hlAutofocus>
+      <button pButton type="button" class="ui-button-warning hl-accept ml-3"
+              (click)="acceptInvite();" icon="fa fa-check" iconPos="left" label="Accept"
+              [disabled]="accept.value.length < 6"></button>
+      <button pButton type="button" class="ui-button-danger hl-reject ml-2"
+              (click)="rejectInvite();" icon="fa fa-ban" iconPos="left" label="Reject"></button>
+      <button pButton type="button" class="ui-button-info ml-2"
+              (click)="cancel();" icon="fa fa-times" iconPos="left" label="Cancel"></button>
+    </nav>
+  </main>
+</div>

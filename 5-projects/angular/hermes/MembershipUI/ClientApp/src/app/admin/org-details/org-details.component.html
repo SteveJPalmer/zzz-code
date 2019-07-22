@@ -1,0 +1,93 @@
+<div class="hl-fill">
+  <main class="d-flex flex-column justify-content-center hl-fill">
+    <section *ngIf="dataFetched && !noOrgMsg" [@adminRoute]="state">
+      <div class="d-flex justify-content-center align-items-center hl-fill">
+        <div>
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <div class="mb-2"><span>Name: </span><span class="hl-org-item-name">{{userOrg.organizationName}}</span></div>
+              <p-checkbox name="isGH" class="hl-org-ckbox hl-display-only" label="Ground Handler"
+                          [(ngModel)]="userOrg.isGroundHandler" binary="true" [disabled]="true"></p-checkbox>
+              <div>
+                <p-checkbox name="isAgent" class="hl-org-ckbox-agent hl-display-only" label="Agent"
+                            [(ngModel)]="userOrg.isAgent" binary="true" [disabled]="true"></p-checkbox>
+                <div *ngIf="userOrg.isAgent" class="hl-org-item-iata hl-sub-item ml-2">
+                  <span>- IATA Code: </span><span class="hl-sub-item-value">{{userOrg.isAgent}}</span>
+                </div>
+              </div>
+              <p-checkbox name="isHaulier" class="hl-org-ckbox hl-display-only" label="Haulier"
+                          [(ngModel)]="userOrg.isHaulier" binary="true" [disabled]="true"></p-checkbox>
+              <p-checkbox name="isDriver" class="hl-org-ckbox hl-display-only" label="Driver"
+                          [(ngModel)]="userOrg.isDriver" binary="true" [disabled]="true"></p-checkbox>
+              <div class="mt-2"><span>Location: </span><span class="hl-org-item-loc">{{userOrg.location}}</span></div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section *ngIf="dataFetched && noOrgMsg && !showNewOrgFrom" [@adminRoute]="state">
+      <div class="d-flex justify-content-center align-items-center hl-fill hl-no-org-msg">
+        <div>
+          <div class="mt-4">You are not Member/Owner of any Org Yet.</div>
+          <div>Do you want to create one now and be it's Owner?</div>
+          <nav class="mt-2">
+            <button pButton type="button" class="ui-button-warning m-3 hl-org-yes"
+                    (click)="showNewOrgFrom=true;" icon="fa fa-check" iconPos="left" label="Yes"></button>
+            <button pButton type="button" class="ui-button-info m-3 hl-org-cancel"
+                    (click)="noOrgMsg=false;" icon="fa fa-times" iconPos="left" label="Cancel"></button>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section *ngIf="dataFetched && noOrgMsg && showNewOrgFrom" [@adminView]="state">
+      <div class="d-flex justify-content-center hl-new-org-container">
+        <div>
+          <p class="orgDetails mt-3">Enter Organization details... </p>
+          <div>
+            <form #orgForm="ngForm">
+              <div class="mt-3 mb-3">
+                <span class="hl-mandatory-label">*</span><span class="hl-label">Org Name</span>
+                <div class="ui-inputgroup hl-org-input">
+                  <span class="ui-inputgroup-addon"><i class="fa fa-sitemap"></i></span>
+                  <input type="text" pInputText [(ngModel)]="orgInfo.organizationName" name="name" #name="ngModel"
+                         size="30" maxlength="50" hlAutofocus required autocomplete="off"
+                         [ngClass]="{'hl-mandatory': name.invalid && name.touched}">
+                </div>
+              </div>
+              <p-checkbox name="isGH" class="hl-org-ckbox" label="Are you a Ground Handler ?"
+                          [(ngModel)]="orgInfo.isGroundHandler" binary="true"></p-checkbox>
+              <p-checkbox name="isAgent" class="hl-org-ckbox" label="Are you an Agent ?"
+                          [(ngModel)]="isAgent" binary="true"></p-checkbox>
+              <span *ngIf="isAgent" class="ml-5">
+                <span class="hl-mandatory-label">*</span>
+                <span class="hl-label">IATA Code</span>
+                <input type="text" pInputText [(ngModel)]="orgInfo.isAgent" name="agent" #agent="ngModel"
+                        size="13" maxlength="13"
+                        [required]='isAgent'
+                        [ngClass]="{'hl-mandatory': agent.invalid && agent.touched}">
+              </span>
+              <p-checkbox name="isHaulier" class="hl-org-ckbox" label="Are you a Haulier ?"
+                          [(ngModel)]="orgInfo.isHaulier" binary="true"></p-checkbox>
+              <p-checkbox name="isDriver" class="hl-org-ckbox" label="Are you a Driver ?"
+                          [(ngModel)]="orgInfo.isDriver" binary="true"></p-checkbox>
+              <div class="mt-3 mb-5">
+                <span class="hl-mandatory-label">*</span><span class="hl-label">Location</span>
+                <div class="ui-inputgroup hl-org-input">
+                  <span class="ui-inputgroup-addon"><i class="fa fa-map-marker"></i></span>
+                  <input type="text" pInputText [(ngModel)]="orgInfo.location" name="location" #location="ngModel"
+                         size="30" maxlength="50" required autocomplete="off"
+                         [ngClass]="{'hl-mandatory': location.invalid && location.touched}">
+                </div>
+              </div>
+            </form>
+            <nav class="d-flex justify-content-around mt-4 mb-3">
+              <button pButton type="button" class="ui-button-info ml-2 hl-org-cancel"
+                      (click)="showNewOrgFrom=true;noOrgMsg=false;" icon="fa fa-times" iconPos="left" label="Cancel"></button>
+              <button pButton type="button" class="ui-button-warning mr-3 hl-org-submit"
+                      (click)="onCreate()" icon="fa fa-chevron-right" iconPos="left" label="Create"
+                      [disabled]="!orgForm.form.valid"></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

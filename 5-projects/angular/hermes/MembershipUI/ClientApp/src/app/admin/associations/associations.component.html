@@ -1,0 +1,63 @@
+<div class="hl-fill">
+  <main class="d-flex flex-column justify-content-center align-items-center hl-fill hl-associations-container">
+    <section *ngIf="dataFetched && !isInvite">
+      <section *ngIf="isSuperUser" [@adminRoute]="state">
+        <div class="d-flex flex-column justify-content-space-between align-items-start mb-5">
+          <div class="mb-4">
+            <span class="hl-invite-title">Your Ground Handlers</span>
+            <button pButton type="button" class="ui-button-info hl-add-user"
+                    (click)="showSearchUsers(organizationType.HERMESUPERUSER);" icon="fa fa-plus-square" iconPos="left" label="Add"></button>
+          </div>
+          <div>
+            <div *ngFor="let invite of invitedUsers" class="hl-invite-items">
+              <span>{{invite.user.name}}</span>
+              <span class="hl-iemail">({{invite.user.email}})</span>
+              <span class="hl-istatus pl-2">"{{InviteStatus[invite.inviteStatus]}}"</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  *ngIf="!isSuperUser" [@adminRoute]="state">
+        <div class="d-flex flex-column justify-content-space-between align-items-start hl-invited-section">
+          <div class="mb-3">
+            <span class="hl-invite-title">Your Agents</span>
+            <button pButton type="button" class="ui-button-info hl-add-user"
+                    (click)="showSearchUsers(organizationType.AGENT);" icon="fa fa-plus-square" iconPos="left" label="Add"></button>
+          </div>
+          <div><div *ngFor="let invite of invitedUsers" class="hl-invite-items">
+              <div *ngIf="invite.invitedAs === 'AGENT'"> <span>{{invite.user.name}}</span>
+                <span class="hl-iemail">({{invite.user.email}})</span>
+                <span class="hl-istatus pl-2">"{{InviteStatus[invite.inviteStatus]}}"</span></div>
+          </div></div>
+        </div>
+        <div class="d-flex flex-column justify-content-space-between align-items-start hl-invited-section">
+          <div class="mb-3">
+            <span class="hl-invite-title">Your Hauliers</span>
+            <button pButton type="button" class="ui-button-info hl-add-user"
+                    (click)="showSearchUsers(organizationType.HAULIER);" icon="fa fa-plus-square" iconPos="left" label="Add"></button>
+          </div>
+          <div><div *ngFor="let invite of invitedUsers" class="hl-invite-items">
+              <div *ngIf="invite.invitedAs === 'HAULIER'"> <span>{{invite.user.name}}</span>
+                <span class="hl-iemail">({{invite.user.email}})</span>
+                <span class="hl-istatus pl-2">"{{InviteStatus[invite.inviteStatus]}}"</span></div>
+          </div></div>
+        </div>
+        <div class="d-flex flex-column justify-content-space-between align-items-start hl-invited-section">
+          <div class="mb-3">
+            <span class="hl-invite-title">Your Drivers</span>
+            <button pButton type="button" class="ui-button-info hl-add-user"
+                    (click)="showSearchUsers(organizationType.DRIVER);" icon="fa fa-plus-square" iconPos="left" label="Add"></button>
+          </div>
+          <div><div *ngFor="let invite of invitedUsers" class="hl-invite-items">
+              <div *ngIf="invite.invitedAs === 'DRIVER'"> <span>{{invite.user.name}}</span>
+                <span class="hl-iemail">({{invite.user.email}})</span>
+                <span class="hl-istatus pl-2">"{{InviteStatus[invite.inviteStatus]}}"</span></div>
+          </div></div>
+        </div>
+      </section>
+    </section>
+    <section *ngIf="dataFetched && isInvite">
+      <admin-accept-invite [invite]="pendingInvite" (accepted)="onAccepted($event)"></admin-accept-invite>
+    </section>
+  </main>
+</div>

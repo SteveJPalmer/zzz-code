@@ -1,0 +1,24 @@
+@import '../../assets/css/themes/hl-palette';
+
+.special-card {
+  background-color: $hl-white;
+}
+
+.hl-app {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-right: 2rem;
+  color: slategrey;
+  font-weight: 700;
+  border: 0.5px solid lightgrey;
+  transition: color 0.4s ease, background-color 0.4s ease-in-out;
+  &:hover {
+    color: $hl-blue;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 2px #9fb3ba;
+    transition: color 0.8s ease, background-color 0.4s ease-in-out;
+  }
+}

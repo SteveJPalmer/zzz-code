@@ -1,0 +1,64 @@
+@import '../../../assets/css/themes/hl-palette';
+
+.hl-card {
+  background-color: white;
+  //background-color: $hl-white;
+}
+
+.hl-admin-container {
+  display: flex;
+  text-align: center;
+  height: 83vh;
+  & > .hl-admin-nav {
+    flex-grow: 1;
+    flex-basis: 15%;
+    background-color: $hl-white;
+  }
+  & > .hl-admin-content {
+     flex: 2 2 85%;
+     background-color: $hl-white;
+     //background-color: white;
+   }
+}
+
+.hl-nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  //margin-left: 2px;
+  //padding: 2px 0;
+  & .hl-nav-item {
+    //background-color: #b9cdd4;
+    background-color: #c1d5dc;
+    flex-grow: 1;
+    //margin: 2px 0;
+    &.hl-active {
+      background-color: $hl-white;
+      //background-color: white;
+    }
+  }
+  & a:nth-of-type(2) {
+    margin: 4px 0;
+    @media (max-width: 768px) {
+      margin: 0 4px;
+    }
+  }
+}
+
+.hl-router-container {
+  height: 100%;
+}
+
+/* ---------------------------
+   -- Device specific rules --
+   --------------------------- */
+@media screen and (max-width: 768px) {
+  .hl-admin-container {
+    flex-direction: column;
+    height: 87vh;
+  }
+  .hl-nav-items {
+    flex-direction: row;
+  }
+}

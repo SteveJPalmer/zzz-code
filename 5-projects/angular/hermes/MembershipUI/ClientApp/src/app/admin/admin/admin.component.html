@@ -1,0 +1,18 @@
+<div class="d-flex flex-column mt-2 mt-md-4" [@hlList]="true">
+  <p-card class="hl-card">
+      <main class="hl-admin-container">
+        <nav class="hl-admin-nav">
+          <section class="hl-nav-items">
+            <a class="hl-nav-item d-flex flex-column justify-content-center" routerLink="/admin/user-details" routerLinkActive="active hl-active" >User Details</a>
+            <a class="hl-nav-item hl-border d-flex flex-column justify-content-center" routerLink="/admin/org-details" routerLinkActive="active hl-active" >Org Details</a>
+            <a class="hl-nav-item d-flex flex-column justify-content-center" routerLink="/admin/associations" routerLinkActive="active hl-active" >Associations</a>
+          </section>
+        </nav>
+        <section class="hl-admin-content">
+          <div class="hl-router-container">
+            <router-outlet></router-outlet>
+          </div>
+        </section>
+      </main>
+  </p-card>
+</div>

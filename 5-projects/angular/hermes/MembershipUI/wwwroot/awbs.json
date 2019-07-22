@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "awbNumber": "783-234744",
+      "weight": "20.5",
+      "numberOfPieces": "4"
+    },
+    {
+      "awbNumber": "743-236744",
+      "weight": "24.5",
+      "numberOfPieces": "5"
+    },
+    {
+      "awbNumber": "783-275344",
+      "weight": "20.5",
+      "numberOfPieces": "9"
+    }
+  ]
+}

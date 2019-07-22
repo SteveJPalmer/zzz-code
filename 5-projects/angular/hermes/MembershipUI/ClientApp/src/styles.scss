@@ -1,0 +1,238 @@
+@import 'assets/css/themes/_hl-palette.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* ---------------------------
+   --   Global App styles   --
+   --------------------------- */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: $hl-bg-grey;
+  overflow-x: hidden;
+  font-family: "Roboto", Arial, sans-serif !important;
+  outline-style:none !important;
+  box-shadow:none !important;
+}
+
+.bg {
+  background-color: $hl-bg-grey;
+  //background-color: $hl-white;
+  height: 100%;
+
+  &.bg-image {
+    //background: url("/Membership-b&w.png") no-repeat center;  /* main background image - Full height, centered*/
+    //background-size: cover;
+    //background-color: black;
+    //background-color: $hl-blue;
+  }
+}
+
+
+/* override Bootstrap container edge padding */
+.container-fluid {
+  &.hl-container-fluid {
+    padding-right:0;
+    padding-left:0;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .col-12 {
+    padding-left: 0;
+    padding-right: 0; }
+}
+
+.fill, .hl-fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+.hl-date-container {
+  input {
+    color: $hl-blue;
+    //font-weight: 700;
+  }
+  .ui-widget.ui-button {
+    border: 1px solid $hl-blue !important;
+    background: $hl-blue !important;
+    opacity: 0.85;
+  }
+  .ui-widget.ui-button:enabled:hover {
+    opacity: 1;
+  }
+  .ui-calendar.ui-calendar-w-btn input {
+    width: 75%;
+  }
+}
+
+
+//focus management
+input:focus, .ui-inputtext.ui-state-focus, .ui-inputtext:focus {
+  box-shadow: none !important;
+  background-color: #e1f6ef !important;
+}
+
+/* override Bootstrap checkbox */
+.ui-chkbox-label {
+  vertical-align: inherit;
+  margin-bottom: 0.05rem;
+}
+
+.ui-chkbox .ui-chkbox-box {
+  width: 18px;
+  height: 18px;
+}
+.ui-chkbox .ui-chkbox-box.ui-state-active {
+  background: none;
+  background-color: $hl-blue !important;
+  border: 1px solid $hl-blue;
+}
+
+.ui-chkbox .ui-chkbox-box.ui-state-focus {
+  box-shadow: none;
+  background: none;
+}
+
+.ui-chkbox .ui-chkbox-box .ui-chkbox-icon {
+  font-size: 14px;
+  margin: 1px 0 0 0;
+}
+
+.ui-chkbox-label {
+  margin: 0 0 0 0;
+  color: $hl-blue !important;
+}
+
+.ui-dropdown {
+  outline-style:none !important;
+  box-shadow:none !important;
+
+  .ui-dropdown-label:hover {
+    background-color: #e1f6ef !important;
+  }
+}
+
+
+/* styling dialog */
+p-dialog.hl-modal {
+  .ui-dialog-titlebar.ui-widget-header {
+    color: $hl-white;
+    background: none !important;
+    background-color: $hl-blue !important;
+  }
+  .ui-dialog-content.ui-widget-content {
+    background-color: $hl-light-blue;
+  }
+}
+
+.ui-widget-overlay.ui-dialog-mask {
+  opacity: 0.8 !important;
+}
+
+/* table styling */
+.ui-sortable-column i.ui-sortable-column-icon, .ui-sortable-column i.ui-sortable-column-icon:before {
+  color:$hl-blue;
+}
+
+/* calendar */
+.ui-datepicker.ui-widget .ui-datepicker-calendar td a.ui-state-active {
+  background-color: $hl-blue !important;
+}
+
+/* bootstrap card overrides */
+.hl-card.hl-card-noborder .ui-card {
+  border: none !important;
+}
+.hl-card .ui-card .ui-card-body {
+  padding: 0.3rem !important;
+}
+
+
+/* bootstrap table overrides */
+.hl-table-container.ui-table {
+  .ui-table-thead>tr>th {
+    color: darkgrey !important;
+    font-size: 0.85rem;
+    font-weight: 300 !important;
+    border: none !important;
+    border-bottom: 1px solid #f2f2f2 !important;
+    background-color: $hl-white !important;
+  }
+  &.awbs .ui-table-tbody>tr>td {
+    border: none !important;
+    padding: 0.15rem .5rem !important;
+    font-size: 0.95rem;
+  }
+  &.awbs-selected .ui-table-tbody>tr>td {
+    border: none !important;
+    padding: 0.1rem .5rem !important;
+    font-size: 1rem;
+  }
+  &.vcts {
+    @media screen and (min-width: 992px) {
+      margin-left: 2rem;
+      margin-right: 1rem;
+    }
+    .ui-table-tbody>tr>td {
+      border: none !important;
+      padding: 0.2rem .5rem !important;
+      font-size: 1rem;
+    }
+    .ui-table-thead > tr > th.ui-sortable-column.ui-state-highlight {
+      //background-color: #f2f2f2 !important;
+      color: $hl-blue !important;
+      font-weight: 700 !important;
+    }
+  }
+}
+
+
+//PrimeNG override
+.hl-search-users-tabs.ui-tabview .ui-tabview-nav li .ui-tabview-left-icon:before {
+  color:$hl-blue !important;
+}
+
+
+/* ---------------------------
+   --    Error handling     --
+   --------------------------- */
+#toast-container {
+  margin-top: 3.2rem;
+}
+
+.error-req {
+  .error-req-code {
+    display: block;
+    margin-top: 2px;
+    color: #630000;
+    font-weight: 700;
+  }
+  .error-req-msg {
+    display: block;
+  }
+  .error-req-footer {
+    display: block;
+    font-size: 0.75em;
+    font-style: italic;
+    color: darkgrey;
+    padding-top: 2px;
+    &.app-error-req-footer {
+      color: darkslategrey;
+    }
+  }
+}
+
+
+/* ---------------------------
+   -- Device specific rules --
+   --------------------------- */
+
+/* mobile first - adjust page layout for desktop */
+@media screen and (min-width: 992px) {
+  #hl-body {
+    padding-right:10%;
+    padding-left:10%;
+  }
+}
+

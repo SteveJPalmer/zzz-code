@@ -1,0 +1,19 @@
+<div>
+<div class="d-flex flex-column align-items-stretch mt-4" [@hlList]="true">
+
+  <div class="mt-1 flex-fill">
+    <div class="card special-card text-center">
+      <div class="card-body">
+        <section class="mb-4">
+          <div class="mb-4"><h4>Apps</h4></div>
+          <div *ngIf="navMenu.userDataFetched">
+            <a *ngIf="!isSuperUser" href="https://localhost:44355/" class="hl-app"><span>eCheckin</span></a>
+            <a *ngIf="!isSuperUser" href="https://localhost:44354/" class="hl-app"><span>Track&Trace</span></a>
+            <a routerLink="/admin/org-details" routerLinkActive="active hl-active" class="hl-app"><span>Admin</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

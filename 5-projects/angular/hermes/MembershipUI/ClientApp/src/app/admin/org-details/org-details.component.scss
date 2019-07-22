@@ -1,0 +1,92 @@
+@import '../../../assets/css/themes/hl-palette';
+
+.hl-org-item-name {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: $hl-blue;
+}
+
+.hl-org-item-iata {
+  display: inline;
+  margin-left: 1rem;
+  font-size: 1.2em;
+  &.hl-sub-item {
+    font-size: 0.95em;
+    font-weight: 500;
+    .hl-sub-item-value {
+      color: $hl-blue;
+    }
+  }
+}
+
+.hl-org-item-loc {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: $hl-blue;
+}
+
+.hl-no-org-msg {
+  background-color: white;
+  box-shadow: 2px 2px 2px #9fb3ba;
+  margin: 0 20%;
+}
+
+.hl-new-org-container {
+  background-color: white;
+  box-shadow: 2px 2px 2px #9fb3ba;
+  margin: 0 20%;
+  text-align: left;
+}
+
+.orgDetails {
+  color: $hl-blue;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.hl-org-cancel, .hl-org-submit, .hl-org-yes {
+  height:40px;
+}
+
+.hl-label {
+  color: grey;
+}
+
+.hl-org-input {
+  margin-bottom: 0.8rem;
+}
+
+.hl-org-ckbox {
+  display: block;
+  margin-top: 0.3rem;
+  &.hl-display-only {
+    margin-left: 1.5rem;
+  }
+}
+
+.hl-org-ckbox-agent {
+  display: inline-block;
+  margin-top: 0.3rem;
+  &.hl-display-only {
+    margin-left: 1.5rem;
+  }
+}
+
+.hl-mandatory-label {
+  color: red;
+  &:after {
+    content: ' ';
+  }
+}
+
+.hl-mandatory {
+  box-shadow: 0.25px 0.25px 5px red;
+  &.ng-dirty {
+    border-bottom-color: lightgrey;
+  }
+}
+
+.ui-inputgroup .ui-inputgroup-addon {
+  color: $hl-blue;
+}
