@@ -70,4 +70,8 @@ describe('SearchUsersComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have orgType === 2', () => {
+    expect(component.orgType).toBe(2);
+  });
 });
