@@ -17,22 +17,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3-frameworks/angular/httpClient/http-pre4.3/httpServciePromise/src/app/vehicle.service.ts">
+        <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="-1606">
+              <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts">
+        <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="61" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="61" />
+            <state relative-caret-position="322">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,11 +77,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/index.html" />
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.html" />
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.scss" />
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app-routing.module.ts" />
-        <option value="C:/work_area/temp/test-JSON-TemplateLiterals.html" />
+        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/index.html" />
+        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/../work_area/temp/test-JSON-TemplateLiterals.html" />
         <option value="$PROJECT_DIR$/2-javascript/typescript/classes.ts" />
         <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr-FontAwesome.html" />
         <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr.html" />
@@ -112,9 +115,9 @@
     </layout>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="135" />
-    <option name="width" value="1635" />
+    <option name="x" value="147" />
+    <option name="y" value="134" />
+    <option name="width" value="1550" />
     <option name="height" value="866" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,63 +153,6 @@
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="componentTests101" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="componentTests101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="componentTests101" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,7 +168,7 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="eCheckInUI" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -231,8 +176,8 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="eCheckInUI" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -240,19 +185,8 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="eCheckInUI" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="eCheckInUI" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,11 +195,10 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="eCheckInUI" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -273,7 +206,11 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="accept-order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -281,8 +218,11 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -290,19 +230,10 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,23 +242,36 @@
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
               <item name="5-projects" type="462c0819:PsiDirectoryNode" />
               <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="ordersApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="orderSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="cl-panel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="hla-results-entry" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/work_area" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work_area" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\work_area\primeNg-scratch\prmineNg-scratch\node_modules\typescript\lib" />
@@ -423,11 +367,12 @@
       <workItem from="1560932438056" duration="800000" />
       <workItem from="1561017169855" duration="1246000" />
       <workItem from="1563809943620" duration="630000" />
+      <workItem from="1563891041157" duration="1648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133447000" />
+    <option name="totallyTimeSpent" value="135095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,9 +384,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="135" width="1635" height="866" extended-state="0" />
+    <frame x="147" y="134" width="1550" height="866" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.28825396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.25637585" />
       <window_info id="Favorites" order="1" sideWeight="0.5022727" side_tool="true" weight="0.2012894" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -710,8 +656,8 @@
         <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/shared/dashboard-button/dashboard-button.component.js" />
         <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/shared/dashboard-button/dashboard-button.component.js.map" />
         <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters-routing.module.js" />
-        <option value="C:/tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js.map" />
-        <option value="C:/tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js" />
+        <option value="$PROJECT_DIR$/../tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js.map" />
+        <option value="$PROJECT_DIR$/../tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js" />
       </list>
     </option>
   </component>
@@ -725,97 +671,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/orderSearch/orderSearch.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/5c - the-Holy-Grail-layout/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/5c - the-Holy-Grail-layout/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/1 - flexContainerProps/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/1 - flexContainerProps/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/2 - flexItemOrder/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/2 - flexItemOrder/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/3a - flex-grow/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/3a - flex-grow/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/3b - flex-shrink/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/3b - flex-shrink/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/3c - flex-basis/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/3c - flex-basis/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4a - justify-content/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -974,7 +829,7 @@
     <entry file="file://$PROJECT_DIR$/3-frameworks/angular/CLI/base/myApp/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://C:/work_area/bootstrap4/flex -utility/e2e/app.po.ts">
+    <entry file="file://$PROJECT_DIR$/../work_area/bootstrap4/flex -utility/e2e/app.po.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/2-javascript/libraries/RxJS/baseObservable/index.html">
@@ -1054,9 +909,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/httpClient/http-pre4.3/httpServciePromise/src/app/vehicle.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/clPanel/cl-panel.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/common/clPanel/cl-panel.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/courses/courses.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/orderSearch/orderSearch.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/orderSearch/orderSearch.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="552">
           <caret line="24" column="85" lean-forward="true" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="85" />
           <folding>
             <element signature="e#125#175#0" expanded="true" />
@@ -1064,20 +960,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/httpClient/http-pre4.3/httpServciePromise/src/app/vehicle.service.ts">
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/courses/course-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="-442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/store/reducer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-649" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/store/store.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts">
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="61" />
+        <state relative-caret-position="253">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1606">
+          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
