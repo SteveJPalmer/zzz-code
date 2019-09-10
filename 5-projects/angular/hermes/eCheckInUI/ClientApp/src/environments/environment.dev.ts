@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   env: 'dev',
-  appVersion: "Beta 0.3.0-D",
+  appVersion: "Beta 0.4.1-D",
   baseUrl: "https://ngcoreapis-dev-wa.azurewebsites.net/",
   B2CAuthority: "https://login.microsoftonline.com/tfp/hermesdevb2c.onmicrosoft.com/B2C_1_signup_in",
   B2CPwdResetPolicyURL: "https://login.microsoftonline.com/tfp/hermesdevb2c.onmicrosoft.com/b2c_1_pwd_reset",

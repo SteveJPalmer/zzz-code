@@ -39,6 +39,8 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { VctStatusPipe, VctStatusDirective, MapToIterable, AutofocusDirective, RejectReasonPipe } from './shared';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { AppCommonModule } from './common/common.module';
+import { UldService } from './Services';
+import { UldsComponent } from './ulds/ulds.component';
 
 // Logger callback for MSAL
 export function loggerCallback(logLevel, message, piiEnabled) {
@@ -62,7 +64,8 @@ export const protectedResourceMap: [string, string[]][] = prm;
     VctStatusDirective,
     RejectReasonPipe,
     MapToIterable,
-    AutofocusDirective
+    AutofocusDirective,
+    UldsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -120,6 +123,7 @@ export const protectedResourceMap: [string, string[]][] = prm;
     MsalService,
     VctService,
     OrgsService,
+    UldService,
     // { provide: UrlSerializer,
     //   useClass: CustomUrlSerializer
     // }

@@ -1,0 +1,81 @@
+@import '../../assets/css/themes/hl-palette';
+
+.col-uld {
+  display: inline-block;
+  color: darkgrey !important;
+  font-size: 0.85rem;
+  font-weight: 300 !important;
+  border: none !important;
+  border-bottom: 1px solid #f2f2f2 !important;
+  &.col-uld-series {
+    width: 40%;
+  }
+  &.col-uld-pieces, &.col-uld-weight {
+    width: 25%;
+  }
+}
+
+.input-uld {
+  color: $hl-blue;
+  margin-top: 0.3rem;
+  &:nth-child(even) {
+    background-color: #fafafb;
+  }
+  input {
+    border: none;
+    outline: none !important;
+    padding-left: 0.5rem;
+    background-color: inherit;
+  }
+  .uld-series {
+    width: 36%;
+    margin-right: 4%;
+  }
+  .uld-pieces, .uld-weight {
+    width: 12%;
+    margin-right: 13%
+  }
+}
+
+.hl-mandatory {
+  box-shadow: 0.25px 0.25px 5px #ff6671;
+  &.ng-dirty {
+    border-bottom-color: #1708d3;
+  }
+}
+
+.hl-uld-update {
+  background-color: #9db3e9 !important;
+  border-color: #899ed6 !important;
+  &:hover {
+    background-color: #899ed6 !important;
+  }
+}
+
+.hl-uld-cancel {
+  color: grey !important;
+}
+
+.hl-uld-remove {
+  width: 2rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+}
+.hl-uld-add {
+  width: 6.5rem;
+  margin-top: 0.6rem;
+  height: 80%;
+  font-size: 0.9rem;
+  background-color: $hl-blue !important;
+  border-color: #a2a2a2 !important;
+  &:hover {
+    background-color: #3d8281 !important;
+    border-color: #757575 !important;
+  }
+  &button {
+    border-radius: 3px;
+  }
+  &button span {
+    margin-top: 4px;
+  }
+}

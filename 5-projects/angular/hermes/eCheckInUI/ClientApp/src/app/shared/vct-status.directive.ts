@@ -31,6 +31,9 @@ export class VctStatusDirective implements OnInit {
       case 'Retry or Contact Support':
         styleColour = '#d9534f';
         break;
+      case 'Rejected':
+        styleColour = '#d9534f';
+        break;
       default:
         applyStyle = false;
     }

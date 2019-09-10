@@ -1,18 +1,19 @@
-import { Delivery, Commodity, Airline, Consignment, Agent ,FlightLeg, Location } from '../models';
+import { Commodity, Agent, Package } from '../models';
 
 export class IShipment {
   public origin: string;
   public destination: string;
   public commodityInfo: Commodity;
-  public shcs: number[];
-  public airlineInfo: Airline;
-  public flightLegs: FlightLeg[];
-  public locations: Location[];
-  public consignmentInfo: Consignment;
-  public deliveryInfo: Delivery;
+  public bookedInfo: Package;
+  public customerReceivedInfo: Package;
+  public flightReceivedInfo: Package;
+  public shcs: string[];
   public agentInfo: Agent;
   public assignedTo: string;
   public assignedByUser: string;
   public remarks: string;
   public createdTime: number;
+  public consigneeInfo: Agent;
+  public shipperInfo: Agent;
+  public bookingInfo: any[];
 }

@@ -1,0 +1,63 @@
+<form #uldForm="ngForm">
+  <section>
+    <div *ngIf="mode === 'dropoff'" >
+      <span class="col-uld col-uld-series">Serial</span>
+      <span class="col-uld col-uld-pieces">Pieces</span>
+      <span class="col-uld col-uld-weight">Weight</span>
+      <div *ngFor="let uld of ulds; let i=index" class="input-uld">
+        <input id="uld-series-{{i}}" class="uld-series" [(ngModel)]="ulds[i].serial" #serial="ngModel" type="text"
+               name="uld-series-{{i}}" placeholder="<serial>" required
+               [ngClass]="{'hl-mandatory': serial.invalid && serial.touched}" />
+        <input id="uld-pieces-{{i}}" class="uld-pieces" [(ngModel)]="ulds[i].pieces" #pieces="ngModel" type="text"
+               name="uld-pieces-{{i}}" placeholder="<pieces>"
+               required pattern="^\d+$"
+               [ngClass]="{'hl-mandatory': pieces.invalid && pieces.touched}" />
+        <input id="uld-weight-{{i}}" class="uld-weight" [(ngModel)]="ulds[i].weight" #weight="ngModel" type="text"
+               name="uld-weight-{{i}}" placeholder="<weight>"
+               required pattern="^-{0,1}\d*\.{0,1}\d+$"
+               [ngClass]="{'hl-mandatory': weight.invalid && weight.touched}" />
+        <button pButton type="button" class="ui-button-danger hl-uld-remove"
+                (click)="removeUld(i)" icon="fa fa-trash-o" iconPos="left"></button>
+      </div>
+      <div>
+        <button pButton type="button" class="ui-button-info hl-uld-add"
+                    (click)="addUld()" icon="fa fa-plus-square-o" iconPos="left" label="Add ULD"></button>
+      </div>
+    </div>
+
+    <div *ngIf="mode === 'pickup'" >
+      <span class="col-uld col-uld-series ml-4 pl-1">Serial</span>
+      <span class="col-uld col-uld-pieces">Pieces</span>
+      <span class="col-uld col-uld-weight">Weight</span>
+      <div *ngFor="let uld of ulds; let i=index" class="input-uld">
+        <p-checkbox id="uld-include-{{i}}" class="uld-include" [(ngModel)]="ulds[i].include" binary="true"
+                    name="uld-include-{{i}}"></p-checkbox>
+        <input id="uld-series-{{i}}" class="uld-series" [(ngModel)]="ulds[i].serial" #serial="ngModel" type="text"
+               name="uld-series-{{i}}" placeholder="<serial>" required disabled
+               [ngClass]="{'hl-mandatory': serial.invalid && serial.touched}" />
+        <input id="uld-pieces-{{i}}" class="uld-pieces" [(ngModel)]="ulds[i].pieces" #pieces="ngModel" type="text"
+               name="uld-pieces-{{i}}" placeholder="<pieces>"
+               required disabled pattern="^\d+$"
+               [ngClass]="{'hl-mandatory': pieces.invalid && pieces.touched}" />
+        <input id="uld-weight-{{i}}" class="uld-weight" [(ngModel)]="ulds[i].weight" #weight="ngModel" type="text"
+               name="uld-weight-{{i}}" placeholder="<weight>"
+               required disabled pattern="^-{0,1}\d*\.{0,1}\d+$"
+               [ngClass]="{'hl-mandatory': weight.invalid && weight.touched}" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-4 pt-3">
+    <button pButton type="button" class="ui-button-secondary hl-uld-cancel"
+            (click)="onCancel()" icon="fa fa-times-circle" iconPos="left" label="Cancel"></button>
+    <button *ngIf="mode === 'dropoff' && !edit" pButton type="button" class="ui-button-warning hl-uld-update"
+            (click)="onUpdate()" icon="fa fa-check-circle" iconPos="left" label="Continue"
+            [disabled]="!uldForm.form.valid"></button>
+    <button *ngIf="mode === 'dropoff' && edit" pButton type="button" class="ui-button-warning hl-uld-update"
+            (click)="onUpdate()" icon="fa fa-check-circle" iconPos="left" label="Update"
+            [disabled]="!uldForm.form.valid"></button>
+    <button *ngIf="mode === 'pickup' && edit" pButton type="button" class="ui-button-warning hl-uld-update"
+            (click)="onUpdate()" icon="fa fa-check-circle" iconPos="left" label="Update"></button>
+ </section>
+</form>

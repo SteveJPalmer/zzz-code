@@ -19,6 +19,7 @@ export class EticketComponent implements OnInit {
   title: string = 'E-Ticket(s)';
   listCols: any[];
   detailCols: any[];
+  detailUldCols: any[];
   vctRequests: ExportVCTRequest[];
   selectedVctRequest: ExportVCTRequest;
   showQRCode: boolean = false;
@@ -43,6 +44,9 @@ export class EticketComponent implements OnInit {
   continuationTokensDropoff: Array<string> = [''];
   nextContinuationTokenPickup: string;
   nextContinuationTokenDropoff: string;
+  // detail view
+  viewAWBs: Array<any> = [];
+  viewULDs: Array<any> = [];
 
   constructor( private vctService: VctService,
                private spinner: NgxSpinnerService,
@@ -63,6 +67,49 @@ export class EticketComponent implements OnInit {
     } else {
       this.showQRCode = false;
     }
+    let awbs = []; // view AWB details
+    let looseCargo = this.selectedVctRequest.vctManifestInfo.looseCargoInfo.containerContentInfo;
+    let rejectReason: string = '';
+    for (let prop in looseCargo) {
+      if (looseCargo.hasOwnProperty(prop)) {
+        // console.log(`obj.${prop} = ${JSON.stringify(looseCargo[prop], null, 2)}`);
+        if (this.selectedVctRequest.awbRejections) {
+          rejectReason = this.selectedVctRequest.awbRejections[prop];
+        }
+        awbs.push({
+          'awbNumber': prop,
+          'pieces': looseCargo[prop].numberOfPieces,
+          'weight': looseCargo[prop].weight,
+          'rejectReason': rejectReason
+        });
+      }
+    }
+    this.viewAWBs = awbs;
+    console.log(`awbs: ${JSON.stringify(this.viewAWBs, null, 2)}`);
+    // ULDs
+    let ulds = [];
+    let rejectUldReason: string = '';
+    if (this.selectedVctRequest.vctManifestInfo.uldCargoInfo && this.selectedVctRequest.vctManifestInfo.uldCargoInfo.length > 0) {
+      for (let uld of this.selectedVctRequest.vctManifestInfo.uldCargoInfo) {
+        let uldSerial = uld.uldMetadata.uldNumber;
+        for (let awb in uld.containerContentInfo) {
+          if (uld.containerContentInfo.hasOwnProperty(awb)) {
+            if (this.selectedVctRequest.uldRejections) {
+              rejectUldReason = this.selectedVctRequest.uldRejections[uldSerial];
+            }
+            ulds.push({
+              'uldSerial': uldSerial,
+              'awbNumber': awb,
+              'pieces': uld.containerContentInfo[awb].numberOfPieces,
+              'weight': uld.containerContentInfo[awb].weight,
+              'rejectReason': rejectUldReason
+            });
+          }
+        }
+      }
+    }
+    this.viewULDs = ulds;
+    console.log(`ulds: ${JSON.stringify(this.viewULDs, null, 2)}`);
   }
 
   back() {
@@ -314,9 +361,9 @@ export class EticketComponent implements OnInit {
   onFilter() {
     this.filterActive = true;
     this.retrieveVctRequests(this.stime, this.etime);
-    if ( this.stime == null && this.etime == null && this.filterPickup && this.filterDropoff ) {
-      this.filterActive = false;
-    }
+    // if ( this.stime == null && this.etime == null && this.filterPickup && this.filterDropoff ) {
+    //   this.filterActive = false;
+    // }
   }
 
   onPrint() {
@@ -341,14 +388,28 @@ export class EticketComponent implements OnInit {
     ];
     this.detailCols = [
       { field: 'awbNumber', header: 'AWB Number', width: '16' },
-      { field: 'domain', header: 'Domain', width: '10' },
-      { field: 'airline', header: 'Airline', width: '10' },
-      { field: 'pieces', header: 'Pieces', width: '10' },
-      { field: 'weight', header: 'Weight(kg)', width: '13' },
-      { field: 'origin', header: 'Origin', width: '11' },
-      { field: 'destination', header: 'Destination', width: '14' },
+      { field: 'pieces', header: 'Pieces', width: '8' },
+      { field: 'weight', header: 'Weight(kg)', width: '8' },
       { field: 'rejectReason', header: 'Reject Reason', width: '16' }
     ];
+    // this.detailCols = [
+    //   { field: 'awbNumber', header: 'AWB Number', width: '16' },
+    //   { field: 'domain', header: 'Domain', width: '10' },
+    //   { field: 'airline', header: 'Airline', width: '10' },
+    //   { field: 'pieces', header: 'Pieces', width: '10' },
+    //   { field: 'weight', header: 'Weight(kg)', width: '13' },
+    //   { field: 'origin', header: 'Origin', width: '11' },
+    //   { field: 'destination', header: 'Destination', width: '14' },
+    //   { field: 'rejectReason', header: 'Reject Reason', width: '16' }
+    // ];
+    this.detailUldCols = [
+      { field: 'uldSerial', header: 'ULD Serial', width: '12' },
+      { field: 'awbNumber', header: 'AWB Number', width: '12' },
+      { field: 'pieces', header: 'Pieces', width: '8' },
+      { field: 'weight', header: 'Weight(kg)', width: '8' },
+      { field: 'rejectReason', header: 'Reject Reason', width: '16' }
+    ];
+
 
     if ( this.navMenu.initialLoad ) {
       this.spinner.show();

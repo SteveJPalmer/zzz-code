@@ -1,11 +1,11 @@
-import { Container } from './container';
-import { VCTBooking } from './vctbooking';
 
-export class Loose extends Container {
+export class Loose {
 
-  constructor ( VCTBookings: Array<VCTBooking> ) {
+  public containerContentInfo: object;
+
+  constructor ( containerContentInfo: object = null ) {
     //
-    super( VCTBookings );
+    this.containerContentInfo = containerContentInfo;
   }
 
 }

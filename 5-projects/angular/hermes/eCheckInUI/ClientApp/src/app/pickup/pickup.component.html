@@ -45,7 +45,8 @@
 
       <div class="card-body p-0 mt-3" *ngIf ="selectedAWBs?.length || airwayBills?.length" [@hlList]="driverDetailView">
         <p-table #mainTable *ngIf ="airwayBills?.length" [columns]="cols" [value]="airwayBills" [(selection)]="selectedAWBs"
-                 selectionMode="multiple" [scrollable]="true" scrollHeight="22vh" [styleClass]="'hl-table-container awbs'">
+                 selectionMode="multiple" [scrollable]="true" scrollHeight="22vh" [styleClass]="'hl-table-container awbs'"
+                 (onRowSelect)="onRowSelect($event)">
           <ng-template pTemplate="header" let-columns>
             <tr>
               <th class="text-center" *ngFor="let col of columns">
@@ -84,19 +85,38 @@
           <p-table [value]="selectedAWBs" [scrollable]="true" scrollHeight="30vh" class="mb-2" [styleClass]="'hl-table-container awbs-selected'">
             <ng-template pTemplate="body" let-awb let-rowData let-rowIndex="rowIndex">
               <tr>
-                <td class="text-center hl-selected-rows">
+                <td class="hl-selected-rows">
                   <div class="d-flex justify-content-center" [@hlList]="driverDetailView">
-                    <div class="hl-row hl-sel-text">
-                      <span style="color:#2b5f59"><b>{{awb.userProvidedAirwayBill.awbNumber}}</b>, &nbsp;Weight: <b>{{awb.weight | number:'.1-1'}}</b>kg, &nbsp;
-                        Number of Pieces: <b>{{awb.pieces}}</b> <i>(of {{awb.expectedNumberOfPieces}})</i></span>
+                    <div *ngIf="awb.selectedUlds && awb.selectedUlds.length > 0" class="hl-row hl-toggle-btn mr-2" >
+                      <i *ngIf="awb.showUlds" class="fa fa-minus-square-o" (click)="toggleUlds(rowIndex)" aria-hidden="false"></i>
+                      <i *ngIf="!awb.showUlds" class="fa fa-plus-square-o" (click)="toggleUlds(rowIndex)" aria-hidden="true"></i>
                     </div>
-                    <div class="hl-row hl-edit-btn">
+                    <div class="hl-row hl-sel-text mr-2">
+                      <span><b>{{awb.userProvidedAirwayBill.awbNumber}}</b>, &nbsp;Weight: <b>{{awb.totalWeight | number:'.1-1'}}</b> kg, &nbsp;
+                        Number of Pieces: <b>{{awb.totalPieces}}</b> <i>(of {{awb.totalExpectedPieces}})</i></span>
+                    </div>
+                    <div *ngIf="awb.selectedUlds" class="hl-row hl-uld-btn ml-1">
+                      <button pButton type="button" class="ui-button-info hl-uld-edit"
+                              (click)="editULDs(awb.userProvidedAirwayBill.awbNumber, rowData, rowIndex)" icon="fa fa-list-ul" iconPos="left" label="ULD"></button>
+                    </div>
+                    <div class="hl-row hl-edit-btn ml-1">
                       <button pButton type="button" class="ui-button-warning hl-awb-edit"
-                              (click)="editSelection(awb.awbNumber, rowData, rowIndex)" icon="fa fa-pencil" iconPos="left" label="Edit"></button>
+                              (click)="editSelection(awb.userProvidedAirwayBill.awbNumber, rowData, rowIndex)" icon="fa fa-pencil" iconPos="left" label="Edit"></button>
                     </div>
-                    <div class="hl-row hl-remove-btn">
+                    <div class="hl-row hl-remove-btn ml-1">
                       <button pButton type="button" class="ui-button-danger hl-awb-remove"
-                              (click)="removeSelection(awb.awbNumber)" icon="fa fa-trash-o" iconPos="left" label="Remove"></button>
+                              (click)="removeSelection(awb.userProvidedAirwayBill.awbNumber)" icon="fa fa-trash-o" iconPos="left"></button>
+                    </div>
+                  </div>
+                  <div *ngIf="awb.selectedUlds && awb.selectedUlds.length > 0 && awb.showUlds" class="d-flex justify-content-center">
+                    <div>
+                      <div *ngFor="let col of awb.selectedUlds">
+                        <div *ngIf="col.include" class="hl-uld-text d-flex justify-content-start">
+                                            <span>ULD Serial: <b class="hl-uld-value">{{col.serial}}</b>, &nbsp;
+                                                     Weight: <b class="hl-uld-value">{{col.weight | number:'.1-1'}}</b> kg, &nbsp;
+                                                     Number of Pieces: <b class="hl-uld-value">{{col.pieces}}</b></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </td>
@@ -113,7 +133,9 @@
                 <p-calendar [(ngModel)]="appointment"
                             showTime="true" hourFormat="24" [showIcon]="true"
                             dateFormat="dd/mm/yy"
-                            [hideOnDateTimeSelect]="true"></p-calendar> <!--[touchUI]="true" : only in ver 6-->
+                            [hideOnDateTimeSelect]="true"
+                            [minDate]="minAppDate"
+                            readonlyInput="true"></p-calendar> <!--[touchUI]="true" : only in ver 6-->
               </div>
             </div>
             <div></div>
@@ -161,7 +183,7 @@
               <span class="hl-label">Trailer Reg</span>
               <div class="ui-inputgroup driverInput">
                 <span class="ui-inputgroup-addon"><i class="fa fa-truck"></i></span>
-                <input type="text" pInputText [(ngModel)]="vehicleInfo.registrationTrailorNumber" name="trailer"
+                <input type="text" pInputText [(ngModel)]="vehicleInfo.registrationTrailerNumber" name="trailer"
                        size="12" maxlength="10" autocomplete="off" class="hl-upper">
               </div>
               <span class="hl-mandatory-label">*</span><span class="hl-label">Door</span>
@@ -202,10 +224,23 @@
     <p-spinner id="hl-pieces-input" [(ngModel)]="adjustedNumberOfPieces" [min]="1" [max]="maxValue" size="6" required ngDefaultControl
                inputStyleClass="centered"></p-spinner>
   </div>
-  <p-footer>
+  <section class="mt-4 pt-3">
     <button pButton type="button" class="ui-button-secondary hl-awb-cancel"
             (click)="cancel()" icon="fa fa-times-circle" iconPos="left" label="Cancel"></button>
     <button pButton type="button" class="ui-button-warning hl-awb-update"
             (click)="updatePieces()" icon="fa fa-check-circle" iconPos="left" label="Update"></button>
-  </p-footer>
+  </section>
+</p-dialog>
+
+<!--Modal - edit ULDs -->
+<p-dialog id="hl-modal-ulds" class="hl-modal" [(visible)]="displayULDsModal" styleClass="hl-modal-active"
+          [modal]="true" [closable]="false" [closeOnEscape]="true"
+          [responsive]="true" [breakpoint]="575"
+          [focusOnShow]="false" (onShow)="setFocus();">
+  <p-header>AWB: <b>{{selectedAWB}}</b></p-header>
+  <div class="">
+    <app-ulds [ulds]="selectedULDs" [edit]="isEdit" [mode]="uldMode"
+              on-cancel="cancelULDs($event)"
+              on-update="updateULDs($event)"></app-ulds>
+  </div>
 </p-dialog>

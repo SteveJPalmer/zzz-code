@@ -4,3 +4,4 @@ export * from './vct.service';
 export * from './awb.service';
 export * from './orgs.service';
 export * from './rest-endpoints';
+export * from './uld.service';

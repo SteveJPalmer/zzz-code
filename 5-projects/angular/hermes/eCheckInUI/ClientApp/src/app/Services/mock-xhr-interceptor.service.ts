@@ -3,17 +3,16 @@ import {
   HttpInterceptor,
   HttpHandler,
   HttpRequest,
-  HttpEvent,
   HttpResponse,
   HttpHeaders
 } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { mockGhA, mockGhB as ghs, mockGhC, mockGhZ } from './mock-xhr-interceptor.data';
-import { mockAWBsA as awbs, mockAWBsZ } from './mock-xhr-interceptor.data';
+import { mockAWBsExpA as awbsExp, mockAWBsExpZ } from './mock-xhr-interceptor.data';
+import { mockAWBsImpA as awbsImp, mockAWBsImpZ } from './mock-xhr-interceptor.data';
 import { mockDropoffVSTReqA as dvcts, mockDropoffVSTReqZ } from './mock-xhr-interceptor.data';
 import { mockPickupVSTReqA as pvcts, mockPickupVSTReqZ } from './mock-xhr-interceptor.data';
 import { userProfileA as user, userProfileZ} from './mock-xhr-interceptor.data';
-import {Http} from "@angular/http";
 
 @Injectable()
 export class MockXHRInterceptor implements HttpInterceptor {
@@ -25,9 +24,10 @@ export class MockXHRInterceptor implements HttpInterceptor {
      ** AWB Service **
      *****************/
     //new endpoints
-    if (req.url.indexOf('api/airwaybills/getdropoffairwaybills/dev/99') != -1  && req.method === 'GET') {     //dropoffAWB with pagingation
+    // Drop-off
+    if (req.url.indexOf('api/airwaybills/getdropoffairwaybills/dev/99') !== -1  && req.method === 'GET') {     //dropoffAWB with pagingation
       console.log('>>intercepted api/airwaybills/getdropoffairwaybills/99 request (with pagination)');
-      let body: any[] = awbs;
+      let body: any[] = awbsExp;
       let status: number = 200;
       let headers: HttpHeaders = new HttpHeaders({
           'Content-Type' : 'application/json',
@@ -38,22 +38,37 @@ export class MockXHRInterceptor implements HttpInterceptor {
       //console.info('>>intercepted api/airwaybills/getdropoffairwaybills.. response: >>' + JSON.stringify( response, null, 2 ));
       return Observable.of(response);
     }
-    if (req.url.indexOf('api/airwaybills/getdropoffairwaybills') != -1  && req.method === 'GET') {
+    if (req.url.indexOf('api/airwaybills/getdropoffairwaybills') !== -1  && req.method === 'GET') {
       console.log('>>intercepted api/airwaybills/getdropoffairwaybills.. request');
-      let body = awbs;
+      let body = awbsExp;
       let status = 200;
       return Observable.of(new HttpResponse({ status, body }));
     }
-    if (req.url.indexOf('api/airwaybills/getpickupairwaybills') != -1  && req.method === 'GET') {
+    // Pickup
+    if (req.url.indexOf('api/airwaybills/getpickupairwaybills/dev/99') !== -1  && req.method === 'GET') {     //dropoffAWB with pagingation
+      console.log('>>intercepted api/airwaybills/getpickupairwaybills/99 request (with pagination)');
+      let body: any[] = awbsImp;
+      let status: number = 200;
+      let headers: HttpHeaders = new HttpHeaders({
+        'Content-Type' : 'application/json',
+        'Access-Control-Expose-Headers' : 'ContinuationToken',
+        'ContinuationToken' : '{"token":"mock-token"}'
+      });
+      let response: HttpResponse<Array<any>> = new HttpResponse({ "body" : body, "headers" : headers, "status" : status });
+      //console.info('>>intercepted api/airwaybills/getdropoffairwaybills.. response: >>' + JSON.stringify( response, null, 2 ));
+      return Observable.of(response);
+    }
+
+    if (req.url.indexOf('api/airwaybills/getpickupairwaybills') !== -1  && req.method === 'GET') {
       console.log('>>intercepted api/airwaybills/getpickupairwaybills.. request');
-      let body = awbs;
+      let body = awbsImp;
       let status = 200;
       return Observable.of(new HttpResponse({ status, body }));
     }
     //original endpoint
     if (req.url.indexOf('api/airwaybills/dev') != -1  && req.method === 'GET') {
       console.log('>>intercepted api/airwaybills/.. request');
-      let body = awbs;
+      let body = awbsExp;
       let status = 200;
       return Observable.of(new HttpResponse({ status, body }));
     }

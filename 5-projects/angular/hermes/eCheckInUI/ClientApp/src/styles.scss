@@ -121,8 +121,13 @@ p-dialog.hl-modal {
     background-color: $hl-blue !important;
   }
   .ui-dialog-content.ui-widget-content {
-    background-color: $hl-light-blue;
+    background-color: $hl-white;
   }
+  .ui-spinner:not(.ui-state-disabled) .ui-spinner-button:enabled:hover {
+    border: 1px solid #1e504f;
+    background: #427f7e !important;
+  }
+
 }
 
 .ui-widget-overlay.ui-dialog-mask {

@@ -9,6 +9,22 @@
   }
 }
 
+.hl-view-ulds {
+  .hl-view-uld-rows>td, .hl-view-uld-header>th {
+    font-size: 0.8rem !important;
+  }
+  margin: 0 0;
+  @media screen and (min-width: 768px) {
+  margin: 0 13%;
+}
+  @media screen and (min-width: 992px) {
+    margin: 0 16%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 20%;
+  }
+}
+
 .hl-table-header {
   font-size: 1.2rem;
   span {
@@ -40,6 +56,10 @@
 
 .hl-vct-no, .hl-awb-no {
   font-weight: 700;
+  color: $hl-blue;
+}
+
+.hl-awb-no-uld {
   color: $hl-blue;
 }
 

@@ -2,7 +2,6 @@
 
 .special-card {
   background-color: $hl-white;
-  /*opacity: .8;*/
 }
 
 .hl-awb-search {
@@ -41,14 +40,41 @@
   }
 }
 
+.hl-awb-remove {
+  width: 2rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+}
+.hl-awb-edit {
+  width: 3.5rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+}
+.hl-uld-edit {
+  width: 3.6rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+  background-color: #acc2f8 !important;
+  border-color: #acc2f8 !important;
+  &:hover {
+    background-color: #9db3e9 !important;
+  }
+}
 
-.hl-awb-remove, .hl-awb-edit {
-  height: 90%;
-  font-size: 80%;
+.hl-uld-update {
+  background-color: #9db3e9 !important;
+  border-color: #899ed6 !important;
+  &:hover {
+    background-color: #899ed6 !important;
+  }
 }
 
 .hl-awb-next, .hl-awb-back, .hl-awb-export {
   height:40px;
+}
+
+.hl-uld-cancel, .hl-awb-cancel {
+  color: grey !important;
 }
 
 .hl-awb-footer {
@@ -56,12 +82,24 @@
 }
 
 .hl-selected-rows .hl-row {
-  padding: 6px;
-  &.hl-edit-btn {
-    padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 1px;
+  &.hl-toggle-btn {
+    color: #a4a4e1;
+    padding-top: 7px;
   }
   button{
     border-radius: 3px;
+  }
+}
+
+.hl-selected-rows .hl-uld-text {
+  font-size: 0.75rem;
+  color: slategrey;
+  padding-top: unset;
+  margin-right: 10rem;
+  .hl-uld-value {
+    color: darkslateblue;
   }
 }
 
@@ -113,7 +151,7 @@
 }
 
 .hl-mandatory {
-  box-shadow: 0.25px 0.25px 5px red;
+  box-shadow: 0.25px 0.25px 5px #ff6671;
   &.ng-dirty {
     border-bottom-color: lightgrey;
   }

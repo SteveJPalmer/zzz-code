@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="" />
+    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1606">
-              <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+            <state relative-caret-position="1633">
+              <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -28,15 +30,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120" />
           </provider>
         </entry>
       </file>
@@ -77,11 +86,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/index.html" />
-        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/../work_area/bootstrap-scratch/bootsrap-scratch/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/../work_area/temp/test-JSON-TemplateLiterals.html" />
+        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/index.html" />
+        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.html" />
+        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.scss" />
+        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app-routing.module.ts" />
+        <option value="C:/work_area/temp/test-JSON-TemplateLiterals.html" />
         <option value="$PROJECT_DIR$/2-javascript/typescript/classes.ts" />
         <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr-FontAwesome.html" />
         <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr.html" />
@@ -115,8 +124,8 @@
     </layout>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="147" />
-    <option name="y" value="134" />
+    <option name="x" value="209" />
+    <option name="y" value="138" />
     <option name="width" value="1550" />
     <option name="height" value="866" />
   </component>
@@ -126,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,6 +152,57 @@
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="1-html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="1-html" type="462c0819:PsiDirectoryNode" />
+              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="1-html" type="462c0819:PsiDirectoryNode" />
+              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
+              <item name="effects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="1-html" type="462c0819:PsiDirectoryNode" />
+              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
+              <item name="effects" type="462c0819:PsiDirectoryNode" />
+              <item name="animation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="1-html" type="462c0819:PsiDirectoryNode" />
+              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
+              <item name="effects" type="462c0819:PsiDirectoryNode" />
+              <item name="animation" type="462c0819:PsiDirectoryNode" />
+              <item name="animations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
+              <item name="1-html" type="462c0819:PsiDirectoryNode" />
+              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
+              <item name="effects" type="462c0819:PsiDirectoryNode" />
+              <item name="animation" type="462c0819:PsiDirectoryNode" />
+              <item name="animations" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -264,14 +325,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work_area" />
+    <property name="last_opened_file_path" value="C:/work_area" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\work_area\primeNg-scratch\prmineNg-scratch\node_modules\typescript\lib" />
@@ -368,11 +428,13 @@
       <workItem from="1561017169855" duration="1246000" />
       <workItem from="1563809943620" duration="630000" />
       <workItem from="1563891041157" duration="1648000" />
+      <workItem from="1563956392505" duration="719000" />
+      <workItem from="1564054484060" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135095000" />
+    <option name="totallyTimeSpent" value="136425000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -384,10 +446,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="147" y="134" width="1550" height="866" extended-state="0" />
+    <frame x="209" y="138" width="1550" height="866" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.26308724" />
       <window_info id="Favorites" order="1" sideWeight="0.5022727" side_tool="true" weight="0.2012894" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -656,8 +718,8 @@
         <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/shared/dashboard-button/dashboard-button.component.js" />
         <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/shared/dashboard-button/dashboard-button.component.js.map" />
         <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters-routing.module.js" />
-        <option value="$PROJECT_DIR$/../tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js.map" />
-        <option value="$PROJECT_DIR$/../tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js" />
+        <option value="C:/tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js.map" />
+        <option value="C:/tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js" />
       </list>
     </option>
   </component>
@@ -671,13 +733,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4a - justify-content/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4a - justify-content/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -829,7 +884,7 @@
     <entry file="file://$PROJECT_DIR$/3-frameworks/angular/CLI/base/myApp/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../work_area/bootstrap4/flex -utility/e2e/app.po.ts">
+    <entry file="file://C:/work_area/bootstrap4/flex -utility/e2e/app.po.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/2-javascript/libraries/RxJS/baseObservable/index.html">
@@ -893,9 +948,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/index.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/index.ts" />
     <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -909,13 +962,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts" />
     <entry file="file://$PROJECT_DIR$/3-frameworks/angular/httpClient/http-pre4.3/httpServciePromise/src/app/vehicle.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1004,8 +1051,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1606">
-          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+        <state relative-caret-position="1633">
+          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -1015,11 +1062,16 @@
     <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120" />
       </provider>
     </entry>
   </component>

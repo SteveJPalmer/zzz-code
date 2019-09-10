@@ -10,8 +10,7 @@ export class OrgsService extends ServiceBase {
 
   private _baseUrl: string;
   private _restUrl = RestEndpoints;
-  constructor( private http: HttpClient,
-               @Inject('BASE_URL') baseUrl: string ) {
+  constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     super();
     this._baseUrl = baseUrl;
   }

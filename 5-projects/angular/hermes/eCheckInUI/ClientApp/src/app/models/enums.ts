@@ -3,7 +3,8 @@ export enum VCTRequestStatus {
   'Submitted',
   'Waiting for Delivery',
   'Delivered',
-  'Retry or Contact Support'
+  'Retry or Contact Support',
+  'Rejected'
 };
 
 export enum DeliveryMethod {

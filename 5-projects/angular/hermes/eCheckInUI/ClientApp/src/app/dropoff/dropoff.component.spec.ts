@@ -9,7 +9,7 @@ import { NavMenuService } from '../nav-menu/nav-menu.service';
 import { FormsModule } from '@angular/forms';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { OrgsService, VctService } from "../Services";
+import { OrgsService, UldService, VctService } from '../Services';
 
 // base - check unit test  env
 describe('Test Framework', () => {
@@ -25,6 +25,7 @@ describe('DropOffComponent', () => {
 
   // define jasmine spies
   let awbServiceSpy: jasmine.SpyObj<AwbService>;
+  let uldServiceSpy: jasmine.SpyObj<UldService>;
   let MockVCTService;
   let MockOrgsService;
   let navMenuServiceSpy: jasmine.SpyObj<NavMenuService>;
@@ -34,8 +35,11 @@ describe('DropOffComponent', () => {
 
   beforeEach(async(() => {
     const awbSpyObj = jasmine.createSpyObj('AwbService', ['searchDropoffAWBs']);
-    const navMenuSpyObj = jasmine.createSpyObj('NavMenuService', ['setPageTitle','mblBackImg']);
-    const spinnerSpyObj = jasmine.createSpyObj('NgxSpinnerService', ['show','hide']);
+    const navMenuSpyObj = jasmine.createSpyObj('NavMenuService', ['setPageTitle', 'mblBackImg']);
+    const spinnerSpyObj = jasmine.createSpyObj('NgxSpinnerService', ['show', 'hide']);
+    const uldSpyObj = jasmine.createSpyObj('UldService',
+                                           ['extractULDs', 'createReqULD', 'updateReqULD',
+                                                         'searchReqULD', 'initializeULDCargoInfo', 'getULDCargoInfo']);
 
     MockOrgsService = {
       data: {"dev":"DEV"},
@@ -75,6 +79,7 @@ describe('DropOffComponent', () => {
       providers: [
         { provide: ComponentFixtureAutoDetect, useValue: true },
         { provide: AwbService, useValue: awbSpyObj },
+        { provide: UldService, useValue: uldSpyObj },
         { provide: VctService, useValue: MockVCTService },
         { provide: OrgsService, useValue: MockOrgsService },
         { provide: NgxSpinnerService, useValue: spinnerSpyObj },
@@ -89,6 +94,7 @@ describe('DropOffComponent', () => {
 
     // create jasmine spy instances
     awbServiceSpy = TestBed.get(AwbService);
+    uldServiceSpy = TestBed.get(UldService);
     navMenuServiceSpy = TestBed.get(NavMenuService);
     spinnerServiceSpy = TestBed.get(NgxSpinnerService);
     routerSpy = TestBed.get(Router);

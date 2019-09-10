@@ -2,19 +2,15 @@ import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpHeaders, HttpParams } from '@angular/common/http';
 
-import { AwbService } from '../Services';
-import { AirwayBill } from '../models';
+import { AwbService, VctService, OrgsService, UldService  } from '../Services';
 import { NavMenuService } from '../nav-menu/nav-menu.service';
-import { OrgsService } from '../Services';
-import { VctService } from '../Services';
+import { AirwayBill, Vehicle, Driver, ImportVCTRequest, VCTManifest, Loose, ULD, DeliveryMethod, Appointment } from '../models';
+import { IPickupList } from './IPickupList';
 
 import { Table } from 'primeng/table';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { hlDetail, hlList, hlData } from '../shared';
-import { MapToIterable } from '../shared';
 
-import { Vehicle, Driver, VCTBooking, ImportVCTRequest, VCTManifest, Loose, DeliveryMethod, Appointment } from '../models';
-import { IPickupList } from './IPickupList';
 
 @Component({
   selector: 'app-pickup',
@@ -64,12 +60,20 @@ export class PickupComponent implements OnInit {
   vehicleInfo: Vehicle = new Vehicle();
   selectedDeliveryMethod: string;
 
+  //edit ULDs control
+  displayULDsModal: boolean = false;
+  isEdit: boolean;
+  uldMode: string = 'pickup';
+  selectedULDs: Array<any>;
+  minAppDate: any;
+
   constructor(private awbService: AwbService,
               private spinner: NgxSpinnerService,
               public navMenu: NavMenuService,
               private router: Router,
               private orgsService: OrgsService,
               private vctService: VctService,
+              private uldService: UldService,
               private cdRef : ChangeDetectorRef) {
   }
 
@@ -103,15 +107,21 @@ export class PickupComponent implements OnInit {
             /* add derived properties */
             let tmpAirwayBills: IPickupList[] = [];
             for (let elem of body) {
-              let tempWeight = Number(elem.consignmentInfo.expectedWeight).toFixed(1);
-              let tmpAWB: IPickupList = {userProvidedAirwayBill: elem, pieces: elem.consignmentInfo.expectedNumberOfPieces, weight: tempWeight,
-                aWBNumber: elem.awbNumber,
-                origin: elem.origin,
-                destination: elem.destination,
-                expectedNumberOfPieces: elem.consignmentInfo.expectedNumberOfPieces,
-                expectedWeight: tempWeight
-              };
-              tmpAirwayBills.push(tmpAWB);
+              if (!elem.hawbs || elem.hawbs === null || (elem.hawbs && elem.hawbs.length === 0)) {     // temp disable any hawbs
+                let numberOfPieces =  (elem.bookedInfo && elem.bookedInfo.numberOfPieces) ? elem.bookedInfo.numberOfPieces : '0';
+                let weight =  (elem.bookedInfo && elem.bookedInfo.weight) ? elem.bookedInfo.weight : '0';
+                let tempWeight = Number(weight).toFixed(1);
+                let containsULD: string = (elem.shcs && elem.shcs.indexOf('BUP') !== -1) ? 'Yes' : '';
+                let tmpAWB: IPickupList = {userProvidedAirwayBill: elem, pieces: numberOfPieces, weight: tempWeight,
+                  aWBNumber: elem.awbNumber,
+                  origin: elem.origin,
+                  destination: elem.destination,
+                  expectedNumberOfPieces: numberOfPieces,
+                  expectedWeight: tempWeight,
+                  uld: containsULD
+                };
+                tmpAirwayBills.push(tmpAWB);
+              }
             }
             this.airwayBills = tmpAirwayBills;
           }
@@ -173,15 +183,21 @@ export class PickupComponent implements OnInit {
         /* add derived properties */
         let tmpAirwayBills: IPickupList[] = [];
         for (let elem of body) {
-          let tempWeight = Number(elem.consignmentInfo.expectedWeight).toFixed(1);
-          let tmpAWB: IPickupList = {userProvidedAirwayBill: elem, pieces: elem.consignmentInfo.expectedNumberOfPieces, weight: tempWeight,
-            aWBNumber: elem.awbNumber,
-            origin: elem.origin,
-            destination: elem.destination,
-            expectedNumberOfPieces: elem.consignmentInfo.expectedNumberOfPieces,
-            expectedWeight: tempWeight
-          };
-          tmpAirwayBills.push(tmpAWB);
+          if (!elem.hawbs || elem.hawbs === null || (elem.hawbs && elem.hawbs.length === 0)) {     // temp disable any hawbs
+            let numberOfPieces =  (elem.bookedInfo && elem.bookedInfo.numberOfPieces) ? elem.bookedInfo.numberOfPieces : '0';
+            let weight =  (elem.bookedInfo && elem.bookedInfo.weight) ? elem.bookedInfo.weight : '0';
+            let tempWeight = Number(weight).toFixed(1);
+            let containsULD: string = (elem.shcs && elem.shcs.indexOf('BUP') !== -1) ? 'Yes' : '';
+            let tmpAWB: IPickupList = {userProvidedAirwayBill: elem, pieces: numberOfPieces, weight: tempWeight,
+              aWBNumber: elem.awbNumber,
+              origin: elem.origin,
+              destination: elem.destination,
+              expectedNumberOfPieces: numberOfPieces,
+              expectedWeight: tempWeight,
+              uld: containsULD
+            };
+            tmpAirwayBills.push(tmpAWB);
+          }
         }
         this.airwayBills = tmpAirwayBills;
         this.searchClicked = true;
@@ -201,7 +217,7 @@ export class PickupComponent implements OnInit {
   removeSelection($event) {
     // quirk to handle un-highlighting removed row. See 'Change Detection' in Table component doc
     var tmpSelectedAWBs = this.selectedAWBs;
-    let index = tmpSelectedAWBs.findIndex(awb => awb.awbNumber === $event);
+    let index = tmpSelectedAWBs.findIndex(awb => awb.aWBNumber === $event);
     tmpSelectedAWBs.splice(index, 1);
     this.selectedAWBs = [...tmpSelectedAWBs];
   }
@@ -229,6 +245,74 @@ export class PickupComponent implements OnInit {
     let $awb = this.selectedAWBs[this.selectedAWBIndex];
     let calcWeight = Number(($awb.expectedWeight / $awb.expectedNumberOfPieces ) * $awb.pieces).toFixed(1);
     this.selectedAWBs[this.selectedAWBIndex].weight = calcWeight;
+    // adjust totals for display
+    if (this.selectedAWBs[this.selectedAWBIndex].uld === 'Yes') {
+      this.recalculateTotals(this.selectedAWBs[this.selectedAWBIndex].selectedUlds );
+    } else {
+      this.selectedAWBs[this.selectedAWBIndex].totalPieces = this.adjustedNumberOfPieces;
+      this.selectedAWBs[this.selectedAWBIndex].totalWeight = calcWeight;
+    }
+  }
+
+  onRowSelect(event) {
+    // console.log(JSON.stringify(event, null, 2));
+    let idx = this.selectedAWBs.length - 1;  // identify next selectedAWB array index..
+    // console.info('next index: ' + idx);
+    this.selectedAWBs[idx].pieces = parseInt(this.selectedAWBs[idx].expectedNumberOfPieces);
+    this.selectedAWBs[idx].totalPieces = parseInt(this.selectedAWBs[idx].expectedNumberOfPieces);
+    this.selectedAWBs[idx].totalExpectedPieces = parseInt(this.selectedAWBs[idx].expectedNumberOfPieces);
+    this.selectedAWBs[idx].weight = parseFloat(this.selectedAWBs[idx].expectedWeight);
+    this.selectedAWBs[idx].totalWeight = parseFloat(this.selectedAWBs[idx].expectedWeight);
+    this.selectedAWBs[idx].totalExpectedWeight = parseInt(this.selectedAWBs[idx].expectedWeight);
+    if ( event.data.uld === 'Yes') {
+      let ulds = this.uldService.extractULDs(event.data.userProvidedAirwayBill.bookingInfo);
+      this.selectedULDs = JSON.parse(JSON.stringify(ulds));
+      this.selectedULDs.forEach( (item, i, a) => a[i].include = true );
+      this.selectedAWB = this.selectedAWBs[idx].userProvidedAirwayBill.awbNumber;
+      this.selectedAWBIndex = idx;
+      this.updateULDs(this.selectedULDs);  // simulate ULD comp update event
+    }
+  }
+
+  toggleUlds(idx) {
+    console.log('toggleULDs > showUlds: ' + this.selectedAWBs[idx].showUlds);
+    this.selectedAWBs[idx].showUlds = !this.selectedAWBs[idx].showUlds;
+  }
+
+  editULDs($event, rowData, rowIndex) {
+    this.selectedAWB = $event;
+    this.selectedAWBIndex = rowIndex;
+    this.isEdit = true;
+    this.selectedULDs = JSON.parse(JSON.stringify(this.selectedAWBs[rowIndex].selectedUlds));
+    this.displayULDsModal = true;
+  }
+
+  cancelULDs($event) {
+    // console.info('>>Dropoff Comp >cancelULDs()...' + $event);
+    this.displayULDsModal = false;
+  }
+
+  updateULDs($event) {
+    // console.info('>>Dropoff Comp >updateULDs()...' + JSON.stringify($event, null, 2) );
+    this.selectedAWBs[this.selectedAWBIndex].selectedUlds = $event;
+    this.recalculateTotals($event);  // adjust pieces & weight for ULDs
+    this.displayULDsModal = false;
+  }
+
+  recalculateTotals($event) {
+    let pieces = +this.selectedAWBs[this.selectedAWBIndex].pieces;
+    let piecesExpected = +this.selectedAWBs[this.selectedAWBIndex].expectedNumberOfPieces;
+    let weight = +this.selectedAWBs[this.selectedAWBIndex].weight;
+    let weightExpected = +this.selectedAWBs[this.selectedAWBIndex].expectedWeight;
+    let urlPieces = 0, urlWeight = 0;
+    if ($event.length > 0) {
+      urlPieces = $event.map(i => i.include ? +i.pieces : 0).reduce((a, n) => a + n);
+      urlWeight = $event.map(i => i.include ? +i.weight : 0).reduce((a, n) => a + n);
+    }
+    this.selectedAWBs[this.selectedAWBIndex].totalPieces = pieces + urlPieces;
+    this.selectedAWBs[this.selectedAWBIndex].totalExpectedPieces = piecesExpected + urlPieces;
+    this.selectedAWBs[this.selectedAWBIndex].totalWeight = weight + urlWeight;
+    this.selectedAWBs[this.selectedAWBIndex].totalExpectedWeight = weightExpected + urlWeight;
   }
 
   cancel() {
@@ -260,26 +344,47 @@ export class PickupComponent implements OnInit {
     let unixTime = this.appointment ? Math.round(this.appointment.getTime() / 1000) : null;   //convert form js Epoch Time to standard Unix Time
     let appointment: Appointment = new Appointment(unixTime);
     // console.info('>>importVCTRequest - appointment: ' + appointment);
-
-    let vctBookings: Array<VCTBooking> = [];
-    for (let booking of this.selectedAWBs) {
-      /* construct each booking for request */
-      let tmpBooking: VCTBooking = { userProvidedAirwayBill: booking.userProvidedAirwayBill,
-        pieces: booking.pieces,
-        weight: booking.weight,
-        rejectReason: null };
-      delete tmpBooking.userProvidedAirwayBill['_ts'];
-      delete tmpBooking.userProvidedAirwayBill['_rid'];
-      delete tmpBooking.userProvidedAirwayBill['_self'];
-      delete tmpBooking.userProvidedAirwayBill['_etag'];
-      vctBookings.push(tmpBooking);
+    this.uldService.initializeULDCargoInfo();
+    let containerContentInfo: object = {};
+    // console.log('>>exportVCTRequests - selectedAWBs: ' + JSON.stringify(this.selectedAWBs, null, 2));
+    for (let awb of this.selectedAWBs) {
+      // console.log('>>exportVCTRequests: loop AWBs--- ' + JSON.stringify(awb, null, 2))
+      /* loose cargo */
+      // console.warn(`>>looseCargo: ${awb.aWBNumber} - ${awb.pieces} - ${awb.weight} ` );
+      containerContentInfo[awb.aWBNumber] = {'numberOfPieces': awb.pieces, 'weight': awb.weight };
+      // console.error('containerContentInfo: ' + JSON.stringify(containerContentInfo, null, 2));
+      /* ULD cargo */
+      if (awb.selectedUlds) {
+        // console.warn('ULD array detected..');
+        // console.info('>>ULDCargo: ' + JSON.stringify(awb.selectedUlds, null, 2) );
+        // console.info('..start to loop through');
+        // loop through ULDs
+        for (let uld of awb.selectedUlds) {
+          // console.warn('looping - ULD: ' + JSON.stringify(uld, null, 2));
+          if (uld.include) {
+            let index = this.uldService.searchReqULD(uld.serial);
+            // console.error('>>uldService.searchReqULD() - returned index: ' + index);
+            if (index !== -1) {
+              // console.error('update');
+              this.uldService.updateReqULD(awb.aWBNumber, uld, index);
+            } else {
+              // console.error('create');
+              this.uldService.createReqULD(awb.aWBNumber, uld);
+            }
+          }
+        }
+      }
     }
-    //console.log('vctBookings: ' + JSON.stringify(vctBookings, null, 2) );
-    let looseCargoInfo: Array<Loose> = [new Loose( vctBookings )];
-    let manifestInfo: VCTManifest = new VCTManifest( looseCargoInfo );
-    //construct final importVCTRequest for POST request
+    const looseCargoInfo: Loose = new Loose( containerContentInfo );
+    // console.error('looseCargoInfo: ' + JSON.stringify(looseCargoInfo, null, 2));
+    const uldCargoInfo: Array<ULD> = this.uldService.getULDCargoInfo();
+    // console.error('uldCargoInfo: ' + JSON.stringify(uldCargoInfo, null, 2));
+    const vctManifestInfo: VCTManifest = new VCTManifest(looseCargoInfo, uldCargoInfo);
+    // console.error('manifestInfo: ' + JSON.stringify(vctManifestInfo, null, 2));
+
+    // construct final exportVCTRequest for POST request
     let deliveryMethodValue: number = DeliveryMethod[this.selectedDeliveryMethod];
-    let importVCTRequest: ImportVCTRequest = new ImportVCTRequest( appointment, this.vehicleInfo, manifestInfo, deliveryMethodValue);
+    let importVCTRequest: ImportVCTRequest = new ImportVCTRequest( appointment, this.vehicleInfo, vctManifestInfo, this.navMenu.selectedGH, deliveryMethodValue);
     console.log('ImportVCTRequest: ' + JSON.stringify(importVCTRequest, null, 2) );
 
     this.vctService.importVCTRequest( importVCTRequest, this.navMenu.selectedGH )
@@ -326,6 +431,7 @@ export class PickupComponent implements OnInit {
       { field: 'origin', header: 'Origin' },
       { field: 'destination', header: 'Destination' },
       { field: 'expectedNumberOfPieces', header: 'Number of Pieces' },
+      { field: 'uld', header: 'ULDs' },
       { field: 'expectedWeight', header: 'Weight(kg)' }
     ];
     //doorOptions SelectItems
@@ -335,7 +441,14 @@ export class PickupComponent implements OnInit {
       {label: 'Back', value: 'BACK'},
       {label: 'Ramp', value: 'RAMP'}
     ];
-
+    let defaultDate = new Date();
+    defaultDate.setDate(defaultDate.getDate() + 1);
+    defaultDate.setHours(9, 0, 0, 0);
+    this.appointment = defaultDate;
+    // eTime.setDate(eTime.getDate() + 1)
+    let minAppDate = new Date();
+    minAppDate.setMinutes ( minAppDate.getMinutes() + 30 );
+    this.minAppDate = minAppDate;
     if ( this.navMenu.initialLoad ) {
       this.spinner.show();
       this.navMenu.initialLoad = false;

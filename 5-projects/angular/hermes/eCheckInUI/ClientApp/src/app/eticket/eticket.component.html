@@ -142,11 +142,51 @@
           <div>Driver: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.driverInfo.driverFirstName }}</span></div>
           <div>Driver Id: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.driverInfo.driverId }}</span></div>
           <div>Vehicle Reg: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.registrationNumber}}</span></div>
-          <div>Trailor Reg: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.registrationTrailorNumber}}</span></div>
+          <div>Trailor Reg: <span class="hl-dd">{{selectedVctRequest.vehicleInfo.registrationTrailerNumber}}</span></div>
         </div>
        </div>
-
-        <p-table [value]="selectedVctRequest.vctManifestInfo.looseCargoInfo[0].vctBookings"
+        <p-table [value]="viewAWBs"
+                 [columns]="detailCols" [resizableColumns]="true"
+                 [styleClass]="'hl-table-container awbs ml-md-5 mr-md-5'">
+          <ng-template pTemplate="header" let-columns>
+            <tr>
+              <th class="text-center" *ngFor="let col of columns" pResizableColumn [style.width.%]="col.width" >
+                {{col.header}}
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-awb>
+            <tr class="text-center">
+              <td class="hl-awb-no hl-tbl-pad">{{awb.awbNumber}}</td>
+              <td>{{awb.pieces}}</td>
+              <td>{{awb.weight | number:'1.0-2' }}</td>
+              <td class="hl-reject-reason">{{awb.rejectReason}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+        <section *ngIf="viewULDs.length > 0" class="hl-view-ulds">
+          <p-table [value]="viewULDs"
+                   [columns]="detailUldCols" [resizableColumns]="true"
+                   [styleClass]="'hl-table-container awbs mt-4'">
+            <ng-template pTemplate="header" let-columns>
+              <tr class="hl-view-uld-header">
+                <th class="text-center" *ngFor="let col of columns" pResizableColumn [style.width.%]="col.width">
+                  {{col.header}}
+                </th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-awb>
+              <tr class="text-center hl-view-uld-rows">
+                <td class="hl-awb-no hl-tbl-pad">{{awb.uldSerial}}</td>
+                <td class="hl-awb-no-uld hl-tbl-pad">{{awb.awbNumber}}</td>
+                <td>{{awb.pieces}}</td>
+                <td>{{awb.weight | number:'1.0-2' }}</td>
+                <td class="hl-reject-reason">{{awb.rejectReason}}</td>
+              </tr>
+            </ng-template>
+          </p-table>
+        </section>
+       <!-- <p-table [value]="selectedVctRequest.vctManifestInfo.looseCargoInfo.containerContentInfo"
                  [columns]="detailCols" [resizableColumns]="true"
                  [styleClass]="'hl-table-container awbs'">
           <ng-template pTemplate="header" let-columns>
@@ -168,7 +208,7 @@
               <td class="hl-reject-reason">{{awb.rejectReason | RejectReason }}</td>
             </tr>
           </ng-template>
-        </p-table>
+        </p-table>-->
       <div>
         <button pButton type="button" class="ui-button-warning hl-print ml-3 mt-4 mb-1"
                 (click)="onPrint()" icon="fa fa-print" iconPos="left" label="Print"></button>

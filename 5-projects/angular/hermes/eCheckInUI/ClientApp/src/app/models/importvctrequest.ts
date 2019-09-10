@@ -11,9 +11,10 @@ export class ImportVCTRequest extends VCTRequest {
   constructor( appointmentInfo: Appointment = null,
                vehicleInfo: Vehicle,
                vctManifestInfo: VCTManifest,
+               groundHandlerId: string,
                deliveryMethod: number ) {
     //
-    super(vehicleInfo, vctManifestInfo, null, VCTRequestStatus['Waiting for Submission'], null, 0, deliveryMethod );
+    super(null, vehicleInfo, vctManifestInfo, null, null, VCTRequestStatus['Waiting for Submission'], groundHandlerId, null, 0, null, deliveryMethod);
     this.appointmentInfo = appointmentInfo;
   }
 

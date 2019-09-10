@@ -2,7 +2,7 @@
 export const environment = {
   production: false,
   env: 'local',
-  appVersion: "Beta 0.3.0-L",
+  appVersion: "Beta 0.4.1-L",
   baseUrl: "https://localhost:44392/",
   B2CAuthority: "https://login.microsoftonline.com/tfp/hermesdevb2c.onmicrosoft.com/B2C_1_signup_in",
   B2CPwdResetPolicyURL: "https://login.microsoftonline.com/tfp/hermesdevb2c.onmicrosoft.com/b2c_1_pwd_reset",
