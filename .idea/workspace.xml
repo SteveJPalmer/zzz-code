@@ -33,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="299">
               <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -44,9 +44,7 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -124,10 +122,10 @@
     </layout>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="209" />
-    <option name="y" value="138" />
+    <option name="x" value="59" />
+    <option name="y" value="69" />
     <option name="width" value="1550" />
-    <option name="height" value="866" />
+    <option name="height" value="864" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,46 +161,7 @@
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
               <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="1-html" type="462c0819:PsiDirectoryNode" />
-              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="1-html" type="462c0819:PsiDirectoryNode" />
-              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
-              <item name="effects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="1-html" type="462c0819:PsiDirectoryNode" />
-              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
-              <item name="effects" type="462c0819:PsiDirectoryNode" />
-              <item name="animation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="1-html" type="462c0819:PsiDirectoryNode" />
-              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
-              <item name="effects" type="462c0819:PsiDirectoryNode" />
-              <item name="animation" type="462c0819:PsiDirectoryNode" />
-              <item name="animations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="1-html" type="462c0819:PsiDirectoryNode" />
-              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
-              <item name="effects" type="462c0819:PsiDirectoryNode" />
-              <item name="animation" type="462c0819:PsiDirectoryNode" />
-              <item name="animations" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="2-javascript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
@@ -430,11 +389,13 @@
       <workItem from="1563891041157" duration="1648000" />
       <workItem from="1563956392505" duration="719000" />
       <workItem from="1564054484060" duration="611000" />
+      <workItem from="1568374153019" duration="706000" />
+      <workItem from="1568627614368" duration="116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136425000" />
+    <option name="totallyTimeSpent" value="137247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,10 +407,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="138" width="1550" height="866" extended-state="0" />
+    <frame x="59" y="69" width="1550" height="864" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.26308724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.26979867" />
       <window_info id="Favorites" order="1" sideWeight="0.5022727" side_tool="true" weight="0.2012894" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1061,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="299">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1070,9 +1031,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
