@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/tools/WebStorm/ao-CodeStyle.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/tools/WebStorm/ao-LiveTemplates.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/tools/WebStorm/ao-Monokai.jar" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,100 +16,8 @@
   <component name="FavoritesManager">
     <favorites_list name="zzz-code" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>font</find>
-      <find>family</find>
-      <find>CreateOrderDto</find>
-      <find>apiRequestsPost</find>
-      <find>apiOrdersPost</find>
-      <find>apiOrdersByOrderNumberOrderablesPost</find>
-      <find>post</find>
-      <find>apiOrdersByOrderNumberOrderablesPostWithHttpInfo</find>
-      <find>ICourse</find>
-      <find>User</find>
-      <find>interfa</find>
-      <find>interface</find>
-      <find>httpClient</find>
-      <find>http</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\zzz-code\5-projects\angular\ng - storyline-tracker (ng first look)\app</dir>
-      <dir>C:\zzz-code\5-projects\angular\tissueTyping</dir>
-      <dir>C:\zzz-code\5-projects\angular\tissueTyping\ClientApp_20171204-SwaggerGen-EnvSwitch-Results</dir>
-      <dir>C:\zzz-code\5-projects\angular\ordersApp</dir>
-      <dir>C:\zzz-code\5-projects\angular\userLogin</dir>
-      <dir>C:\zzz-code\5-projects\angular</dir>
-      <dir>C:\zzz-code\5-projects\angular\ng - storyline-tracker (ng first look)</dir>
-      <dir>C:\zzz-code\5-projects\angular\ng - angular-tour-of-heroes</dir>
-      <dir>C:\zzz-code\3-frameworks\angular\httpClient\http-pre4.3\httpServiceObservable\src\app</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/index.html" />
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.html" />
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app.component.scss" />
-        <option value="C:/work_area/bootstrap-scratch/bootsrap-scratch/src/app/app-routing.module.ts" />
-        <option value="C:/work_area/temp/test-JSON-TemplateLiterals.html" />
-        <option value="$PROJECT_DIR$/2-javascript/typescript/classes.ts" />
-        <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr-FontAwesome.html" />
-        <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr.html" />
-        <option value="$PROJECT_DIR$/1-html/UI/Toastr/toastr-options.html" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/customDirectives/attribute-directives/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/5-projects/angular/userLogin/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/orderSearch/orderSearch.service.ts" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/5c - the-Holy-Grail-layout/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/3c - flex-basis/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/1 - flexContainerProps/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/2 - flexItemOrder/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/3a - flex-grow/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/3b - flex-shrink/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/4a - justify-content/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/4b - align-items/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/4c - align-content/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/flexbox/5a - equal-height-cols/styles.css" />
-        <option value="$PROJECT_DIR$/1-html/layout/fauxColumns.html" />
-        <option value="$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts" />
-      </list>
-    </option>
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -121,184 +29,25 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="69" />
-    <option name="width" value="1550" />
-    <option name="height" value="864" />
-  </component>
+  <component name="ProjectId" id="1UOBC6Q9Vz273KyUcRbP39gxJW6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="work_area" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="1-html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="2-javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="3-frameworks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="accept-order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="cl-panel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zzz-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zzz-code" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="zzz-code" type="462c0819:PsiDirectoryNode" />
-              <item name="5-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="angular" type="462c0819:PsiDirectoryNode" />
-              <item name="tissueTyping" type="462c0819:PsiDirectoryNode" />
-              <item name="ClientApp_20171204-SwaggerGen-EnvSwitch-Results" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="hla-results-entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript&#10;HTML&#10;JavaScript 1.8" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/work_area" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="C:\work_area\primeNg-scratch\prmineNg-scratch\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\5-projects\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\work_area" />
       <recent name="C:\zzz-code\1-html\layout\bootstrap4\flex -utility\src\app" />
@@ -306,16 +55,19 @@
       <recent name="C:\zzz-code\1-html\UI\Toastr" />
       <recent name="C:\zzz-code\2-javascript\ES6" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\5-projects\angular" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -391,662 +143,271 @@
       <workItem from="1564054484060" duration="611000" />
       <workItem from="1568374153019" duration="706000" />
       <workItem from="1568627614368" duration="116000" />
+      <workItem from="1575217710825" duration="2159000" />
+      <workItem from="1575221200436" duration="994000" />
+      <workItem from="1575225468081" duration="64000" />
+      <workItem from="1575225577498" duration="83000" />
+      <workItem from="1575226401734" duration="391000" />
+      <workItem from="1575226930827" duration="181000" />
+      <workItem from="1575227128476" duration="1688000" />
+      <workItem from="1575288733098" duration="2000000" />
+      <workItem from="1575294578462" duration="1018000" />
+      <workItem from="1575296622414" duration="7699000" />
+      <workItem from="1575381652697" duration="3369000" />
+      <workItem from="1575457741568" duration="2427000" />
+      <workItem from="1575543897535" duration="587000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137247000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="59" y="69" width="1550" height="864" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7435198" visible="true" weight="0.26979867" />
-      <window_info id="Favorites" order="1" sideWeight="0.5022727" side_tool="true" weight="0.2012894" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3287858" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32868218" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2510232" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.36655405" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.31782946" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="3" sideWeight="0.25648022" weight="0.20126984" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters-routing.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/shared/sort-characters.pipe.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/shared/sort-characters.pipe.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/shared/character-button/character-button.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/shared/character-button/character-button.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/character/character.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/character/character.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/character-list/character-list.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/character-list/character-list.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/boot.browser.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.shared.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.browser.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.server.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/IAppState.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/store.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/reducer.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/index.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/encoder.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/variables.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/rxjs-operators.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/configuration.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/index.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/orders.service.js" />
         <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/api.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/orderables.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/requestOrderables.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/createOrderDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/updateOrderDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/models.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/orderDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/orderableDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/encoder.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/variables.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/rxjs-operators.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/orders.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
         <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/configuration.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api/api.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api/requestResults.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/model/hLAObservationDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/model/hLAResultDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/encoder.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/variables.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/rxjs-operators.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/configuration.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/index.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/requestedTests.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/api.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/requests.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/models.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/requestDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/requestedTestDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/api/in-memory-order.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app-routing.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.actions.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/IOrder.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search.actions.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search.component.spec.js" />
         <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search-panel.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search.actions.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/test/boot-tests.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/index.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/updateOrderDto.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.service.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/variables.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/requestOrderables.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.shared.js" />
         <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/environments/environment.dev.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/requestDto.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/requestedTests.service.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/store.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/configuration.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.spec.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/model/hLAResultDto.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/index.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/createOrderDto.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/api/in-memory-order.service.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/model/hLAObservationDto.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/configuration.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/IAppState.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.browser.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app-routing.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js.map" />
         <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/environments/environment.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.server.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/IOrder.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/variables.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/orderableDto.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/variables.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/rxjs-operators.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/test/boot-tests.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/requests.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api.module.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search.actions.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/models.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.spec.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/api.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/rxjs-operators.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.spec.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/rxjs-operators.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/requestedTestDto.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.actions.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/encoder.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/orderables.service.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api/api.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/reducer.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/orderDto.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/models.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api/requestResults.service.js" />
         <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/environments/environments.interface.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/main.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/main.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/api/in-memory-store.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/api/in-memory-store.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/app.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/app.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/app-routing.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/app-routing.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/page-not-found.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/page-not-found.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/message.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/message.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/auth-guard.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/auth-guard.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/can-deactivate-guard.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/can-deactivate-guard.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/exception.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/exception.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/rxjs-extensions.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/rxjs-extensions.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/user-profile.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/user-profile.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/config.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/config.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/module-import-guard.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/module-import-guard.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/core.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/core.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/index.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/index.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/entity.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/entity.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/nav/nav.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/nav/nav.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/modal/modal.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/modal/modal.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/modal/modal.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/modal/modal.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/modal/modal.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/modal/modal.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/toast/toast.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/toast/toast.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/toast/toast.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/toast/toast.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/toast/toast.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/toast/toast.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/spinner/spinner.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/spinner/spinner.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/spinner/spinner.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/spinner/spinner.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/spinner/spinner.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/core/spinner/spinner.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/admin/admin.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/admin/admin.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/admin/admin.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/admin/admin.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/admin/admin-routing.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/admin/admin-routing.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login-routing.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login-routing.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/login/login.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/models/character.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/models/character.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/models/character.model.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/models/character.model.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/models/index.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/models/index.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/init-caps.pipe.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/init-caps.pipe.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/shared.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/shared.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/filter-text/filter-text.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/filter-text/filter-text.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/filter-text/filter-text.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/filter-text/filter-text.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/filter-text/filter-text.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/shared/filter-text/filter-text.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicles.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicles.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicles.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicles.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicles-routing.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicles-routing.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle.model.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle.model.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle-resolver.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle-resolver.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle-button/vehicle-button.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/shared/vehicle-button/vehicle-button.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicle/vehicle.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicle/vehicle.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicle-list/vehicle-list.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/vehicles/vehicle-list/vehicle-list.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/dashboard.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/dashboard.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/dashboard.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/dashboard.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/dashboard-routing.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/dashboard-routing.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/shared/dashboard-button/dashboard-button.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/dashboard/shared/dashboard-button/dashboard-button.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/ng - storyline-tracker (ng first look)/app/characters/characters-routing.module.js" />
-        <option value="C:/tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js.map" />
-        <option value="C:/tfs/HermesNGCore-StoryBranch-Steve/HermesNGUI/ClientApp/src/app/models/applicationUser.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search.actions.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/encoder.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.spec.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.spec.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/index.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/boot.browser.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/encoder.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search.component.spec.js" />
+        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js.map" />
       </list>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="dart-exception">
-          <properties />
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/zzz-code/1-html/tools" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4a - justify-content/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4b - align-items/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4b - align-items/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4c - align-content/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4c - align-content/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4d - align-self/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/4d - align-self/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/5a - equal-height-cols/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/5a - equal-height-cols/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/z-index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/positioningProps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/fauxColumns.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="78" selection-start-line="78" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/5b - dynamic-no-items/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/flexbox/5b - dynamic-no-items/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/floatContaining.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/view/pipes/src/app/hero-birthday1.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/view/pipes/protractor.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/view/pipes/src/app/hero-birthday2.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/layout/bootstrap4/flex -utility/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1978">
-          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#13;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#15;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#15;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#15;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#16;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/CLI/base/myApp/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/CLI/base/myApp/.angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/CLI/base/myApp/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/work_area/bootstrap4/flex -utility/e2e/app.po.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-javascript/libraries/RxJS/baseObservable/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-javascript/libraries/RxJS/baseObservable/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/userLogin/src/app/_services/user.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/userLogin/src/app/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/userLogin/src/app/_services/authentication.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/userLogin/src/app/_models/user.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/userLogin/src/app/_helpers/fake-backend.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="70" lean-forward="true" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/userLogin/src/app/_guards/auth.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/index.ts" />
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/httpClient/http-pre4.3/httpServiceObservable/src/app/vehicle.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/eCheckInUI/ClientApp/src/app/Services/orgs.service.ts" />
-    <entry file="file://$PROJECT_DIR$/3-frameworks/angular/httpClient/http-pre4.3/httpServciePromise/src/app/vehicle.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/clPanel/cl-panel.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/common/clPanel/cl-panel.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/courses/courses.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/orderSearch/orderSearch.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/orderSearch/orderSearch.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="85" lean-forward="true" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="85" />
-          <folding>
-            <element signature="e#125#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/courses/course-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/store/reducer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/store/store.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-828">
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/5-projects/angular/eCheckInUI" />
+      <path value="$PROJECT_DIR$/5-projects/asp.net-core/hermes/eCheckInUI" />
+    </ignored-roots>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="-1440" y="222" key="#Custom_Plugin_Repositories" timestamp="1575460126331">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1440" y="222" key="#Custom_Plugin_Repositories/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575460126331" />
+    <state x="-1593" y="126" key="#Menus_and_Toolbars" timestamp="1575304413323">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1593" y="126" key="#Menus_and_Toolbars/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304413323" />
+    <state x="-1593" y="126" key="#Scopes" timestamp="1575296672235">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1593" y="126" key="#Scopes/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575296672235" />
+    <state x="-1731" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575304375295">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1731" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304375295" />
+    <state x="-1466" y="354" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1575304577314">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1466" y="354" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304577314" />
+    <state x="-1596" y="3" width="1091" height="988" key="CommitChangelistDialog2" timestamp="1575300920675">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1596" y="3" width="1091" height="988" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575300920675" />
+    <state x="-1499" y="187" key="FileChooserDialogImpl" timestamp="1575383373330">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1499" y="187" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575383373330" />
+    <state x="-1545" y="177" width="1026" height="775" key="SettingsEditor" timestamp="1575460197255">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1545" y="177" width="1026" height="775" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575460197255" />
+    <state width="512" height="446" key="SwitcherDM" timestamp="1575301463958">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state width="512" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575301463958" />
+    <state x="-1593" y="196" key="Vcs.Push.Dialog.v2" timestamp="1575300880095">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1593" y="196" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575300880095" />
+    <state x="-1489" y="296" key="cloudConfig.PluginsDialog" timestamp="1575221140757">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1489" y="296" key="cloudConfig.PluginsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575221140757" />
+    <state x="-1609" y="298" key="cloudConfig.SelfSettingsDialog" timestamp="1575304599529">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1609" y="298" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304599529" />
+    <state x="-1821" y="166" width="1225" height="699" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1575383381170">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1821" y="166" width="1225" height="699" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575383381170" />
+    <state x="-1394" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575302756400">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1394" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575302756400" />
+    <state x="-1490" y="50" width="610" height="837" key="find.popup" timestamp="1575302367674">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1490" y="50" width="610" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575302367674" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1575382480243">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575382480243" />
+    <state x="-1544" y="183" width="700" height="530" key="recent.locations.popup" timestamp="1575301477525">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1544" y="183" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575301477525" />
+    <state x="-1522" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1575304422333">
+      <screen x="-1920" y="0" width="1920" height="1078" />
+    </state>
+    <state x="-1522" y="212" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304422333" />
   </component>
 </project>
