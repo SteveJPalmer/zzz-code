@@ -1,7 +1,7 @@
 <h2>Bypass Security Component</h2>
 
 <h3>Html:</h3>
-<p><i>cant use interpolation - must use binding (Angular sanitizes): </i> <span>{{evilSVG}}</span></p>
+<p><i>cant use interpolation (Angular sanitizes) - ** must use binding **: </i> <span>{{evilSVG}}</span></p>
 <p><i>evilSVG (Angular sanitizes): </i> <span [innerHtml]="evilSVG"></span></p>
 <p><i>safeSVG innerHtml:</i> <span [innerHtml]="safeSVG"></span></p>
 
