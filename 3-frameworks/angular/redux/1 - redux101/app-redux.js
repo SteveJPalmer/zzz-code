@@ -77,7 +77,7 @@ addView((state) => {
   console.log(`There are ${state.courses.length} courses in the library`);
 });
 
-/* create our second view  - reports latest courses */
+/* create our second view  - reports latest course */
 addView((state) => {
   console.log(`The latest course in the library: ${state.courses[state.courses.length -1].name}`);
 });

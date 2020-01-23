@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/css-pre-processors/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/1-html/css-pre-processors/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransformAndTransition.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransformAndTransition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/css/cssTransition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/javascript/setInterval/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-html/visualisation/effects/animation/animations/javascript/setInterval/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-javascript/events/scrolling/hideHeader/index-headerHide.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-javascript/events/scrolling/hideHeader/index-headerHide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-javascript/events/scrolling/hideHeader/index-scrollEventBinding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-javascript/events/scrolling/pin/basicPin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3-frameworks/angular/redux/1 - redux101/app-redux.js" beforeDir="false" afterPath="$PROJECT_DIR$/3-frameworks/angular/redux/1 - redux101/app-redux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-projects/angular/Tech Notes.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-projects/angular/hermes/eCheckInUI/ClientApp/src/app/dropoff/dropoff.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-projects/angular/hermes/eCheckInUI/ClientApp/src/app/dropoff/dropoff.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/common/clPanel/cl-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/common/clPanel/cl-panel.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/common/clPanel/cl-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-projects/angular/ordersApp/ordersApp/src/app/common/clPanel/cl-panel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +32,12 @@
     <node-interpreter value="project" />
     <bower-package value="" />
     <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -38,9 +57,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript&#10;HTML&#10;JavaScript 1.8" />
     <property name="editor.config.ad.shown" value="true" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -55,12 +79,23 @@
       <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
     <configuration name="index-d3-DataLoad-JSON.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/zzz-code/1-html/visualisation/D3/Base/index-d3-DataLoad-JSON.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="ng" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/5-projects/angular/hermes/eCheckInUI/ClientApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ng" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.ng" />
         <item itemvalue="JavaScript Debug.index-d3-DataLoad-JSON.html" />
       </list>
     </recent_temporary>
@@ -164,6 +199,16 @@
       <workItem from="1575543897535" duration="587000" />
       <workItem from="1575903870727" duration="1667000" />
       <workItem from="1576167551471" duration="780000" />
+      <workItem from="1578497205744" duration="1490000" />
+      <workItem from="1578571020861" duration="1782000" />
+      <workItem from="1578581488548" duration="5854000" />
+      <workItem from="1578653841618" duration="3311000" />
+      <workItem from="1578757967669" duration="2639000" />
+      <workItem from="1578840486045" duration="2015000" />
+      <workItem from="1579528244814" duration="4058000" />
+      <workItem from="1579602464040" duration="7205000" />
+      <workItem from="1579692186711" duration="3767000" />
+      <workItem from="1579774857734" duration="8423000" />
     </task>
     <servers />
   </component>
@@ -171,127 +216,58 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/api.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/orders.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/configuration.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search-panel.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/index.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/updateOrderDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/variables.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/requestOrderables.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.shared.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/environments/environment.dev.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/requestDto.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/requestedTests.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/store.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/configuration.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.spec.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/model/hLAResultDto.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/index.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/createOrderDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/api/in-memory-order.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/model/hLAObservationDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/configuration.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/IAppState.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.browser.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/app/app-routing.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/environments/environment.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/app.module.server.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/IOrder.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/variables.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/orderableDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/variables.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/rxjs-operators.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/test/boot-tests.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/requests.service.js" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js.map" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api.module.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search.actions.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/models.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/api/api.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/rxjs-operators.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.helper.service.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/rxjs-operators.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/requestedTestDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.actions.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/encoder.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/cl-panel/cl-panel.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/api/orderables.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api/api.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/reducer.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/model/orderDto.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/model/models.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/results/api/requestResults.service.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/environments/environments.interface.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js.map" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search.actions.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/requests/encoder.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/accept-order/accept-order.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/order-search-panel/order-search-panel.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/store/index.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/boot.browser.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/services/orders/encoder.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
         <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/request-search-panel/request-search.component.spec.js" />
-        <option value="$PROJECT_DIR$/5-projects/angular/tissueTyping/ClientApp_20171204-SwaggerGen-EnvSwitch-Results/app/components/hla-results-entry/hla-results-entry.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
+        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js.map" />
       </list>
     </option>
   </component>
@@ -365,24 +341,53 @@
       <screen x="-1920" y="0" width="1920" height="1078" />
     </state>
     <state x="-1466" y="354" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304577314" />
+    <state x="610" y="300" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1579781216286">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="610" y="300" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781216286" />
+    <state x="578" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579776490887">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="578" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776490887" />
     <state x="-1596" y="3" width="1091" height="988" key="CommitChangelistDialog2" timestamp="1575300920675">
       <screen x="-1920" y="0" width="1920" height="1078" />
     </state>
     <state x="-1596" y="3" width="1091" height="988" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575300920675" />
-    <state x="421" y="187" key="FileChooserDialogImpl" timestamp="1575903888050">
+    <state x="144" y="152" width="1382" height="766" key="DiffContextDialog" timestamp="1579776074763">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="144" y="152" width="1382" height="766" key="DiffContextDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776074763" />
+    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1578497523618">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1499" y="187" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575383373330" />
-    <state x="421" y="187" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575903888050" />
-    <state x="846" y="28" width="1026" height="775" key="SettingsEditor" timestamp="1575906266667">
+    <state x="259" y="226" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1578497523618" />
+    <state width="1522" height="216" key="GridCell.Tab.0.bottom" timestamp="1579777923017">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1522" height="216" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
+    <state width="1522" height="216" key="GridCell.Tab.0.center" timestamp="1579777923017">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1522" height="216" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
+    <state width="1522" height="216" key="GridCell.Tab.0.left" timestamp="1579777923017">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1522" height="216" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
+    <state width="1522" height="216" key="GridCell.Tab.0.right" timestamp="1579777923017">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1522" height="216" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
+    <state x="271" y="93" width="1108" height="850" key="SettingsEditor" timestamp="1579781356832">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1545" y="177" width="1026" height="775" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575460197255" />
-    <state x="846" y="28" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575906266667" />
-    <state width="512" height="446" key="SwitcherDM" timestamp="1575301463958">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="271" y="93" width="1108" height="850" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781356832" />
+    <state width="512" height="447" key="SwitcherDM" timestamp="1579778730013">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="512" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575301463958" />
+    <state width="512" height="447" key="SwitcherDM/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579778730013" />
     <state x="-1593" y="196" key="Vcs.Push.Dialog.v2" timestamp="1575300880095">
       <screen x="-1920" y="0" width="1920" height="1078" />
     </state>
@@ -395,26 +400,43 @@
       <screen x="-1920" y="0" width="1920" height="1078" />
     </state>
     <state x="-1609" y="298" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304599529" />
-    <state x="-1821" y="166" width="1225" height="699" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1575383381170">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="99" y="166" width="1225" height="701" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1579776749515">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1821" y="166" width="1225" height="699" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575383381170" />
-    <state x="-1394" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575302756400">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="99" y="166" width="1225" height="701" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776749515" />
+    <state x="144" y="152" width="1379" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579775918874">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="144" y="152" width="1379" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579775918874" />
+    <state x="144" y="152" width="1382" height="766" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1579775918874">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="144" y="152" width="1382" height="766" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579775918874" />
+    <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579781716232">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1394" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575302756400" />
-    <state x="-1490" y="50" width="610" height="837" key="find.popup" timestamp="1575302367674">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781716232" />
+    <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1579528344244">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1490" y="50" width="610" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575302367674" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1575382480243">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="430" y="50" width="1002" height="839" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579528344244" />
+    <state width="600" height="441" key="javadoc.popup" timestamp="1579781794120">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575382480243" />
-    <state x="-1544" y="183" width="700" height="530" key="recent.locations.popup" timestamp="1575301477525">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state width="600" height="441" key="javadoc.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781794120" />
+    <state x="376" y="183" width="700" height="531" key="recent.locations.popup" timestamp="1579778777246">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1544" y="183" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575301477525" />
+    <state x="376" y="183" width="700" height="531" key="recent.locations.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579778777246" />
+    <state x="616" y="207" key="refactoring.ChangeSignatureDialog" timestamp="1579777443508">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="207" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777443508" />
     <state x="-1522" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1575304422333">
       <screen x="-1920" y="0" width="1920" height="1078" />
     </state>
