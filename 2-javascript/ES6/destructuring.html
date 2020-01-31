@@ -12,13 +12,8 @@
   <script>
   /* test prep */  
   function myHarness() {
-    //inputs
-    var value1 = 'test';
-    var value2 = 'test2';
-
     //test call
-    var res = testFn(value1, value2);
-    
+    var res = testFn('testArg1', 'testArg2');
     //outputs
     document.getElementById("output").innerHTML = res;
   }

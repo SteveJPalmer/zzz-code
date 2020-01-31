@@ -11,12 +11,10 @@ console.timeEnd('loop-100');  // prints loop-100: 0.7ms
 /* EMCA5 timing fn */
 var start = Date.now();	 					//start time (number ms)
 console.log('start: ' + start);
-
 //just to slow it down a bit (taking 0)
 for (var i = 0; i < 1000000; i++) {
   null;
 }
-
 //process running
 var stop = Date.now();						//stop time (number ms)
 console.log('end: ' + stop);

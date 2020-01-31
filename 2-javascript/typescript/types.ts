@@ -2,7 +2,7 @@
  **  variables  **
  *****************/
 
- //types
+//types
 var myString : string = 'test';   //type string..
 var myNumber : number = 1;
 var myBoolean : boolean = true;
@@ -11,7 +11,7 @@ myString = myNumber;              //compiler error
 myString = myNumber.toString();   //ok
 
 // : Any  - relax type checking
-var item1 : any = { id:1, name:"item 1" };
+var item1 = { id:1, name:"item 1" };
 item1 = { id:2 };			//is now ok (:any relaxes strict type checking)
 
 //inferred typing
@@ -67,7 +67,7 @@ var result = addNumbers(1, 2);					//3 - ok
 var result = addNumbers("1", "2");			//compilation error, as strings passed not numbers
 
 //anonymous fns
-var addNumbers2 = function(a: number, b: number): number { return a + b; }
+var addNumbers2 = function(a: number, b: number): number { return a + b; };
 
 //fat arrow fns (to right of =)
 var addNumbers3 = (a: number, b: number): number => a + b;
