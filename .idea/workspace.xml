@@ -1,20 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/baseTemplateForm/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/baseTemplateForm/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/baseTemplateForm/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-javascript/ES6/RESTParam-wihDestructuring.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-javascript/ES6/RESTParam-wihDestructuring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-javascript/ES6/destructuring.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-javascript/ES6/destructuring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-javascript/dates/timingProcesses.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-javascript/dates/timingProcesses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-javascript/typescript/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-javascript/typescript/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/.angular-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/e2e/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/e2e/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/hero-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/hero-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/hero-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/hero-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/hero.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/typings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="zzz-code" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,17 +86,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript&#10;HTML&#10;JavaScript 1.8" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2-frameworks/angular/view/forms/advTemplateForm" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
@@ -63,11 +110,11 @@
       <recent name="C:\zzz-code\5-projects\angular" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
       <recent name="C:\zzz-code\1-html\layout\bootstrap4\flex -utility\src\app" />
       <recent name="C:\zzz-code\1-html\layout\bootstrap4\flex -utility" />
-      <recent name="C:\zzz-code\1-html\UI\Toastr" />
-      <recent name="C:\zzz-code\2-javascript\ES6" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -90,18 +137,6 @@
         <item itemvalue="JavaScript Debug.index-d3-DataLoad-JSON.html" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -204,65 +239,70 @@
       <workItem from="1580147059993" duration="145000" />
       <workItem from="1580385022970" duration="2575000" />
       <workItem from="1580393341342" duration="5613000" />
+      <workItem from="1585751355388" duration="480000" />
+      <workItem from="1585752193518" duration="904000" />
+      <workItem from="1586179636553" duration="107000" />
+      <workItem from="1586446619041" duration="2106000" />
+      <workItem from="1586788975293" duration="1737000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicles.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/vehicle.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/main.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/baseService/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
-        <option value="$PROJECT_DIR$/3-frameworks/angular/services/nestedServices/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/main.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/main.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/app.module.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicle.service.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicles.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.module.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/main.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/main.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.service.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.module.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/main.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/main.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/main.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
+        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
       </list>
     </option>
   </component>
@@ -296,18 +336,17 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -316,26 +355,14 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1440" y="222" key="#Custom_Plugin_Repositories" timestamp="1575460126331">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="432" y="158" key="#Scopes" timestamp="1585752486717">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1440" y="222" key="#Custom_Plugin_Repositories/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575460126331" />
-    <state x="-1593" y="126" key="#Menus_and_Toolbars" timestamp="1575304413323">
-      <screen x="-1920" y="0" width="1920" height="1078" />
+    <state x="432" y="158" key="#Scopes/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585752486717" />
+    <state x="529" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585751811954">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1593" y="126" key="#Menus_and_Toolbars/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304413323" />
-    <state x="-1593" y="126" key="#Scopes" timestamp="1575296672235">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1593" y="126" key="#Scopes/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575296672235" />
-    <state x="-1731" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575304375295">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1731" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304375295" />
-    <state x="-1466" y="354" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1575304577314">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1466" y="354" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304577314" />
+    <state x="529" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585751811954" />
     <state x="610" y="300" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1579781216286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -344,10 +371,6 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="578" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776490887" />
-    <state x="-1596" y="3" width="1091" height="988" key="CommitChangelistDialog2" timestamp="1575300920675">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1596" y="3" width="1091" height="988" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575300920675" />
     <state x="144" y="152" width="1382" height="766" key="DiffContextDialog" timestamp="1579776074763">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -355,7 +378,6 @@
     <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1580393569042">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1499" y="187" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575383373330" />
     <state x="259" y="226" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580393569042" />
     <state width="1522" height="216" key="GridCell.Tab.0.bottom" timestamp="1579777923017">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -376,30 +398,18 @@
     <state x="271" y="93" width="1108" height="850" key="SettingsEditor" timestamp="1580403371415">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1545" y="177" width="1026" height="775" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575460197255" />
     <state x="271" y="93" width="1108" height="850" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403371415" />
     <state width="512" height="447" key="SwitcherDM" timestamp="1579778730013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="512" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575301463958" />
     <state width="512" height="447" key="SwitcherDM/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579778730013" />
-    <state x="-1593" y="196" key="Vcs.Push.Dialog.v2" timestamp="1575300880095">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1593" y="196" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575300880095" />
-    <state x="-1489" y="296" key="cloudConfig.PluginsDialog" timestamp="1575221140757">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1489" y="296" key="cloudConfig.PluginsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575221140757" />
     <state x="311" y="299" key="cloudConfig.SelfSettingsDialog" timestamp="1580403401766">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1609" y="298" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304599529" />
     <state x="311" y="299" key="cloudConfig.SelfSettingsDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403401766" />
     <state x="99" y="166" width="1225" height="701" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1579776749515">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1821" y="166" width="1225" height="699" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575383381170" />
     <state x="99" y="166" width="1225" height="701" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776749515" />
     <state x="144" y="152" width="1379" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579775918874">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -412,30 +422,23 @@
     <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579781716232">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1394" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575302756400" />
     <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781716232" />
-    <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1579528344244">
+    <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1586447376391">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1490" y="50" width="610" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575302367674" />
+    <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586447376391" />
     <state x="430" y="50" width="1002" height="839" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579528344244" />
     <state width="600" height="441" key="javadoc.popup" timestamp="1579781794120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="600" height="440" key="javadoc.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575382480243" />
     <state width="600" height="441" key="javadoc.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781794120" />
     <state x="376" y="183" width="700" height="531" key="recent.locations.popup" timestamp="1579778777246">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1544" y="183" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575301477525" />
     <state x="376" y="183" width="700" height="531" key="recent.locations.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579778777246" />
     <state x="616" y="207" key="refactoring.ChangeSignatureDialog" timestamp="1579777443508">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="207" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777443508" />
-    <state x="-1522" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1575304422333">
-      <screen x="-1920" y="0" width="1920" height="1078" />
-    </state>
-    <state x="-1522" y="212" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1078@-1920.0.1920.1078" timestamp="1575304422333" />
   </component>
 </project>

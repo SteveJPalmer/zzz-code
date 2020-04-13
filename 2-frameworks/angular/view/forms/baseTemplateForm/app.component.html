@@ -1,0 +1,21 @@
+<div>
+  <!--  base Template Form to examine FormModel (FormGroup & FormControl) -->
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" >
+    <pre>Form value: {{ myForm.value | json }}</pre>
+    <pre>Form valid: {{ myForm.valid }}</pre>
+    <div>
+      <label for="myId">First</label>
+      <input #first="ngModel" name="first" ngModel required id="myId"/></div>
+    <div>
+      <label for="myId2">Last</label>
+      <input name="last" [(ngModel)]="last" id="myId2"/></div>  <!-- additional explicit two-way binding to comp data structure -->
+      <pre>First name value: {{ first.value }}</pre>
+      <pre>First name valid: {{ first.valid }}</pre>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+
+</div>
