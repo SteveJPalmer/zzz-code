@@ -20,43 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/baseTemplateForm/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/baseTemplateForm/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/baseTemplateForm/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/username.validator.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/.angular-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/hero-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/hero-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/hero-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/hero-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/app/hero.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/fullTemplateForm/hero.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/formApp/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,26 +63,30 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript&#10;HTML&#10;JavaScript 1.8" />
     <property name="editor.config.ad.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/2-frameworks/angular/view/forms/advTemplateForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\5-projects\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
-      <recent name="C:\zzz-code\1-html\layout\bootstrap4\flex -utility\src\app" />
-      <recent name="C:\zzz-code\1-html\layout\bootstrap4\flex -utility" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -244,6 +216,12 @@
       <workItem from="1586179636553" duration="107000" />
       <workItem from="1586446619041" duration="2106000" />
       <workItem from="1586788975293" duration="1737000" />
+      <workItem from="1586878713431" duration="1217000" />
+      <workItem from="1586954275500" duration="637000" />
+      <workItem from="1586957371025" duration="836000" />
+      <workItem from="1586958222381" duration="838000" />
+      <workItem from="1586959134477" duration="1075000" />
+      <workItem from="1587226114155" duration="1293000" />
     </task>
     <servers />
   </component>
@@ -375,9 +353,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="144" y="152" width="1382" height="766" key="DiffContextDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776074763" />
-    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1580393569042">
+    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1586960022007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="259" y="226" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586960022007" />
     <state x="259" y="226" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580393569042" />
     <state width="1522" height="216" key="GridCell.Tab.0.bottom" timestamp="1579777923017">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -395,10 +374,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1522" height="216" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
-    <state x="271" y="93" width="1108" height="850" key="SettingsEditor" timestamp="1580403371415">
+    <state x="603" y="33" width="1108" height="850" key="SettingsEditor" timestamp="1586958990329">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="603" y="33" key="SettingsEditor/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586958990329" />
     <state x="271" y="93" width="1108" height="850" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403371415" />
+    <state width="247" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1586959643442">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="247" height="198" key="ShowFilterAction_Filter_Popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959643442" />
     <state width="512" height="447" key="SwitcherDM" timestamp="1579778730013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -423,14 +407,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781716232" />
-    <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1586447376391">
+    <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1586959941654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586447376391" />
+    <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959941654" />
     <state x="430" y="50" width="1002" height="839" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579528344244" />
-    <state width="600" height="441" key="javadoc.popup" timestamp="1579781794120">
+    <state width="600" height="441" key="javadoc.popup" timestamp="1586958389005">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="600" height="441" key="javadoc.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586958389005" />
     <state width="600" height="441" key="javadoc.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781794120" />
     <state x="376" y="183" width="700" height="531" key="recent.locations.popup" timestamp="1579778777246">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -440,5 +425,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="207" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777443508" />
+    <state x="613" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1586959694361">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="613" y="245" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959694361" />
   </component>
 </project>
