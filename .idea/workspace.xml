@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/username.validator.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/username.validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/username.validator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +219,7 @@
       <workItem from="1586958222381" duration="838000" />
       <workItem from="1586959134477" duration="1075000" />
       <workItem from="1587226114155" duration="1293000" />
+      <workItem from="1587571622665" duration="26000" />
     </task>
     <servers />
   </component>
@@ -425,6 +423,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="207" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777443508" />
+    <state x="696" y="247" key="run.anything.popup" timestamp="1587571641771">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="696" y="247" key="run.anything.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1587571641771" />
     <state x="613" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1586959694361">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

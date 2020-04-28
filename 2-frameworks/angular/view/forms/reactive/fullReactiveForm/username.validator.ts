@@ -2,6 +2,7 @@
 /* ------------------------------------------------ */
 import { AbstractControl } from '@angular/forms';     //if required
 import { ValidatorFn } from '@angular/forms';         //if required
+import { FormGroup, ValidationErrors } from '@angular/forms';   //if required
 
 /* Basic fn receives control & returns either null (if passes) or key:value error obj (if fails) */
 export function forbiddenNameValidator(control: AbstractControl): {[key: string]: any} | null {
