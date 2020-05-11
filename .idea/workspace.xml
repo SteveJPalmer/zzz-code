@@ -16,17 +16,26 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/username.validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm/username.validator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../zzz-code\exportToHTML" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,28 +71,28 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/2-frameworks/angular/view/forms/reactive/fullReactiveForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../workArea" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
-      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -220,6 +229,14 @@
       <workItem from="1586959134477" duration="1075000" />
       <workItem from="1587226114155" duration="1293000" />
       <workItem from="1587571622665" duration="26000" />
+      <workItem from="1588690868542" duration="460000" />
+      <workItem from="1588691342032" duration="547000" />
+      <workItem from="1588691900566" duration="204000" />
+      <workItem from="1588692115063" duration="47000" />
+      <workItem from="1588692172171" duration="362000" />
+      <workItem from="1588692713352" duration="548000" />
+      <workItem from="1588693501699" duration="1648000" />
+      <workItem from="1588774740146" duration="33000" />
     </task>
     <servers />
   </component>
@@ -312,7 +329,24 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -339,90 +373,37 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="529" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585751811954" />
-    <state x="610" y="300" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1579781216286">
+    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1588774775310">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="610" y="300" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781216286" />
-    <state x="578" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579776490887">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="578" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776490887" />
-    <state x="144" y="152" width="1382" height="766" key="DiffContextDialog" timestamp="1579776074763">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="144" y="152" width="1382" height="766" key="DiffContextDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776074763" />
-    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1586960022007">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="259" y="226" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586960022007" />
+    <state x="259" y="226" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588774775310" />
     <state x="259" y="226" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580393569042" />
-    <state width="1522" height="216" key="GridCell.Tab.0.bottom" timestamp="1579777923017">
+    <state x="263" y="247" key="IDE.errors.dialog" timestamp="1588692003030">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1522" height="216" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
-    <state width="1522" height="216" key="GridCell.Tab.0.center" timestamp="1579777923017">
+    <state x="263" y="247" key="IDE.errors.dialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588692003030" />
+    <state x="231" y="98" width="1083" height="738" key="SettingsEditor" timestamp="1588693159077">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1522" height="216" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
-    <state width="1522" height="216" key="GridCell.Tab.0.left" timestamp="1579777923017">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1522" height="216" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
-    <state width="1522" height="216" key="GridCell.Tab.0.right" timestamp="1579777923017">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1522" height="216" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777923017" />
-    <state x="603" y="33" width="1108" height="850" key="SettingsEditor" timestamp="1586958990329">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="603" y="33" key="SettingsEditor/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586958990329" />
+    <state x="231" y="98" width="1083" height="738" key="SettingsEditor/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588693159077" />
     <state x="271" y="93" width="1108" height="850" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403371415" />
     <state width="247" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1586959643442">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="247" height="198" key="ShowFilterAction_Filter_Popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959643442" />
-    <state width="512" height="447" key="SwitcherDM" timestamp="1579778730013">
+    <state x="288" y="338" width="462" height="411" key="cloudConfig.SelfSettingsDialog" timestamp="1588691017623">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="512" height="447" key="SwitcherDM/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579778730013" />
-    <state x="311" y="299" key="cloudConfig.SelfSettingsDialog" timestamp="1580403401766">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
+    <state x="288" y="338" width="462" height="411" key="cloudConfig.SelfSettingsDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588691017623" />
     <state x="311" y="299" key="cloudConfig.SelfSettingsDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403401766" />
-    <state x="99" y="166" width="1225" height="701" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1579776749515">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="99" y="166" width="1225" height="701" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579776749515" />
-    <state x="144" y="152" width="1379" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579775918874">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="144" y="152" width="1379" height="777" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579775918874" />
-    <state x="144" y="152" width="1382" height="766" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1579775918874">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="144" y="152" width="1382" height="766" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579775918874" />
-    <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579781716232">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="526" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781716232" />
     <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1586959941654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959941654" />
-    <state x="430" y="50" width="1002" height="839" key="find.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579528344244" />
     <state width="600" height="441" key="javadoc.popup" timestamp="1586958389005">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="600" height="441" key="javadoc.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586958389005" />
-    <state width="600" height="441" key="javadoc.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579781794120" />
-    <state x="376" y="183" width="700" height="531" key="recent.locations.popup" timestamp="1579778777246">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="376" y="183" width="700" height="531" key="recent.locations.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579778777246" />
-    <state x="616" y="207" key="refactoring.ChangeSignatureDialog" timestamp="1579777443508">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="616" y="207" key="refactoring.ChangeSignatureDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1579777443508" />
     <state x="696" y="247" key="run.anything.popup" timestamp="1587571641771">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
