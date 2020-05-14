@@ -35,13 +35,12 @@
       });
 
       it('string true: should be truthy', function () {		//matcher is for boolean casting testing
+        console.log('......>>>>>executing Tests1');
         expect(true).toBeTruthy();                      	//will pass
-      });
-      it('String true: should fail falsy', function () {
-        expect(true).toBeFalsy();                       	//will fail
       });
 
       it("mySum should add correctly", function() {
+        console.log('......>>>>>executing Tests1');
         //var a = 12;
         expect(mySum(1,2)).toEqual(3,'test mgs');
       });
@@ -61,16 +60,12 @@
         console.info('......beforeEach - Tests2');
       });
       it('string true: should be truthy', function () {		//matcher is for boolean casting testing
+        console.log('......>>>>>executed Tests2');
         expect(true).toBeTruthy();                      	//will pass
-        expect(false).toBeFalsy();                      	//will pass
-        expect('boo!').toBeTruthy();                      //will pass
       });
 
     });
 
   });
-
-
-
 
 })();
