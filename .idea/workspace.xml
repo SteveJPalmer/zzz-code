@@ -28,6 +28,17 @@
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/karma-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/src/Player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/src/Song.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/src/myCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/test/PlayerSpec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/test/SpecHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/test/mySpecs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component-externalTemplate.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component-externalTemplate.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component-inlineTemplate.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,18 +92,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
-      <recent name="C:\zzz-code\5-projects\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -237,6 +248,11 @@
       <workItem from="1588692713352" duration="548000" />
       <workItem from="1588693501699" duration="1648000" />
       <workItem from="1588774740146" duration="33000" />
+      <workItem from="1589970354760" duration="83000" />
+      <workItem from="1589970446282" duration="975000" />
+      <workItem from="1589985148127" duration="4539000" />
+      <workItem from="1590059219340" duration="595000" />
+      <workItem from="1590077523783" duration="1260000" />
     </task>
     <servers />
   </component>
@@ -377,7 +393,6 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="259" y="226" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588774775310" />
-    <state x="259" y="226" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580393569042" />
     <state x="263" y="247" key="IDE.errors.dialog" timestamp="1588692003030">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -386,7 +401,6 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="231" y="98" width="1083" height="738" key="SettingsEditor/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588693159077" />
-    <state x="271" y="93" width="1108" height="850" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403371415" />
     <state width="247" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1586959643442">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -395,11 +409,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="288" y="338" width="462" height="411" key="cloudConfig.SelfSettingsDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588691017623" />
-    <state x="311" y="299" key="cloudConfig.SelfSettingsDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1580403401766" />
-    <state x="430" y="50" width="1002" height="839" key="find.popup" timestamp="1586959941654">
+    <state x="430" y="50" width="1002" height="999" key="find.popup" timestamp="1589970751104">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959941654" />
+    <state x="430" y="50" width="1002" height="999" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1589970751104" />
     <state width="600" height="441" key="javadoc.popup" timestamp="1586958389005">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
