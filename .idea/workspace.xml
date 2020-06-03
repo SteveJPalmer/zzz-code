@@ -26,20 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/karma-config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/src/Player.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/src/Song.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/src/myCode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/test/PlayerSpec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/test/SpecHelper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/Karma/test/mySpecs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component-externalTemplate.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component-externalTemplate.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component-inlineTemplate.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/testing/TestBed/componentTests101/src/app/app.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,18 +79,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
-      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -253,6 +240,7 @@
       <workItem from="1589985148127" duration="4539000" />
       <workItem from="1590059219340" duration="595000" />
       <workItem from="1590077523783" duration="1260000" />
+      <workItem from="1590156266939" duration="6417000" />
     </task>
     <servers />
   </component>
