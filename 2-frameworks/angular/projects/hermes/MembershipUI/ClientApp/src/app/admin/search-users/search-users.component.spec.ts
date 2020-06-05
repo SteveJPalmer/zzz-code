@@ -24,6 +24,7 @@ describe('SearchUsersComponent', () => {
     const navMenuSpyObj = jasmine.createSpyObj('NavMenuService', ['setPageTitle', 'setupUserAccount']);
     const spinnerSpyObj = jasmine.createSpyObj('NgxSpinnerService', ['show', 'hide']);
     activatedRoute = new ActivatedRouteStub();
+    
     MockOrgsService = {
       data: {},
       error: 'test error',

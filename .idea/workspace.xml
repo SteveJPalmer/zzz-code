@@ -26,7 +26,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="" />
+    <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/projects/hermes/MembershipUI/ClientApp/src/app/admin/search-users/activated-route-stub.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/projects/hermes/MembershipUI/ClientApp/src/app/admin/search-users/activated-route-stub.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/projects/hermes/MembershipUI/ClientApp/src/app/admin/search-users/search-users.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-frameworks/angular/projects/hermes/MembershipUI/ClientApp/src/app/admin/search-users/search-users.component.spec.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,18 +83,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
-      <recent name="C:\zzz-code\5-projects\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -241,6 +245,10 @@
       <workItem from="1590059219340" duration="595000" />
       <workItem from="1590077523783" duration="1260000" />
       <workItem from="1590156266939" duration="6417000" />
+      <workItem from="1591366446265" duration="616000" />
+      <workItem from="1591367076962" duration="855000" />
+      <workItem from="1591367986932" duration="690000" />
+      <workItem from="1591383944079" duration="63000" />
     </task>
     <servers />
   </component>
@@ -373,22 +381,28 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="432" y="158" key="#Scopes/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585752486717" />
+    <state x="358" y="365" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1591367063894">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="358" y="365" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591367063894" />
     <state x="529" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585751811954">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="529" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1585751811954" />
-    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1588774775310">
+    <state x="259" y="226" key="FileChooserDialogImpl" timestamp="1591384102639">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="259" y="226" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588774775310" />
+    <state x="259" y="226" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591384102639" />
     <state x="263" y="247" key="IDE.errors.dialog" timestamp="1588692003030">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="263" y="247" key="IDE.errors.dialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588692003030" />
-    <state x="231" y="98" width="1083" height="738" key="SettingsEditor" timestamp="1588693159077">
+    <state x="188" y="71" width="1143" height="920" key="SettingsEditor" timestamp="1591367921620">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="231" y="98" width="1083" height="738" key="SettingsEditor/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1588693159077" />
+    <state x="188" y="71" width="1143" height="920" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591367921620" />
     <state width="247" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1586959643442">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
