@@ -9,18 +9,29 @@ const { SpecReporter } = require('jasmine-spec-reporter');
  */
 exports.config = {
   allScriptsTimeout: 11000,
-  specs: [
-    './src/**/*.e2e-spec.ts'
-  ],
-  capabilities: {
-    browserName: 'chrome'
+  // specs: [
+  //   './src/**/*.e2e-spec.ts'
+  // ],
+  suites: {
+    home: './src/home/**/*.e2e-spec.ts',
+    steve: ['./src/steve/**/*.e2e-spec.ts',
+      './src/steve/**/*others.e2e-spec.ts']
   },
+  Capabilities: {
+    'browserName': 'chrome'
+  },
+  // multiCapabilities: [{
+  //   'browserName': 'firefox'
+  // }, {
+  //   'browserName': 'chrome'
+  // }],
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
+  SELENIUM_PROMISE_MANAGER: false,
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 30000,
+    defaultTimeoutInterval: 300000000,
     print: function() {}
   },
   onPrepare() {
