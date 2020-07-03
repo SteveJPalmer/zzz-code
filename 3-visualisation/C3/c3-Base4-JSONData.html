@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!-- Load c3.css -->
+  <link href="./c3-0.7.18/c3.css" rel="stylesheet">
+  <!-- Load d3.js and c3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./c3-0.7.18/c3.js"></script>
+</head>
+<body>
+  <div id="my-container"></div>
+  <div id="my-container2"></div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    /* example:1 - column orientated data */
+    var initialJSONData = {
+      "data1": [30, 200, 100, 150, 250],
+      "data2": [50, 20, 10, 40, 25]
+    };
+
+    console.log("DOM fully loaded and parsed");
+    // call generate() with arg obj
+    var chart = c3.generate({
+      bindto: '#my-container',
+      data: {
+        json: initialJSONData
+      },
+      axis: {
+        y: {
+          label: { // ADD
+            text: 'Y Label Name',
+            position: 'outer-middle'
+          }
+        }
+      }
+    });
+
+
+    /* example:1 - category orientated data */
+    /* JSON Array */
+    var moreJSONData = [
+        {name: 'www.site1.com', upload: 200, download: 200, total: 400},
+        {name: 'www.site2.com', upload: 100, download: 300, total: 400},
+        {name: 'www.site3.com', upload: 300, download: 200, total: 500},
+        {name: 'www.site4.com', upload: 400, download: 100, total: 500}
+    ];
+    /* or JSON obj */
+    // var moreJSONData = { "myRecords": [
+    //   {name: 'www.site1.com', upload: 200, download: 200, total: 400},
+    //   {name: 'www.site2.com', upload: 100, download: 300, total: 400},
+    //   {name: 'www.site3.com', upload: 300, download: 200, total: 500},
+    //   {name: 'www.site4.com', upload: 400, download: 100, total: 500}
+    // ]}
+
+    var chart = c3.generate({
+      bindto: '#my-container2',
+      data: {
+        json: moreJSONData,                     // or JSON Array
+        /* json: moreJSONData.myRecords */      // or JSON Obj
+        keys: {
+          x: 'name',                             // it's possible to specify 'x' when category axis
+          value: ['upload', 'download', 'total']
+        }
+      },
+      axis: {
+        x: {
+          type: 'category'                        // will display name for each category
+        },
+        y: {
+          label: {
+            text: 'Y Label Name',
+            position: 'outer-middle'
+          }
+        }
+      }
+    });
+  });
+
+</script>
+</html>

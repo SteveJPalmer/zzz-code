@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!-- Load c3.css -->
+  <link href="./c3-0.7.18/c3.css" rel="stylesheet">
+  <!-- Load d3.js and c3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./c3-0.7.18/c3.js"></script>
+</head>
+<body>
+  <div id="my-container"></div>
+  <div><button onclick="addDataSet()">Load Data</button></div></br>
+  <div><button onclick="removeDataSet()">Remove Data</button></div></br>
+  <div><button onclick="addAndRemoveDataSets()">Load & Remove Data</button></div>
+</body>
+<script>
+  var chart;
+  //typicall fetch via XHR
+  var initialData = [
+    ['data1', 30, 200, 100, 400, 150, 250],
+    ['data2', 50, 130, 120, 70, 150, 25]
+  ];
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    // call generate() with arg obj
+    chart = c3.generate({
+      bindto: '#my-container',
+      data: {
+        columns: initialData,
+        //type: 'bar'       // apply to all columns
+        types: {
+          data2: 'bar'      // apply to just one column  (default is line)
+        }
+      },
+      axis: {
+        y: {
+          label: {
+            text: 'Y Label Name',
+            position: 'outer-middle'
+          },
+          tick: {
+            format: d3.format("$,") // ADD
+          }
+        }
+      }
+    });
+
+  });
+
+  /******************************
+   * load & unload data columns *
+   ******************************/
+  function addDataSet() {
+    // chart.load({                             // add new data column
+    //   columns:[
+    //     ['data3', 100, 110, 120, 110, 100, 80, 50]
+    //   ]
+    // });
+    /* or */
+    chart.load({                                // add new data column as 'bar' type
+      columns:[
+        ['data3', 100, 110, 120, 110, 100, 80]
+      ],
+      type: 'bar'
+    });
+  };
+
+
+  function removeDataSet() {
+    chart.unload({
+      ids: 'data3'                   // specific data columns
+    });
+    /* or */
+    // chart.unload({
+    //    ids: ['data1', 'data3']       // array of data columns
+    // });
+    /* or */
+    // chart.unload();                   // all data columns
+  };
+
+
+  function addAndRemoveDataSets() {
+    chart.load({
+      columns: [
+        ['data5', 220, 210, 220, 210, 230, 230],
+        ['data6', 320, 310, 320, 310, 330, 330],
+      ],
+      unload: ['data1']
+    });
+    /* or */
+
+  };
+
+
+    // chart.load({
+    //   columns:[
+    //     ['data4', 30, 20, 50, 40, 60, 50,100,200]
+    //   ],
+    //   type: 'bar'
+    // });
+
+
+</script>
+</html>

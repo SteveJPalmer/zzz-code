@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!-- Load c3.css -->
+  <link href="./c3-0.7.18/c3.css" rel="stylesheet">
+  <!-- Load d3.js and c3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./c3-0.7.18/c3.js"></script>
+</head>
+<body>
+  <div id="my-container"></div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    // call generate() with arg obj
+    var chart = c3.generate({
+      bindto: '#my-container',
+      data: {
+        columns: [
+          ['data1', 30, 200, 100, 400, 150, 250],
+          ['data2', 50, 20, 10, 40, 15, 25]
+        ]
+      },
+      axis: {
+        y: {
+          label: { // ADD
+            text: 'Y Label Name',
+            position: 'outer-middle'
+          }
+        }
+      }
+    });
+
+  });
+
+</script>
+</html>

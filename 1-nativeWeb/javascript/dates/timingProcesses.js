@@ -8,7 +8,7 @@ console.timeEnd('loop-100');  // prints loop-100: 0.7ms
 
 
 //=============================================================================
-/* EMCA5 timing fn */
+/* ES5 timing fn */
 var start = Date.now();	 					//start time (number ms)
 console.log('start: ' + start);
 //just to slow it down a bit (taking 0)
