@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!-- Load c3.css -->
+  <link href="./c3-0.7.18/c3.css" rel="stylesheet">
+  <!-- Load d3.js and c3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./c3-0.7.18/c3.js"></script>
+</head>
+<body>
+  <div id="my-container"></div>
+  <div id="my-container2"></div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    var chart = c3.generate({
+      bindto: '#my-container',
+      data: {
+        columns: [
+          ['data1', 30, 20, 50, 40, 60, 50],
+          ['data2', 200, 130, 90, 240, 130, 220],
+          ['data3', 300, 200, 160, 400, 250, 250]
+        ],
+        type: 'bar',
+        colors: {
+          data1: '#ff0000',
+          data2: '#00ff00',
+          data3: '#0000ff'
+        }//,
+        // color: function (color, d) {
+        //   // d will be 'id' when called for legends
+        //   return d.id && d.id === 'data3' ? d3.rgb(color).darker(d.value / 150) : color;
+        // }
+      }
+    });
+  });
+
+  var chart;
+  //typicall fetch via XHR
+  var initialData = [
+    ['data1', 30, 200, 100, 400, 0, 250],
+    ['data2', 50, 130, 120, 70, 150, 25]
+  ];
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    // call generate() with arg obj
+    chart = c3.generate({
+      bindto: '#my-container2',
+      size: {
+        height: 600,
+        width:600
+      },
+      padding: {
+        top: 100,
+        right: 100,
+        bottom: 10,
+        left: 100,
+      },
+      data: {
+        columns: initialData,
+        //type: 'bar'       // apply to all columns
+        types: {
+          data2: 'bar'      // apply to just one column  (default is line)
+        },
+        colors: {
+          data1: 'rgba(217,0,255,0.79)',
+          data2: '#00eaff',
+        },
+        color: function (color, d) {
+          //uses D3.js Color manipulation methods (applies darker function to each value in data 2)
+          /* change colour in linear fashion */
+          //return d.id && d.id === 'data2' ? d3.rgb(color).darker(d.value / 50) : color;
+
+          /* change color in steps */
+          var shade = color;
+          if(d.id && d.id === 'data2') {
+            if(d.value >= 145) {
+              shade = d3.rgb(color).darker(3);
+            } else if (d.value >= 125) {
+              shade = d3.rgb(color).darker(1.5);
+            }
+          }
+          return shade;
+        }
+      },
+      axis: {
+        y: {
+          label: {
+            text: 'Y Label Name',
+            position: 'outer-middle'
+          }
+        }
+      },
+    });
+
+  });
+</script>
+<style>
+
+</style>
+</html>

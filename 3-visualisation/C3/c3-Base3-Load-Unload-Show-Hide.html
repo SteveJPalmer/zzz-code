@@ -13,7 +13,8 @@
   <div id="my-container"></div>
   <div><button onclick="addDataSet()">Load Data</button></div></br>
   <div><button onclick="removeDataSet()">Remove Data</button></div></br>
-  <div><button onclick="addAndRemoveDataSets()">Load & Remove Data</button></div>
+  <div><button onclick="addAndRemoveDataSets()">Load & Remove Data</button></div></br>
+  <div><button onclick="hideData()">Hide 1</button>&nbsp;<button onclick="showData()">Show 1 & 2</button></div>
 </body>
 <script>
   var chart;
@@ -92,17 +93,19 @@
       ],
       unload: ['data1']
     });
-    /* or */
-
   };
 
+  function hideData() {
+    //chart.hide('data1', {withLegend: true});    // also hide legend
+    chart.hide('data1');                        // hide single dataset
+    //chart.hide(['data1', 'data2']);             // hide multiple datasets
+    //chart.hide();                               // hide all
+  };
 
-    // chart.load({
-    //   columns:[
-    //     ['data4', 30, 20, 50, 40, 60, 50,100,200]
-    //   ],
-    //   type: 'bar'
-    // });
+  function showData() {
+    chart.show(['data1', 'data2']);
+    //chart.show(['data1', 'data2'], {withLegend: true});   // add withLegend, if prev removed
+  };
 
 
 </script>

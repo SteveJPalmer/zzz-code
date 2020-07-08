@@ -28,76 +28,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/1 - Bootstrap Structure.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/2 - Grid_Template - basic 2 col.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/3 - Grid_Template - 2 col (2row) - Responsive .html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/4 - Grid Template - 3 col - Fully Responsive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/5 - Grid Template - Nested - Responsive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/6 - ao-layout-template - LayoutCentering &amp; fullPageHeight.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/jquery-1.11.1/jquery-1.11.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap3/gridSystem/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/.angular-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/bootstrap4/flex -utility/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - flexContainerProps/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - flexContainerAndOrder/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - flexContainerProps/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - flexContainerAndOrder/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - flexItemOrder/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - flexItemOrder/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3a - flex-grow/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - justify-content - align-items/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3a - flex-grow/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3 - flex-grow-shrink-basis/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3b - flex-shrink/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3 - flex-grow-shrink-basis/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3b - flex-shrink/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3c - flex-basis/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3c - flex-basis/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4a - justify-content/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4a - justify-content/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4b - align-items/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4b - align-items/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - justify-content - align-items/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4c - align-content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2b - align-content/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4c - align-content/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2b - align-content/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4d - align-self/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4d - align-self/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5a - equal-height-cols/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5a - equal-height-cols/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5b - dynamic-no-items/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5b - dynamic-no-items/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,18 +81,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
-      <recent name="C:\zzz-code\5-projects\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
       <recent name="C:\work_area" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index-d3-DataLoad-JSON.html">
@@ -324,7 +254,8 @@
       <workItem from="1593778452342" duration="1435000" />
       <workItem from="1593785913312" duration="1895000" />
       <workItem from="1593882324150" duration="3309000" />
-      <workItem from="1594034854726" duration="6119000" />
+      <workItem from="1594034854726" duration="7346000" />
+      <workItem from="1594119045282" duration="5466000" />
     </task>
     <servers />
   </component>
@@ -548,12 +479,12 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="168" y="0" width="912" height="991" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1592823916787" />
-    <state x="430" y="50" width="1002" height="999" key="find.popup" timestamp="1592825659610">
+    <state x="430" y="50" width="1002" height="999" key="find.popup" timestamp="1594133579044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959941654" />
     <state x="430" y="50" width="1002" height="999" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1589970751104" />
-    <state x="430" y="50" width="1002" height="999" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1592825659610" />
+    <state x="430" y="50" width="1002" height="999" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594133579044" />
     <state width="600" height="441" key="javadoc.popup" timestamp="1592822717519">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -563,10 +494,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="696" y="247" key="run.anything.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1587571641771" />
-    <state x="613" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1592820701105">
+    <state x="613" y="245" width="840" height="678" key="search.everywhere.popup" timestamp="1594122209536">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="613" y="245" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959694361" />
-    <state x="613" y="245" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1592820701105" />
+    <state x="613" y="245" width="840" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594122209536" />
   </component>
 </project>

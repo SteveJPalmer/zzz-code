@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!-- Load c3.css -->
+  <link href="./c3-0.7.18/c3.css" rel="stylesheet">
+  <!-- Load d3.js and c3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="./c3-0.7.18/c3.js"></script>
+</head>
+<body>
+  <div id="my-container"></div>
+  <div><button onclick="transform()">transform</button></div></br>
+</body>
+<script>
+  var chart;
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    chart = c3.generate({
+      bindto: '#my-container',
+      data: {
+        columns: [
+          ['data1', 30, 20, 50, 40, 60, 50],
+          ['data2', 200, 130, 90, 240, 130, 220],
+          ['data3', 300, 200, 160, 400, 250, 250]
+        ],
+        type: 'line',
+        colors: {
+          data1: '#ff0000',
+          data2: '#00ff00',
+          data3: '#0000ff'
+        },
+        onclick: function (d, i) {
+          console.log(arguments);             // array contains [0] data & [1] target elem
+          console.log("onclick - d: ", d);    // data
+          console.log("onclick - i: ", i);    // target elem
+        },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+      },
+      oninit: function () { console.log("oninit...");},             // when chart is initialized
+      onrendered : function () { console.log("onrendered...");},    // each time chart redrawn
+      onmouseover: function () { console.log("onmouseover", arguments); }
+    });
+
+  });
+
+  function transform() {
+    // chart.transform('line', 'data1');           // change data1 to line
+    //chart.transform('line', ['data1','data2']);    // change multiple to line (array)
+    chart.transform('line');                      // change all to line
+  };
+
+</script>
+<style>
+  #my-container .c3-line-data1 {
+    stroke-width: 4px;
+  }
+  #my-container .c3-circles-data1 circle {
+    r: 6px;
+  }
+</style>
+</html>

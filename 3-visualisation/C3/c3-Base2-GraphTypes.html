@@ -23,10 +23,14 @@
           ['data1', 30, 200, 100, 400, 150, 250],
           ['data2', 50, 130, 120, 70, 150, 25]
         ],
-        //type: 'bar'       // apply to all columns
+        // type: 'bar'       // apply to all columns
         types: {
           data2: 'bar'      // apply to just one column  (default is line)
         }
+        /* types...
+            line | bar | spline(curved line) | step		-- area | area-spline | area-step
+            pie | donut | gauge | scatter | stanford
+        */
       },
       axis: {
         y: {
