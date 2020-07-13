@@ -6,7 +6,7 @@
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
   <script>
-    /* jq solution */
+    /* 1) jq solution */
     $.getScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js', function(data, textStatus, jqxhr) {
       //console.log(data); 					//data returned
       console.log(textStatus); 		//success
@@ -19,7 +19,7 @@
   </script>
 
   <script>
-    /* native solution */
+    /* 2a) native solution */
     var oScript = document.createElement('script');									  //create script node & dd attrs
     oScript.type = 'text/javascript';
     oScript.src  = 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js';
@@ -30,7 +30,7 @@
 
 
   <script>
-    /* native solution enhanced with cb */
+    /* 2b) native solution enhanced with cb */
     function loadScript(url, callback) {
       var script = document.createElement("script")
       script.type = "text/javascript";

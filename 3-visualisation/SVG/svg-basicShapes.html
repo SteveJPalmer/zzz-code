@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>SVG - Basic Shapes</h1>
+
+  <h2>Rectangle, Line, Circle, Ellipse, Text & Opacity</h2>
+  <svg width="150" height="60">
+    <rect x="50" y="10" width="90" height="40"
+          stroke="blue" stroke-width="4", stroke-opacity="0.5",
+          fill="pink", fill-opacity="0.8" ></rect>
+  </svg>
+
+  <svg width="150" height="50">
+    <line x1="50" y1="0" x2="140" y2="25" stroke="black"></line>
+  </svg>
+
+  <svg width="200" height="60">
+    <circle cx="40" cy="30" r="25" fill="lightblue"></circle>
+    <ellipse cx="150" cy="30" rx="50" ry="25" fill="lightgreen"></ellipse>
+  </svg>
+
+  <svg width="200" height="60">
+    <text x="20" y="25">add some text content..</text>
+  </svg>
+
+
+  <h2>Group</h2>
+  <svg width="300" height="60">
+    <!-- START svg group elem  - think: a Container - allows transforming/moving svg elems together -->
+    <!-- group attrs inherited by children -->
+    <g fill="lightblue" stroke="orange" stroke-width="1"
+       transform="translate(100 0)">
+      <rect x="0" y="0" width="180" height="50" opacity="0.5"></rect>
+      <text x="10" y="20" stroke="steelblue">Text moves with group!</text>
+    </g>
+    <!-- END svg group -->
+  </svg>
+
+
+  <h2>Container - background & border</h2>
+  <svg width="100" height="100" >
+<!--    <rect width="100%" height="100%" fill="orange" stroke="black"></rect>-->
+    <rect width="100%" height="100%" fill="none" stroke="blue"></rect>
+  </svg>
+  <!--  or can use style prop-->
+  <svg width="100" height="100" style="border:1px solid blue; background-color: pink"></svg>
+
+
+  <h2>Container - viewBox</h2>
+  <svg width="200" height="200" style="border:1px solid pink" >
+    <rect x="0" y="0" width="100" height="100" fill="pink"></rect>
+    <text x="0" y="20">zooms into 50 0 150 150..</text>
+    <circle cx="50" cy="50" r="25" fill="lightblue"></circle>
+  </svg>&nbsp;&nbsp;
+  <svg width="200" height="200" viewBox="50 0 100 100" style="border:1px solid pink" >
+    <rect x="0" y="0" width="100" height="100" fill="pink"></rect>
+    <text x="0" y="20">zooms into 150,150..</text>
+    <circle cx="50" cy="50" r="25" fill="lightblue"></circle>
+  </svg>
+
+
+  <h2>Mozilla: the basic shapes</h2>
+  <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+    <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+    <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+
+    <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+    <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+
+    <line x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5"/>
+    <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+              stroke="orange" fill="transparent" stroke-width="5"/>
+
+    <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+             stroke="green" fill="transparent" stroke-width="5"/>
+
+    <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+  </svg>
+
+</body>
+</html>
