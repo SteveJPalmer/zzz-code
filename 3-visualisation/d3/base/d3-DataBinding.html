@@ -3,69 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-
   <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
   <script src="js/d3/d3.min.js"></script>
-
-
 </head>
 <body>
-  <h2>Binding to existing elems</h2>
-  <div>D3 Tutorials</div>
-  <script>
-    /* bind to single value */
-    var myData = ["my first bind!"];
-
-    var p = d3.select("body")
-      .selectAll("div")
-      .data(myData)               //binds data to elem(s)
-      .text(function (d) {        //sets elem text to passes in data value (overwrites existing text)
-        return d;
-      });
-
-    /* can use fat arrow syntax if ES6 available */
-    // var p = d3.select("body")
-    //   .selectAll("div")
-    //   .data(myData)               //binds data to elem(s)
-    //   .text(d => d + ' (fat arrow => edition)');        //sets elem text to passes in data value (overwrites existing text)
-
-  </script>
-
+  <h2>Binding to existing elems <i>(replaces text)</i></h2>
   <p></p>
   <p></p>
   <p></p>
   <script>
     /* bind to multiple values */
-    var myData = ["Hello World!", "Hello D3","Hello JavaScript"];
+    var myData = ["Hello World!", "Hello D3", "Hello JavaScript"];
 
     var p = d3.select("body")
       .selectAll("p")
       .data(myData)
       .text(function (d, i) {
-        return 'added value: ' + d;
+        return 'add data: ' + d;
       });
+      // .text((d, i) => 'add data: ' + d );        // fat arrow version
   </script>
 
-  <h2>Binding to missing elems</h2>
+
+  <h2>Binding to missing elems <i>(adds spans)</i></h2>
   <script>
     /* dynamic - bind to multiple values to missing elem */
     var data = [4, 1, 6, 2, 8, 9];	// our data array
     var body = d3.select("body")
       .selectAll("span")						// at this point, are no <span> elems in <body>  so.. returns an empty selector obj
       .data(data)										// as data array has 6 items, code chained after will run 6 times, for each item in array
-      .enter().append("span")			  // checks for corresponding <span> elems  - if not found , creates new associated <span> elem
-                                    // append() adds above newly created <span>s to <body> elem
+      .enter()			                // checks for corresponding <span> elems  - if not found , creates new associated <span> elem
+      .append("span")               // append() adds above newly created <span>s to <body> elem
       .text(function(d) { return d + " "; })	// text() adds array data value to each of our new <span> elems
       .style('color', function(d) {
-      if (d % 2 === 0) {								// logic to dynamically colour even values green & odd red  (via modulus/remainder fn)
-        return "green";
-      } else {
-        return "red";
-      }
+        if (d % 2 === 0) {							    	// logic to dynamically colour even values green & odd red  (via modulus/remainder fn)
+          return "green";
+        } else {
+          return "red";
+        }
     });
   </script>
 
-  <h2>Two dimensional data</h2>
+
+  <h2>Two dimensional data <i>(check console logs)</i></h2>
   <script>
     /* two dimensional data array - an Array of Arrays */
     var matrix = [
@@ -94,8 +74,6 @@
                   console.log(d);
                   return d;           // add value of each nested array value as <td> text
                 });
-
   </script>
-
 </body>
 </html>

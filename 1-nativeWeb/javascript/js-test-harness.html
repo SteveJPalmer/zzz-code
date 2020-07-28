@@ -17,8 +17,11 @@
     var value2 = 'test2';
 
     //test call
-    var res = testFn(value1, value2);
-    
+    //var res = testFn(value1, value2);
+    var res = testArray([1,2,4,5,3]);
+
+    console.log(res);
+
     //outputs
     document.getElementById("output").innerHTML = res;
   }
@@ -29,6 +32,13 @@
       var status = true;
       return status;
   };
+
+  function testArray(a) {
+    var result;
+    result = a.sort( (a, b) => a - b );
+    return result;
+  };
+
 
   </script>
 

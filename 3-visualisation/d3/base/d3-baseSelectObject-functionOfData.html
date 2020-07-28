@@ -17,6 +17,19 @@
   <script>
     var data = [1, 2, 3];
 
+    /* code to examine returned selector objs after data mapped:
+        1) updating existing (p) elems
+        2) new (div) elems
+    */
+    var examineSelectorObj = d3.select("body")      // update  - examine _groups, _enter & _exit arrays
+      .selectAll("div")
+      .data(data);
+
+    var examineSelectorObj2 = d3.select("body")      // new elems - examine _groups, _enter & _exit arrays
+      .selectAll("p")
+      .data(data);
+    /* -------------------- */
+
     var paragraph = d3.select("body")
       .selectAll("p")
       .data(data)
@@ -27,7 +40,7 @@
         return 'Paragraph ' + d;
       });
 
-  </script>
+</script>
 
   <script>
     d3.selectAll("p")

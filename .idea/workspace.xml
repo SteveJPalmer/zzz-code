@@ -27,55 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/3-visualisation/SVG/svg-basicShapes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-visualisation/SVG/svg-path.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/ES6/RESTParam-wihDestructuring.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/ES6/destructuring.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/ES6/generators.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/web/dynamicScriptLoad.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/javascript/web/dynamicScriptLoad.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/.angular-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/e2e/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/e2e/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/animations.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/customers/customer-list/customer-list.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/customers/customer-list/customer-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/customers/customer-list/customer-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/customers/customer-list/customer-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/customers/customers-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/customers/customers.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/orders/order-list/order-list.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/orders/order-list/order-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/orders/order-list/order-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/orders/order-list/order-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/orders/orders-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/app/orders/orders.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-frameworks/angular/router/router-CLI/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3-visualisation/SVG/index-svg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/js-test-harness.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/javascript/js-test-harness.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +261,11 @@
       <workItem from="1594376923488" duration="4573000" />
       <workItem from="1594486139358" duration="2752000" />
       <workItem from="1594575109611" duration="903000" />
-      <workItem from="1594641112303" duration="7281000" />
+      <workItem from="1594641112303" duration="8594000" />
+      <workItem from="1594819623180" duration="605000" />
+      <workItem from="1595155805707" duration="1564000" />
+      <workItem from="1595856979911" duration="606000" />
+      <workItem from="1595863642329" duration="25000" />
     </task>
     <servers />
   </component>
@@ -538,12 +495,12 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="168" y="0" width="912" height="991" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1592823916787" />
-    <state x="429" y="17" width="1311" height="999" key="find.popup" timestamp="1594671506691">
+    <state x="429" y="17" width="1311" height="999" key="find.popup" timestamp="1594672505364">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="430" y="50" width="1002" height="839" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1586959941654" />
     <state x="430" y="50" width="1002" height="999" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1589970751104" />
-    <state x="429" y="17" width="1311" height="999" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594671506691" />
+    <state x="429" y="17" width="1311" height="999" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594672505364" />
     <state width="600" height="441" key="javadoc.popup" timestamp="1592822717519">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
