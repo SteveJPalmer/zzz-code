@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0; }
+    html, body {
+      height: 100%;
+      width: 100%; }
+    #map {
+      margin: 10%;
+      width: 80%;
+      height: 80%;
+      color: darkorange;
+    }
+
+    .legend {
+      width: 250px;
+      font-size: 14px;
+      color: #333333;
+      font-family: "Open Sans", Helvetica, sans-serif;
+      padding: 10px 14px;
+      background-color: rgba(245,245,220,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      border: 1px solid grey;
+    }
+    .legend img {
+      width: 200px;
+      margin: auto;
+      display: block; }
+  </style>
+
+</head>
+<body>
+  <div id="map"></div>
+
+<script>
+  /* create a Leaflet map */
+  let map = L.map("map", {center: [50.5921653, -3.4673415], zoom: 17});
+
+  /* add a tile layer   - can use shorter  .tile.osm.org/*/
+  L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {attribution: "&copy; OpenStreetMap"}
+  ).addTo(map);
+
+
+  /* add vector layers */
+  // marker
+  // let pnt = L.marker([50.59157976, -3.46735548]).addTo(map);
+  // circle or circleMarker
+  let circle = L.circleMarker( [50.59157976, -3.46735548], {radius: 20, color: "grey", fillColor: "red", fillOpacity: 0.3}
+  ).addTo(map);
+
+  let line = L.polyline(
+    [[50.59157976, -3.46735548], [50.58905771, -3.46831278]], {color: "grey", weight: 3}
+  ).addTo(map);
+
+  // popups (or can chain when create circleMarker:  addTo(map).bindPopup(...); )
+  circle.bindPopup(
+    "This is our <b>new house</b>."
+  );
+
+
+  /* legend */
+  let legend = L.control({position: "bottomleft"});
+
+  legend.onAdd = function() {
+    let div = L.DomUtil.create("div", "legend");
+    div.innerHTML =
+      '<p><b>Simple shapes in Leaflet</b></p><hr>' +
+      'The following shapes were added:<br>' +
+      '<p><ul>' +
+      '<li>A marker</li>' +
+      '<li>A line</li>' +
+      '</ul></p>' +
+      'The circle layer has a <b>popup</b>. ' +
+      'Click on the line to see it!<hr>' +
+      '<img src="images/leaflet.png">';
+    return div;
+  };
+
+  legend.addTo(map);
+
+</script>
+</body>
+</html>
