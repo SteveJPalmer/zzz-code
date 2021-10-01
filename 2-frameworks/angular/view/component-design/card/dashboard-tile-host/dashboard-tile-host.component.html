@@ -1,0 +1,19 @@
+<h2 class="tile-host-header">Dashboard Tile</h2>
+<div class="tile-host-container">
+  <ql-dashboard-tile [icon]="'page_tenancies'" [title]="'General'">
+    <section class="content">
+      <span>foobarbaz</span>
+      <span>foo</span>
+      <span>blarblar</span>
+    </section>
+  </ql-dashboard-tile>
+  <ql-dashboard-tile [icon]="'page_properties'" [title]="'Multiple'" [scrollCount]="data.length">
+    <ng-template #scroll let-index>
+      <section class="content">
+        <span>{{ data[index].name }}</span>
+        <span>{{ data[index].type }}</span>
+        <span>{{ data[index].message }}</span>
+      </section>
+    </ng-template>
+  </ql-dashboard-tile>
+</div>

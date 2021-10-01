@@ -1,0 +1,20 @@
+.tile-host-header {
+  margin: 40px 0 20px 20px;
+}
+
+.tile-host-container {
+  display: flex;
+  margin: 0 20px 40px 20px;
+
+  & > :first-of-type {
+    margin-right: 5%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}

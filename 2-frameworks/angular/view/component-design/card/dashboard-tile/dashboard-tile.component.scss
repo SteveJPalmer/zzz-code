@@ -1,0 +1,68 @@
+@import '../../../../styles/shared/shared';
+
+.header {
+  display: flex;
+  align-items: center;
+  color: var(--qlng-urban-grey-100);
+  width: 100%;
+
+  & .header-icon {
+    margin-right: 5px;
+  }
+  & .header-title {
+    text-transform: uppercase;
+    line-height: line-height(zeta);
+    letter-spacing: letter-spacing(wide);
+    font-size: font-size(theta);
+    font-weight: font-weight(semi-bold);
+  }
+
+  .header-scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    user-select: none;
+
+    & .scroll-label {
+      color: var(--qlng-urban-grey-100);
+      font-weight: font-weight(regular);
+      margin-right: 8px;
+    }
+
+    & .scroll-icon {
+      color: var(--qlng-urban-grey-30);
+
+      &:first-of-type {
+        margin-right: 12px;
+      }
+
+      &.highlight {
+        color: var(--qlng-blue-ribbon-100);
+      }
+    }
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  background-color: var(--qlng-white);
+  border: 1px solid var(--qlng-urban-grey-10);
+  border-radius: radius(10);
+  box-shadow: 0 8px 16px var(--qlng-drop-shadow-10);
+  font-weight: 500;
+  height: 100px;
+  width: 310px;
+
+  & .ng-content-container {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 18px 16px 16px 16px;
+  }
+}
+
+.icon {
+  width: icon-size(20);
+  height: icon-size(20);
+  display: inline-flex;
+}

@@ -1,0 +1,15 @@
+<section class="header">
+  <div class="header-icon"><mat-icon [svgIcon]="icon" class="b-icon icon"></mat-icon></div>
+  <div class="header-title">{{ title }}</div>
+  <div class="header-scroll" *ngIf="scrollCount > 1">
+    <div class="scroll-label">{{ scrollIndex + 1 }} of {{ scrollCount }}</div>
+    <mat-icon class="b-icon b-icon--x-small scroll-icon" [svgIcon]="'chevron_left'" [ngClass]="{ highlight: allowPrev() }" (click)="prev()"></mat-icon>
+    <mat-icon class="b-icon b-icon--x-small scroll-icon" [svgIcon]="'chevron_right'" [ngClass]="{ highlight: allowNext() }" (click)="next()"></mat-icon>
+  </div>
+</section>
+<section class="content">
+  <div class="ng-content-container">
+    <ng-template #defaultRef><ng-content></ng-content></ng-template>
+    <ng-container [ngTemplateOutlet]="scrollRef || defaultRef" [ngTemplateOutletContext]="{ $implicit: scrollIndex }"></ng-container>
+  </div>
+</section>
