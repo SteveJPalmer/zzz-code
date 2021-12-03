@@ -8,4 +8,4 @@ var dateFormatted = hr
                     + ':' + String(min).padStart(2,'0') 
                     + ':' + String(sec).padStart(2,'0') 
                     + '.' + String(ms).padStart(3,'0');
-console.log('Executeion time (hr:min:sec.ms): ' + dateFormatted);
+console.log('Execution time (hr:min:sec.ms): ' + dateFormatted);
