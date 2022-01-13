@@ -1,10 +1,6 @@
 <div>
   <!--  base Reactive Form to examine FormModel (FormGroup & FormControl) -->
   <form #myForm="ngForm" [formGroup]="loginForm" (ngSubmit)="onSubmit(myForm)" >
-    <pre>Form value: {{ myForm.value | json }}</pre>
-    <pre>Form valid: {{ myForm.valid }}</pre>
-    <pre>Form value: {{ loginForm.value | json }}</pre>
-    <pre>Form valid: {{ loginForm.valid }}</pre>
     <div>
       <label for="myId">Username</label>
       <input #user name="username" formControlName="username" id="myId" required/></div>
@@ -14,7 +10,12 @@
     <div>
       <button type="submit">Submit</button>
     </div>
-    <pre>First value: {{ user.value }}</pre>
+    <!-- Debugging within template -->
+    <pre>Form value: {{ loginForm.value | json }}</pre>   // via comp prop
+    <pre>Form valid: {{ loginForm.valid }}</pre>
+    <pre>Form value: {{ myForm.value | json }}</pre>      // via #f temp ref var
+    <pre>Form valid: {{ myForm.valid }}</pre>
+    <pre>First value: {{ user.value }}</pre>              // via #user temp ref var
   </form>
 </div>
 
