@@ -58,8 +58,8 @@ export class AppComponent implements OnInit{
     /* can use the stored comp model (Think: same as myForm.form below) */
     console.log(this.loginForm);                // (obj) holds the FormGroup instance
     console.log(this.loginForm.value);          // (obj) contains values of all forms control values
-    console.log(this.loginForm2);                // (obj) holds the FormGroup instance
-    console.log(this.loginForm2.value);          // (obj) contains values of all forms control values
+    console.log(this.loginForm2);               // (obj) holds the FormGroup instance
+    console.log(this.loginForm2.value);         // (obj) contains values of all forms control values
 
     /* or can still pass in temp ref var (like template form) */
     console.log(myForm.value);									// (obj) direct access - contains values of all forms control values (JSON.stringify for readability)
