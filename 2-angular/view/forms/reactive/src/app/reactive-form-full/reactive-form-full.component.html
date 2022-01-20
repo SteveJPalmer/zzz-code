@@ -1,0 +1,55 @@
+<div>
+  <!--  base Reactive Form to examine FormModel (FormGroup & FormControl) -->
+  <h1>loginForm (ng classes)</h1>
+  <form #f="ngForm" [formGroup]="loginForm" (ngSubmit)="onSubmit(f)" >
+    <pre>Form value: {{ loginForm.value | json }}</pre>
+    <pre>Form valid: {{ loginForm.valid }}</pre>
+    <div>
+      <label for="myId">Username</label>
+      <input #user name="username" formControlName="username" id="myId"  /></div>
+    <div *ngIf="loginForm.get('username').invalid && loginForm.get('username').touched" >
+      <i *ngIf="loginForm.get('username').errors?.['required']">username required</i>
+      <i *ngIf="loginForm.get('username').errors?.['pattern']">min 3 chars</i>
+      <i *ngIf="loginForm.get('username').errors?.['forbiddenName']">
+        custom validation - {{loginForm.get('username').errors?.['forbiddenName'].value}} not allowed</i>
+    </div>
+    <div>
+      <label for="myId2">Password</label>
+      <input name="password" formControlName="password" id="myId2" required /></div>
+    <div *ngIf="loginForm.errors?.['passwordCheck'] && (loginForm.touched || loginForm.dirty)">
+      <i>Password cannot match Username</i>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="button" (click)="resetForm()">Reset</button>
+    </div>
+    <pre>username value (via temp ref var): {{ user.value }}</pre>
+    <pre>username value (via comp prop): {{ username.value }}</pre>
+    <pre>username value (via comp prop): {{ loginForm.controls['username'].errors | json}}</pre>
+    <pre>username value (via comp prop): {{ loginForm.get('username').errors | json }}</pre>
+  </form>
+
+
+  <!--  Adv Reactive Form to test Validations -->
+  <h1>loginForm2 (FormBuilder)</h1>
+  <form #myForm2="ngForm" [formGroup]="loginForm2" (ngSubmit)="onSubmit(myForm2)" >
+    <pre>Form value: {{ loginForm2.value | json }}</pre>
+    <pre>Form valid: {{ loginForm2.valid }}</pre>
+    <div>
+      <label for="myId">Username</label>
+      <input #user2 name="username" formControlName="username" id="myId" /></div>
+    <div *ngIf="username.invalid && username.touched" >  <!-- using getter, to return username FormControl -->
+      <i *ngIf="!loginForm2.get('username').errors?.['forbiddenName2']">
+        Username is required (min 3 chars)</i>
+      <i *ngIf="loginForm2.get('username').errors?.['forbiddenName2']">
+        custom validation - "{{loginForm2.get('username').errors?.['forbiddenName2'].value}}" not allowed</i>
+    </div>
+    <div>
+      <label for="myId2">Password</label>
+      <input name="password" formControlName="password" id="myId2"/></div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+    <pre>username value: {{ user2.value }}</pre>
+  </form>
+</div>
