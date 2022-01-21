@@ -34,6 +34,11 @@ export class ReactiveFormBaseComponent implements OnInit {
   });
   */
 
+  /* getters - ** nice technique - getter to returns the FormControl */
+  get username() {
+    return this.loginForm.get('username');
+  }
+
   onSubmit(f: FormGroupDirective) {
     /* debug via comp FormGroup ref */
     console.log(this.loginForm);          // (obj) FormGroup instance
@@ -50,5 +55,4 @@ export class ReactiveFormBaseComponent implements OnInit {
     console.log(f.form.valid);	     // (true/false) FormGroup valid prop (ie form level)
     console.log(f.form.controls);    // (obj) nested FormControl instances (each of type FormControl)
   }
-
 }

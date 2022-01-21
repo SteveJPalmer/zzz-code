@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { ReactiveFormsArrayComponent } from './reactive-forms-array.component';
 
@@ -8,6 +9,7 @@ describe('ReactiveFormsArrayComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ ReactiveFormsModule ],
       declarations: [ ReactiveFormsArrayComponent ]
     })
     .compileComponents();

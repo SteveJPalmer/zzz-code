@@ -78,10 +78,13 @@ export class ReactiveFormFullComponent implements OnInit {
     this.loginForm.reset();
   }
 
-  /* niceu technique - se getter to returns the FormControl */
+  /* getters - ** nice technique - getter to returns the FormControl */
   get username() {
     return this.loginForm.get('username');
   }
 
+  get password() {
+    return this.loginForm.get('password');
+  }
 }
 
