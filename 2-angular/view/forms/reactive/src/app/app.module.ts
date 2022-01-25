@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ReactiveFormBaseComponent } from './reactive-form-base/reactive-form-base.component';
 import { ReactiveFormFullComponent } from './reactive-form-full/reactive-form-full.component';
 import { ReactiveFormsArrayComponent } from './reactive-forms-array/reactive-forms-array.component';
+import { ReactiveFormsCustomQuantityComponent } from './reactive-forms-custom-quantity/reactive-forms-custom-quantity.component';
+import { TestHostCustomCompsComponent } from './test-host-custom-comps/test-host-custom-comps.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ReactiveFormsArrayComponent } from './reactive-forms-array/reactive-for
     ReactiveFormBaseComponent,
     ReactiveFormFullComponent,
     ReactiveFormsArrayComponent,
+    ReactiveFormsCustomQuantityComponent,
+    TestHostCustomCompsComponent,
   ],
   imports: [
     BrowserModule,
