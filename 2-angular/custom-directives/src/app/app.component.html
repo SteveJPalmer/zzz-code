@@ -1,0 +1,38 @@
+<h1>Structural</h1>
+<H2>*appUnless directive </H2><i>(opposite of *ngIf)</i>
+<p>condition = <span [ngClass]="{ 'a': !condition, 'b': condition, 'unless': true }">{{condition}} </span>
+  <button
+    (click)="condition = !condition"
+    [ngClass] = "{ 'a': condition, 'b': !condition }" >
+    Toggle condition to {{condition ? 'false' : 'true'}}
+  </button>
+</p>
+<p *appUnless="condition">Show this sentence if condition is false</p>
+
+
+
+
+<h1>Attribute Directive</h1>
+<h2>aoHighlight & aoHighlightAdvanced</h2>
+<p aoHighlight>base directive - just sets color to yellow</p>
+<br><hr>
+<h3>enhancement to pass Event obj (cf dev tools for logged event)</h3>
+<input aoHighlightAdvanced="orange" type="text">
+<br><br><hr>
+<h3>Advanced version <i>Mouse over the following lines to see fixed highlights</i></h3>
+<p [aoHighlightAdvanced]="'yellow'">Highlighted in yellow (expression)</p>
+<p aoHighlightAdvanced="orange">Highlighted in orange (string)</p>
+<p aoHighlightAdvanced [defaultColor]="'green'">Highlighted in green - default</p>
+<p aoHighlightAdvanced>Highlighted in red - fallback</p>
+<hr>
+<h3>Pick a highlight color</h3>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [aoHighlightAdvanced]="color">Highlight me!</p>
+
+<p [aoHighlightAdvanced]="color" defaultColor="violet">
+  Highlight me too!
+</p>
