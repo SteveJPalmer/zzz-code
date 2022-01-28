@@ -1,0 +1,47 @@
+<div class="parent">
+  <p>parent works!</p>
+
+  <h2>Ref template within own template <i>([ngTemplateOutlet] & createEmbeddedView())</i></h2>
+    <ng-template #first >
+      <div><b>first section...</b></div>
+    </ng-template>
+    <ng-container [ngTemplateOutlet]="first"></ng-container>
+
+    <ng-template #second let-i>   <!-- can name anything.. let-* -->
+      <div><b>second section...</b><i>(with context obj binding)</i></div>
+      <div>data..{{i}}</div>
+    </ng-template>
+    <ng-container [ngTemplateOutlet]="second" [ngTemplateOutletContext]="{ $implicit: blars }"></ng-container>
+
+    <ng-template #third let-i let-stuff="name">
+      <div><b>third section...</b><i>(with context obj binding)</i></div>
+      <div>data..{{i}} & {{stuff}}</div>
+    </ng-template>
+    <ng-container [ngTemplateOutlet]="third" [ngTemplateOutletContext]="{ $implicit: blars, name: 'other data' }"></ng-container>
+    <!--short version -->
+    <ng-container *ngTemplateOutlet="third; context: {$implicit:blars, name:'other data'}"></ng-container>
+
+    <ng-template #api>
+      <br>
+      <div>** this section added via api... **</div>
+    </ng-template>
+
+
+  <h2>Ref template within child comp <i>(via transclusion & directive)</i></h2>
+  <!-- transcluded template contents - ref in child -->
+  <app-child>
+    <ng-template #chooseOne>
+      <div><b>main content...</b><i>(ref via template ref)</i></div>
+    </ng-template>
+
+    <ng-template #chooseOther let-blars>
+      <div><b>secondary section...</b><i>(ref via template ref)</i></div>
+      {{blars}}
+    </ng-template>
+
+    <ng-template appMyTemplate>
+      <div><b>my template content...</b><i>(ref via directive)</i></div>
+    </ng-template>
+  </app-child>
+
+</div>

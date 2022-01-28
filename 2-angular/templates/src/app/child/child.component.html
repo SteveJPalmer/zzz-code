@@ -1,0 +1,15 @@
+<div class="child">
+  <p>child works!</p>
+<!--  Choose template via comp prop or ngIf-->
+  <ng-container [ngTemplateOutlet]="selected"></ng-container>
+
+  <ng-container *ngIf="true" >
+    <ng-container [ngTemplateOutlet]="other" [ngTemplateOutletContext]="{ $implicit: blarsNested }"></ng-container>
+    <!-- alternative syntax  -->
+<!--    <ng-container *ngTemplateOutlet="other; context: { $implicit: blarsNested }"></ng-container>-->
+  </ng-container>
+
+  <ng-container [ngTemplateOutlet]="myTemplate.templateRef"></ng-container>
+
+  <ng-content></ng-content>
+</div>
