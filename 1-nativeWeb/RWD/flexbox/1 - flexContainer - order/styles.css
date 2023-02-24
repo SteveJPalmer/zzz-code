@@ -11,15 +11,15 @@ body {
 
 .flex-container {
 	display: flex;
-	/*display: inline-flex;*/
-	/*flex-wrap: nowrap;*/
+	/* display: inline-flex; */
+	/* flex-wrap: nowrap; */
 	flex-wrap: wrap;
-	/*flex-wrap: wrap-reverse;*/
-	/*flex-direction: column;*/
-	/*flex-direction: column-reverse;*/
+	/* flex-wrap: wrap-reverse; */
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse; */
 	border: solid 2px #000;
 	/*width: 50%;*/
-	/*height: 20em;*/
+	/* height: 20em; */
 
 }
 
@@ -46,7 +46,7 @@ body {
 .flex-item-03 {
 	background-color: #675BA7;
 	order: 0;
-	/*order: 1;*/
+	/* order: 1; */
 	/*order: -1;*/
 }
 

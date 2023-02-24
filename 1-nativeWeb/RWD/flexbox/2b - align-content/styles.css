@@ -10,12 +10,12 @@ body {
 	border: solid 4px #000;
     height: 36.72em;
     flex-wrap: wrap;
-    /*align-content: flex-start;*/
-    /*align-content: flex-end;*/
-    align-content: center;
-    /*align-content: space-between;*/
-    /*align-content: space-around;*/
-    /*align-content: stretch;*/
+/*    align-content: flex-start;*/
+/*    align-content: flex-end;*/
+/*    align-content: center;*/
+/*    align-content: space-between;*/
+    align-content: space-around;
+/*    align-content: stretch;*/
 }
 
 .flex-item {
