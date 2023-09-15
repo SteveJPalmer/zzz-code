@@ -1,0 +1,27 @@
+@import '../../../../../styles/shared/shared';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+
+  & .warning-text {
+    font-weight: font-weight(semi-bold);
+    margin-right: 9px;
+  }
+  & .warning-comment {
+    font-weight: font-weight(regular);
+  }
+  & .create-link {
+    display: flex;
+    align-items: center;
+    color: var(--qlng-blue-ribbon-100);
+
+    & :first-child {
+      margin-right: 5px;
+      font-weight: font-weight(semi-bold);
+    }
+  }
+}

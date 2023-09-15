@@ -1,0 +1,21 @@
+<ql-dashboard-tile [icon]="'warning'" [title]="'Warnings'" [scrollCount]="clientWarnings.length">
+  <ng-template #scroll let-index>
+    <ql-request-status [requestStatus]="clientWarningStatus$ | async" [useMatCard]="false">
+      <ng-template #rsLoading>
+        <div class="c-mat-spinner">
+          <mat-spinner [diameter]="scssJsonUtils.data.baseSpinnerSize"></mat-spinner>
+        </div>
+      </ng-template>
+      <ng-template #rsSuccess>
+        <section class="content">
+          <div *ngIf="clientWarnings.length; else noWarnings">
+            <span class="warning-text">{{ clientWarnings[index]?.warningText }}</span>
+            <span class="warning-comment">{{ clientWarnings[index]?.additionalComment }}</span>
+          </div>
+          <ng-template #noWarnings>No warnings</ng-template>
+          <div class="create-link"><mat-icon class="b-icon b-icon--x-small" [svgIcon]="'add'"></mat-icon>Add warning</div>
+        </section>
+      </ng-template>
+    </ql-request-status>
+  </ng-template>
+</ql-dashboard-tile>
