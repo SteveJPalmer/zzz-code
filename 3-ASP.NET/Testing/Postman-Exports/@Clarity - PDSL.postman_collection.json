@@ -1,0 +1,4720 @@
+{
+	"info": {
+		"_postman_id": "f40c418f-66fb-4d90-b04f-a23c75872619",
+		"name": "@Clarity - PDSL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Asbestos",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Assets API",
+			"item": [
+				{
+					"name": "Assets",
+					"item": [
+						{
+							"name": "AttributeValues",
+							"item": [
+								{
+									"name": "AttributeValues",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{assetsapi_url}}/api/v1.0/assets/1/attributevalues",
+											"host": [
+												"{{assetsapi_url}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"assets",
+												"1",
+												"attributevalues"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "AttributeValues (Create / Edit / Delete )",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"AttributeValues\" : [\n    {\n        \"id\": 1,\n        \"attributeId\": 1,\n        \"rowversion\": \"AAAAAAAACpA=\",\n        \"dataTypeId\": 1,\n        \"valueAddress\": {\n            \"buildingOrLocationName\": \"Suite 412\",\n            \"houseNameOrNumber\": \"89\",\n            \"street\": \"Friesen Drive\",\n            \"line1\": null,\n            \"locality\": null,\n            \"townOrCity\": \"Boldmere\",\n            \"county\": \"Berkshire\",\n            \"postcode\": \"B73 6HW\"\n        },\n        \"valueCoordinate\": null,\n        \"valueDate\": null,\n        \"valueDecimal\": null,\n        \"valueList\": null,\n        \"valueMoney\": null,\n        \"valueNumber\": null,\n        \"valueText\": null\n    },\n    {\n        \"id\": 5,\n        \"attributeId\": 2,\n        \"rowversion\": \"AAAAAAAAC5Q=\",\n        \"dataTypeId\": 2,\n        \"valueAddress\": null,\n        \"valueCoordinate\": {\n            \"longitude\": -0.89237414,\n            \"latitude\": 52.44901459\n        },\n        \"valueDate\": null,\n        \"valueDecimal\": null,\n        \"valueList\": null,\n        \"valueMoney\": null,\n        \"valueNumber\": null,\n        \"valueText\": null\n    },\n    {\n        \"id\": 4,\n        \"attributeId\": 3,\n        \"rowversion\": \"AAAAAAAAEMg=\",\n        \"dataTypeId\": 3,\n        \"valueAddress\": null,\n        \"valueCoordinate\": null,\n        \"valueDate\": \"1956-02-02T00:00:00\",\n        \"valueDecimal\": null,\n        \"valueList\": null,\n        \"valueMoney\": null,\n        \"valueNumber\": null,\n        \"valueText\": null\n    },\n    {\n        \"id\": 4,\n        \"attributeId\": 4,\n        \"rowversion\": \"AAAAAAAAEcg=\",\n        \"dataTypeId\": 4,\n        \"valueAddress\": null,\n        \"valueCoordinate\": null,\n        \"valueDate\": null,\n        \"valueDecimal\": 159.466966,\n        \"valueList\": null,\n        \"valueMoney\": null,\n        \"valueNumber\": null,\n        \"valueText\": null\n    },\n    {\n        \"id\": 2,\n        \"attributeId\": 5,\n        \"rowversion\": \"AAAAAAAADQ4=\",\n        \"dataTypeId\": 5,\n        \"valueAddress\": null,\n        \"valueCoordinate\": null,\n        \"valueDate\": null,\n        \"valueDecimal\": null,\n        \"valueList\": 4,\n        \"valueMoney\": null,\n        \"valueNumber\": null,\n        \"valueText\": null\n    },\n    {\n        \"id\": 4,\n        \"attributeId\": 8,\n        \"rowversion\": \"AAAAAAAAD18=\",\n        \"dataTypeId\": 8,\n        \"valueAddress\": null,\n        \"valueCoordinate\": null,\n        \"valueDate\": null,\n        \"valueDecimal\": null,\n        \"valueList\": null,\n        \"valueMoney\": null,\n        \"valueNumber\": null,\n        \"valueText\": \"Intranet TCP Auto Loan Account\"\n    }\n]\n}"
+										},
+										"url": {
+											"raw": "{{assetsapi_url}}/api/v1.0/assets/1/attributevalues",
+											"host": [
+												"{{assetsapi_url}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"assets",
+												"1",
+												"attributevalues"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Get All Assets (paged)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assets?assetTypeId=1&pagesize=10&pagenumber=3",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assets"
+									],
+									"query": [
+										{
+											"key": "assetTypeId",
+											"value": "1"
+										},
+										{
+											"key": "pagesize",
+											"value": "10"
+										},
+										{
+											"key": "pagenumber",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Asset",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assets/1000402",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assets",
+										"1000402"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create/Add Asset",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"DataTypeId\" : 8,\n\t\"Name\" : \"Notes\",\n\t\"Sequence\": 8\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assettypes",
+										"1",
+										"attributes"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "AssetTypes",
+					"item": [
+						{
+							"name": "Attributes",
+							"item": [
+								{
+									"name": "Options",
+									"item": [
+										{
+											"name": "Options",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+														"exec": [
+															"pm.test(\"Status code is 200\", function () {",
+															"    pm.response.to.have.status(200);",
+															"});"
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer {{access_token}}"
+													}
+												],
+												"url": {
+													"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes/5/options",
+													"host": [
+														"{{assetsapi_url}}"
+													],
+													"path": [
+														"api",
+														"v1.0",
+														"assettypes",
+														"1",
+														"attributes",
+														"5",
+														"options"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Options (by Id)",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+														"exec": [
+															"pm.test(\"Status code is 200\", function () {",
+															"    pm.response.to.have.status(200);",
+															"});"
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer {{access_token}}"
+													}
+												],
+												"url": {
+													"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes/5/options/1",
+													"host": [
+														"{{assetsapi_url}}"
+													],
+													"path": [
+														"api",
+														"v1.0",
+														"assettypes",
+														"1",
+														"attributes",
+														"5",
+														"options",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Create/Add Option",
+											"event": [
+												{
+													"listen": "test",
+													"script": {
+														"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+														"exec": [
+															"pm.test(\"Status code is 200\", function () {",
+															"    pm.response.to.have.status(200);",
+															"});"
+														],
+														"type": "text/javascript"
+													}
+												}
+											],
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer {{access_token}}"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n\t\"Text\" : \"Office\"\n}"
+												},
+												"url": {
+													"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes/5/options",
+													"host": [
+														"{{assetsapi_url}}"
+													],
+													"path": [
+														"api",
+														"v1.0",
+														"assettypes",
+														"1",
+														"attributes",
+														"5",
+														"options"
+													]
+												}
+											},
+											"response": []
+										}
+									],
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "Attributes",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes?pageSize=4&pageNumber=2",
+											"host": [
+												"{{assetsapi_url}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"assettypes",
+												"1",
+												"attributes"
+											],
+											"query": [
+												{
+													"key": "pageSize",
+													"value": "4"
+												},
+												{
+													"key": "pageNumber",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Attributes (By Id)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes/1",
+											"host": [
+												"{{assetsapi_url}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"assettypes",
+												"1",
+												"attributes",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create/Add Attribute",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"DataTypeId\" : 8,\n\t\"Name\" : \"Notes\",\n\t\"Sequence\": 8\n}"
+										},
+										"url": {
+											"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1/attributes",
+											"host": [
+												"{{assetsapi_url}}"
+											],
+											"path": [
+												"api",
+												"v1.0",
+												"assettypes",
+												"1",
+												"attributes"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "AssetTypes",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assettypes",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assettypes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AssetType (By Id)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assettypes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create/Add AssetType",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"Lawnmower 666\"\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assettypes",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assettypes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update AssetType",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Testing\",\n    \"rowversion\": \"AAAAAAAAJxE=\"\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assettypes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete AssetType",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 204\", function () {",
+											"    pm.response.to.have.status(204);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/assettypes/1000005",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"assettypes",
+										"1000005"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Folders",
+					"item": [
+						{
+							"name": "Create/Add Folder",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"parentId\": 1000004,\n\t\"name\" : \"Bedsits\"\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/folders",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"folders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Folders",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/folders",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"folders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Folder by Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/folders/1000006",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"folders",
+										"1000006"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Folder",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Bedsits (Renamed)\",\n    \"rowversion\": \"AAAAAAAAGdA=\"\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/folders/1000006",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"folders",
+										"1000006"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Folder",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 204\", function () {",
+											"    pm.response.to.have.status(204);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/folders/1000004",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"folders",
+										"1000004"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Files",
+					"item": [
+						{
+							"name": "Get all Files (from Root Folder for AssetId 1)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/Assets/1/folders/0/Files",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Assets",
+										"1",
+										"folders",
+										"0",
+										"Files"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Download File (from Root Folder for AssetId 1)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/Assets/1/folders/0/Files/1000001",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Assets",
+										"1",
+										"folders",
+										"0",
+										"Files",
+										"1000001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Download Archive File (zip of all files Root Folder for AssetId 1)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/Assets/1/folders/0/Files/archive",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Assets",
+										"1",
+										"folders",
+										"0",
+										"Files",
+										"archive"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update file (name & description)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"DermotRenamedThisFile.txt\",\n\t\"description\" : \"Woohoo .... hahahahahaha\",\n\t\"rowversion\": \"AAAAAAAAGZU=\"\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/Assets/1/folders/0/Files/1000001",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Assets",
+										"1",
+										"folders",
+										"0",
+										"Files",
+										"1000001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload file",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/Dermot.PDSLSBS/Documents/AP_Section_1_Introduction.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/Assets/1/folders/0/Files",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Assets",
+										"1",
+										"folders",
+										"0",
+										"Files"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete File",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"rowversion\": \"AAAAAAAAGc0=\"\n}"
+								},
+								"url": {
+									"raw": "{{assetsapi_url}}/api/v1.0/Assets/1/folders/0/Files/1000056",
+									"host": [
+										"{{assetsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Assets",
+										"1",
+										"folders",
+										"0",
+										"Files",
+										"1000056"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Healthcheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{assetsapi_url}}/api/v1.0/healthcheck",
+							"host": [
+								"{{assetsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Datatypes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{assetsapi_url}}/api/v1.0/datatypes",
+							"host": [
+								"{{assetsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"datatypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Values",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{assetsapi_url}}/api/v1.0/values",
+							"host": [
+								"{{assetsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"values"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Identity - list claims",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{assetsapi_url}}/identity",
+							"host": [
+								"{{assetsapi_url}}"
+							],
+							"path": [
+								"identity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Routes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{assetsapi_url}}/api/v1.0/diagnostics/routes",
+							"host": [
+								"{{assetsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"diagnostics",
+								"routes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients API",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"item": [
+						{
+							"name": "HealthCheck (Not Authenticated)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{clientsapi_url}}/api/v1.0/HealthCheck",
+									"host": [
+										"{{clientsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"HealthCheck"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HealthCheck (Authenticated)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{clientsapi_url}}/api/v1.0/HealthCheck/Auth",
+									"host": [
+										"{{clientsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"HealthCheck",
+										"Auth"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Teams",
+					"item": [
+						{
+							"name": "GetTeams",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{clientsapi_url}}/api/v1.0/Teams",
+									"host": [
+										"{{clientsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Teams"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Qualifications",
+					"item": [
+						{
+							"name": "GetQualifications",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{clientsapi_url}}/api/v1.0/Qualifications",
+									"host": [
+										"{{clientsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Qualifications"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "GetUsers",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{clientsapi_url}}/api/v1.0/Users",
+									"host": [
+										"{{clientsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"userName\": \"Bob\",\n\t\"firstName\": \"Bob\",\n\t\"lastName\": \"Bob\",\n\t\"active\": 1\t\t\n}"
+								},
+								"url": {
+									"raw": "{{clientsapi_url}}/api/v1.0/Users",
+									"host": [
+										"{{clientsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Users"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "GetAuthorisations",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{clientsapi_url}}/api/v1.0/Authorisations/0A65C786-C3FC-4E65-B6B0-1005E960CDFD",
+							"host": [
+								"{{clientsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"Authorisations",
+								"0A65C786-C3FC-4E65-B6B0-1005E960CDFD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EffectivePermissions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{clientsapi_url}}/api/v1.0/EffectivePermissions",
+							"host": [
+								"{{clientsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"EffectivePermissions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Costs",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Content API",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time must be below 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{contentapi_url}}/api/v0.3/healthcheck",
+							"host": [
+								"{{contentapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.3",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Public Messages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{contentapi_url}}/api/v0.3/messages/public",
+							"host": [
+								"{{contentapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.3",
+								"messages",
+								"public"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Messages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{contentapi_url}}/api/v0.3/messages",
+							"host": [
+								"{{contentapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.3",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DataCapture API",
+			"item": [
+				{
+					"name": "Forms",
+					"item": [
+						{
+							"name": "FormVersions",
+							"item": [
+								{
+									"name": "FormVersionGroups",
+									"item": [
+										{
+											"name": "Get FormVersionGroups",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"type": "text",
+														"value": "Bearer {{access_token}}"
+													},
+													{
+														"key": "content",
+														"type": "text",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{datacaptureapi_url}}/api/v0.4/forms/1000001/formversions/1000001/FormVersionGroups",
+													"host": [
+														"{{datacaptureapi_url}}"
+													],
+													"path": [
+														"api",
+														"v0.4",
+														"forms",
+														"1000001",
+														"formversions",
+														"1000001",
+														"FormVersionGroups"
+													]
+												}
+											},
+											"response": []
+										}
+									],
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "Answers",
+									"item": [
+										{
+											"name": "Get Answers",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"type": "text",
+														"value": "Bearer {{access_token}}"
+													},
+													{
+														"key": "content",
+														"type": "text",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{datacaptureapi_url}}/api/v0.4/forms/1000001/formversions/1000001/Answers/1000001",
+													"host": [
+														"{{datacaptureapi_url}}"
+													],
+													"path": [
+														"api",
+														"v0.4",
+														"forms",
+														"1000001",
+														"formversions",
+														"1000001",
+														"Answers",
+														"1000001"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "SAVE Answers",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"type": "text",
+														"value": "Bearer {{access_token}}"
+													},
+													{
+														"key": "content",
+														"type": "text",
+														"value": "application/json"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"correlationId\": 1000001,\r\n\t\"answerValues\":\r\n\t[{\r\n\t\t\t\"id\": 0,\r\n\t\t\t\"questionId\": 1000001,\r\n\t\t\t\"dataTypeId\": 1,\r\n\t\t\t\"dateAnswer\": \"2019-06-07T00:00:00\",\r\n\t\t\t\"dateTimeAnswer\": null,\r\n\t\t\t\"decimalAnswer\": null,\r\n\t\t\t\"listAnswer\": null,\r\n\t\t\t\"moneyAnswer\": null,\r\n\t\t\t\"numberAnswer\": null,\r\n\t\t\t\"textAnswer\": null,\r\n\t\t\t\"timeAnswer\": null,\r\n\t\t\t\"imageAnswer\": null,\r\n\t\t\t\"rowversion\": \"AAAAAAAAAAA=\"\r\n\t\t}, {\r\n\t\t\t\"id\": 0,\r\n\t\t\t\"questionId\": 1000002,\r\n\t\t\t\"dataTypeId\": 5,\r\n\t\t\t\"dateAnswer\": null,\r\n\t\t\t\"dateTimeAnswer\": null,\r\n\t\t\t\"decimalAnswer\": null,\r\n\t\t\t\"listAnswer\": 1000003,\r\n\t\t\t\"moneyAnswer\": null,\r\n\t\t\t\"numberAnswer\": null,\r\n\t\t\t\"textAnswer\": null,\r\n\t\t\t\"timeAnswer\": null,\r\n\t\t\t\"imageAnswer\": null,\r\n\t\t\t\"rowversion\": \"AAAAAAAAAAA=\"\r\n\t\t}, {\r\n\t\t\t\"id\": 0,\r\n\t\t\t\"questionId\": 1000003,\r\n\t\t\t\"dataTypeId\": 8,\r\n\t\t\t\"dateAnswer\": null,\r\n\t\t\t\"dateTimeAnswer\": null,\r\n\t\t\t\"decimalAnswer\": null,\r\n\t\t\t\"listAnswer\": null,\r\n\t\t\t\"moneyAnswer\": null,\r\n\t\t\t\"numberAnswer\": null,\r\n\t\t\t\"textAnswer\": \"The comment has been modified once more .. Haha!\",\r\n\t\t\t\"timeAnswer\": null,\r\n\t\t\t\"imageAnswer\": null,\r\n\t\t\t\"rowversion\": \"AAAAAAAAAAA=\"\r\n\t\t}\r\n\t]\r\n}\r\n"
+												},
+												"url": {
+													"raw": "{{datacaptureapi_url}}/api/v0.4/forms/1000001/formversions/1000001/Answers",
+													"host": [
+														"{{datacaptureapi_url}}"
+													],
+													"path": [
+														"api",
+														"v0.4",
+														"forms",
+														"1000001",
+														"formversions",
+														"1000001",
+														"Answers"
+													]
+												}
+											},
+											"response": []
+										}
+									],
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "Get FormVersions",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{access_token}}",
+												"type": "text"
+											},
+											{
+												"key": "content",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{datacaptureapi_url}}/api/v0.4/forms/1000001/formversions",
+											"host": [
+												"{{datacaptureapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.4",
+												"forms",
+												"1000001",
+												"formversions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create FormVersion",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "content",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\":\"Version 3\"\n}"
+										},
+										"url": {
+											"raw": "{{datacaptureapi_url}}/api/v0.4/forms/1000001/formversions",
+											"host": [
+												"{{datacaptureapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.4",
+												"forms",
+												"1000001",
+												"formversions"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Get Forms",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "content",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{datacaptureapi_url}}/api/v0.4/forms",
+									"host": [
+										"{{datacaptureapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.4",
+										"forms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Form",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "content",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"Form 2\"\n}"
+								},
+								"url": {
+									"raw": "{{datacaptureapi_url}}/api/v0.4/forms",
+									"host": [
+										"{{datacaptureapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.4",
+										"forms"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "HealthCheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{datacaptureapi_url}}/api/v0.4/healthcheck",
+							"host": [
+								"{{datacaptureapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.4",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Energy API",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time must be below 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{energyapi_url}}/api/v0.1/healthcheck",
+							"host": [
+								"{{energyapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download EnergyUse",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time must be below 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{energyapi_url}}/api/v0.1/EnergyUse/Download",
+							"host": [
+								"{{energyapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"EnergyUse",
+								"Download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload EnergyUse",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time must be below 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{energyapi_url}}/api/v0.1/EnergyUse/Upload",
+							"host": [
+								"{{energyapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"EnergyUse",
+								"Upload"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Identity API",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"item": [
+						{
+							"name": "HealthCheck",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Response time must be below 300ms\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(300);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/healthcheck",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"healthcheck"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get all Users for a Company",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/Users",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a User by id (Must be owned by the company)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/Users/0A65C786-C3FC-4E65-B6B0-1005E960CDFD",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Users",
+										"0A65C786-C3FC-4E65-B6B0-1005E960CDFD"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Users Test",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/Users/Test",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"Users",
+										"Test"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"userName\" : \"BillyBob@pimss.com\"\n}"
+								},
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/users",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lock User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"userName\" : \"BillyBob@pimss.com\"\n}"
+								},
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/users/0A65C786-C3FC-4E65-B6B0-1005E960CDFD/lock",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"users",
+										"0A65C786-C3FC-4E65-B6B0-1005E960CDFD",
+										"lock"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Unlock User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"userName\" : \"BillyBob@pimss.com\"\n}"
+								},
+								"url": {
+									"raw": "{{identityapi_url}}/api/v1.0/users/0A65C786-C3FC-4E65-B6B0-1005E960CDFD/unlock",
+									"host": [
+										"{{identityapi_url}}"
+									],
+									"path": [
+										"api",
+										"v1.0",
+										"users",
+										"0A65C786-C3FC-4E65-B6B0-1005E960CDFD",
+										"unlock"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "/.well-known/openid-configuration",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{identityserver_url}}/.well-known/openid-configuration",
+							"host": [
+								"{{identityserver_url}}"
+							],
+							"path": [
+								".well-known",
+								"openid-configuration"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Identity Server",
+			"item": [
+				{
+					"name": "well-known/openid-configuration",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{identityserver_url}}/.well-known/openid-configuration\n",
+							"host": [
+								"{{identityserver_url}}"
+							],
+							"path": [
+								".well-known",
+								"openid-configuration\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userinfo_endpoint",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{identityserver_url}}/connect/userinfo",
+							"host": [
+								"{{identityserver_url}}"
+							],
+							"path": [
+								"connect",
+								"userinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authorization_endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{identityserver_url}}/connect/authorize?prompt=none&client_id=clientcredentials.client&scope=viability.api.scope company.profile.scope clarity.pimssapi.scope support.staff.scope core.api.scope assets.api.scope &response_type=id_token token&\n",
+							"host": [
+								"{{identityserver_url}}"
+							],
+							"path": [
+								"connect",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "prompt",
+									"value": "none"
+								},
+								{
+									"key": "client_id",
+									"value": "clientcredentials.client"
+								},
+								{
+									"key": "scope",
+									"value": "viability.api.scope company.profile.scope clarity.pimssapi.scope support.staff.scope core.api.scope assets.api.scope "
+								},
+								{
+									"key": "response_type",
+									"value": "id_token token"
+								},
+								{
+									"key": "\n",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metadata API",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{metadataapi_url}}/api/v0.1/healthcheck",
+							"host": [
+								"{{metadataapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "usermetadata",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{metadataapi_url}}/api/v0.1/usermetadata",
+							"host": [
+								"{{metadataapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"usermetadata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupMetadata",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{metadataapi_url}}/api/v0.1/groupmetadata",
+							"host": [
+								"{{metadataapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"groupmetadata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Planning API",
+			"item": [
+				{
+					"name": "AttributeGroups",
+					"item": [
+						{
+							"name": "AttributeGroups",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/AttributeGroups?assetTypeId=1",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"AttributeGroups"
+									],
+									"query": [
+										{
+											"key": "assetTypeId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Plans",
+					"item": [
+						{
+							"name": "AttributeGroups",
+							"item": [
+								{
+									"name": "AttributeGroups",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{planningapi_url}}/api/v0.1/Plans/1000003/AttributeGroups",
+											"host": [
+												"{{planningapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.1",
+												"Plans",
+												"1000003",
+												"AttributeGroups"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "PlanVersions",
+							"item": [
+								{
+									"name": "PlanVersions",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{planningapi_url}}/api/v0.1/Plans/1000003/PlanVersions",
+											"host": [
+												"{{planningapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.1",
+												"Plans",
+												"1000003",
+												"PlanVersions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PlanVersion by id",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{planningapi_url}}/api/v0.1/Plans/1000003/PlanVersions/1000001",
+											"host": [
+												"{{planningapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.1",
+												"Plans",
+												"1000003",
+												"PlanVersions",
+												"1000001"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add PlanVersion",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"Dermot Plan Version 04\",\n\t\"scheduleId\": 1000001,\n\t\"startYear\": 2000,\n\t\"endYear\": 2070\n\n}"
+										},
+										"url": {
+											"raw": "{{planningapi_url}}/api/v0.1/Plans/1000003/PlanVersions",
+											"host": [
+												"{{planningapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.1",
+												"Plans",
+												"1000003",
+												"PlanVersions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update PlanVersion",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n            \"planId\": 1000003,\r\n            \"name\": \"Dermot Plan Version 01 (modified)\",\r\n            \"scheduleId\": 1000001,\r\n            \"startYear\": 1910,\r\n            \"endYear\": 2000,\r\n            \"rowversion\": \"AAAAAAAAGdE=\",\r\n\r\n}"
+										},
+										"url": {
+											"raw": "{{planningapi_url}}/api/v0.1/Plans/1000003/PlanVersions/1000001",
+											"host": [
+												"{{planningapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.1",
+												"Plans",
+												"1000003",
+												"PlanVersions",
+												"1000001"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Remove PlanVersion",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer {{access_token}}"
+											},
+											{
+												"key": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\"rowversion\": \"AAAAAAAAJxU=\"\n}"
+										},
+										"url": {
+											"raw": "{{planningapi_url}}/api/v0.1/Plans/1000003/PlanVersions/1000005",
+											"host": [
+												"{{planningapi_url}}"
+											],
+											"path": [
+												"api",
+												"v0.1",
+												"Plans",
+												"1000003",
+												"PlanVersions",
+												"1000005"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Plans",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/Plans",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"Plans"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Plan by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/Plans/1000002",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"Plans",
+										"1000002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"planGroupId\": 1000001,\n\t\"assetTypeId\": 1,\n\t\"name\": \"Plan 03\"\n}"
+								},
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/Plans",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"Plans"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"planGroupId\": 1000003,\r\n    \"name\": \"dermotPlan02 (updated)\",\r\n    \"rowversion\": \"AAAAAAAAGc0=\"\r\n}"
+								},
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/Plans/1000002",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"Plans",
+										"1000002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"rowversion\": \"AAAAAAAAGc4=\"\n}"
+								},
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/Plans/1000002",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"Plans",
+										"1000002"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Plan Groups",
+					"item": [
+						{
+							"name": "PlanGroups",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/PlanGroups",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"PlanGroups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PlanGroup by id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/PlanGroups/1000001",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"PlanGroups",
+										"1000001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add PlanGroup",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"parentId\": 1000003,\n\t\"name\": \"Child 3 of Group 03\",\n\t\"budget\": 333311\n}"
+								},
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/PlanGroups",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"PlanGroups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update PlanGroup",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"dermot333\",\n\t\"budget\": 333.66,\n    \"rowversion\": \"AAAAAAAAGcg=\"\n}"
+								},
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/PlanGroups/1000001",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"PlanGroups",
+										"1000001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove PlanGroup",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"rowVersion\": \"AAAAAAAAGco=\"\n}"
+								},
+								"url": {
+									"raw": "{{planningapi_url}}/api/v0.1/PlanGroups/1000001",
+									"host": [
+										"{{planningapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"PlanGroups",
+										"1000001"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Healthcheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{planningapi_url}}/api/v0.1/healthcheck",
+							"host": [
+								"{{planningapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Processes Api",
+			"item": [
+				{
+					"name": "ProcessTypes",
+					"item": [
+						{
+							"name": "GetProcessTypes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "content",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{processapi_url}}/api/v0.3/ProcessTypes",
+									"host": [
+										"{{processapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.3",
+										"ProcessTypes"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "HealthCheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{processapi_url}}/api/v0.3/healthcheck",
+							"host": [
+								"{{processapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.3",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports API",
+			"item": [
+				{
+					"name": "Compliance Reports",
+					"item": [
+						{
+							"name": "GetComplianceCounts",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "content",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{reportsapi_url}}/api/v0.1/ComplianceReports/Counts/1000001",
+									"host": [
+										"{{reportsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"ComplianceReports",
+										"Counts",
+										"1000001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetProcessInstances",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "content",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{reportsapi_url}}/api/v0.1/ComplianceReports/ProcessInstances/1000002/0",
+									"host": [
+										"{{reportsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"ComplianceReports",
+										"ProcessInstances",
+										"1000002",
+										"0"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "HealthCheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time must be below 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{reportsapi_url}}/api/v0.1/healthcheck",
+							"host": [
+								"{{reportsapi_url}}"
+							],
+							"path": [
+								"api",
+								"v0.1",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Settings API",
+			"item": [
+				{
+					"name": "HealthCheck",
+					"item": [
+						{
+							"name": "HealthCheck",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Response time must be below 300ms\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(300);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{settingsapi_url}}/api/v0.1/healthcheck",
+									"host": [
+										"{{settingsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"healthcheck"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Company Settings",
+					"item": [
+						{
+							"name": "CompanySettings",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Response time must be below 300ms\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(300);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{settingsapi_url}}/api/v0.1/CompanySettings",
+									"host": [
+										"{{settingsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"CompanySettings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update CompanySettings",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{access_token}}"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"month\": 4,\r\n\t\"day\": 5,\r\n    \"defaultMaterial\": \"First\"\r\n}"
+								},
+								"url": {
+									"raw": "{{settingsapi_url}}/api/v0.1/CompanySettings",
+									"host": [
+										"{{settingsapi_url}}"
+									],
+									"path": [
+										"api",
+										"v0.1",
+										"CompanySettings"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users API",
+			"item": [
+				{
+					"name": "Values",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{usersapi_url}}/api/v1.0/values",
+							"host": [
+								"{{usersapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"values"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Healthcheck",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{usersapi_url}}/api/v1.0/healthcheck",
+							"host": [
+								"{{usersapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Identity - list claims",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5eb633af-f42b-4c24-aa05-e90b158ef5ff",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{usersapi_url}}/identity",
+							"host": [
+								"{{usersapi_url}}"
+							],
+							"path": [
+								"identity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Routes Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9340994-c246-4df7-9598-1eb5a09fd385",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{usersapi_url}}/api/v1.0/diagnostics/routes",
+							"host": [
+								"{{usersapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"diagnostics",
+								"routes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Viability API",
+			"item": [
+				{
+					"name": "Get Templates",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e20290ab-2a9e-40cc-bcb9-156ea5597986",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{viabilityapi_url}}/api/v1.0/templates",
+							"host": [
+								"{{viabilityapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"templates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notifications",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9af0f79f-a615-4fc6-99bf-8c0d25149ab5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{viabilityapi_url}}/api/v1.0/Notifications",
+							"host": [
+								"{{viabilityapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"Notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Scenarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{viabilityapi_url}}/api/v1.0/templates/5c3f39a70f964f0348af352f/scenarios",
+							"host": [
+								"{{viabilityapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"templates",
+								"5c3f39a70f964f0348af352f",
+								"scenarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Dashboard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{viabilityapi_url}}/api/v1.0/Dashboard",
+							"host": [
+								"{{viabilityapi_url}}"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"Dashboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Token (resourceownerpassword.client) Reduced Scopes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d2bed692-a605-4f85-81c8-0be0a6395e2f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Save Access Token\", function () {",
+							"    ",
+							"    pm.response.to.have.status(200);",
+							"    ",
+							"    if(responseCode.code === 200){",
+							"        var jsonData = pm.response.json();",
+							"        pm.environment.set(\"access_token\", jsonData.access_token);",
+							"        //console.log(jsonData.access_token);",
+							"    }",
+							"",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "resourceownerpassword.client",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "T0pS3cr3t!",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "identity.api.scope clients.api.scope clarity.pimssapi.scope company.profile.scope openid generic.api.scope support.staff.scope viability.api.scope\t",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "{{UserName}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{Password}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{identityserver_url}}/connect/token",
+					"host": [
+						"{{identityserver_url}}"
+					],
+					"path": [
+						"connect",
+						"token"
+					]
+				},
+				"description": "Request access token"
+			},
+			"response": []
+		}
+	]
+}

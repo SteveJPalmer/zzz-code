@@ -1,0 +1,111 @@
+﻿### grab token - Clarity.Web.Ui/src/Clarity.Web.Ui/Pages/Activities/Index.cshtml.cs > OnGetAsync()
+POST https://localhost:44300/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=resourceownerpassword.client&client_secret=T0pS3cr3t!&grant_type=password&scope=identity.api.scope clients.api.scope clarity.pimssapi.scope company.profile.scope openid generic.api.scope support.staff.scope viability.api.scope&username=Admin@hwt2.com&password=Password1@
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+    
+    client.test("Check response props", function() {
+        client.assert(response.body.hasOwnProperty("access_token"), "Cannot find 'access_token' option in response");
+    });
+
+    //client.log(response.body.access_token);
+    
+    client.global.clearAll();
+    client.global.set("global_token", response.body.access_token);
+    client.log( client.global.get("global_token"));
+%}
+
+
+### Assets CAS 44310 - GET /AnalysedDocuments
+GET https://localhost:44310/api/v1.0/AnalysedDocuments
+Content-Type: application/json
+#Authorization: Bearer {{token}}
+Authorization: Bearer {{global_token}}
+
+<> 2022-10-04T122501.200.json
+
+
+### Assets CAS 44310 - GET /AnalysedDocuments?pageNumber=1&pageSize=10&status=0
+GET https://localhost:44310/api/v1.0/AnalysedDocuments?pageNumber=1&pageSize=2&status=0
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Assets CAS 44310 - GET /AnalysedDocuments?status=0
+GET https://localhost:44310/api/v1.0/AnalysedDocuments?status=0
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### Assets CAS 44310 - POST /AnalysedDocuments
+POST https://localhost:44310/api/v1.0/AnalysedDocuments
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "RequestId" : 2005 ,
+  "CustomerName" : "Cust2001",
+  "UserName" : "Name2001",
+  "DocumentName" : "Doc2001.pdf"
+}
+
+### Assets CAS 44310 - PUT /AnalysedDocuments/{requestId}
+PUT https://localhost:44310/api/v1.0/AnalysedDocuments/2005
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "Status" : 1,
+  "DocumentType" : "TestDocType-BBB",
+  "ConfidenceScore" : 0,
+  "OnHoldReason" : "Low confidence score",
+  "Rowversion" : "AAAAAAAMqjU=" 
+}
+
+
+
+
+### ADP API - 44400 - GET /api/BlobFiles/AddFile
+POST https://localhost:44400/api/BlobFiles/AddFile?
+    RequestId="aaaa-1111"&
+    CustomerName="CustomerY"&
+    UserName="UserX"
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="Test_sun_realm_ORION_WAY.pdf"
+Content-Type: application/pdf
+
+< ../../../WorkBusiness/2-%20Compliance/PDF-Automation-Prj/Test-Forms/Test_sun_realm_ORION_WAY.pdf
+--WebAppBoundary--
+
+# // <  ./Test_sun_realm_ORION_WAY.pdf     (can drop into the .idea results output folder ie. .idea\.idea.ClarityMaster\.idea\httpRequests )
+
+
+<> 2022-11-07T125750.400.json
+<> 2022-11-07T124858.400.json
+<> 2022-11-07T124818.400.json
+<> 2022-11-07T124409.400.json
+
+
+
+### ADP API - 44400 - GET /api/ServiceUsage/{requestId}
+GET https://localhost:44400/api/ServiceUsage/{{requestId}}
+Content-Type: application/json
+
+### ADP API - 44400 - GET /api/ServiceUsage/{requestId}
+GET https://localhost:44400/api/ServiceUsage/aaaa-bbbb-cccc-dddd-2002
+Content-Type: application/json
+
+### ADP API - 44400 - GET /api/Analyze/Instances/{requestId}
+GET https://localhost:44400/api/Analyze/Instances/{{requestId}}
+Content-Type: application/json
+
+### ADP API - 44400 - GET /api/Analyze/Instances/{requestId}
+GET https://localhost:44400/api/Analyze/Instances/aaaa-bbbb-cccc-dddd-2001
+Content-Type: application/json
+

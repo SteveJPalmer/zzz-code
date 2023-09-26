@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "3bee66e4-d3d8-4602-bf45-9fe0701fba5a",
+		"name": "APD prj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13066455"
+	},
+	"item": [
+		{
+			"name": "local",
+			"item": [
+				{
+					"name": "Local - ADP API - AddFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "w7vbLimW2/Test_sun_realm_ORION_WAY-NoSignature.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:44400/api/BlobFiles/AddFile?RequestId=AAAA-1111-BBBB-2222&CustomerName=CustPM&UserName=Blinky",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44400",
+							"path": [
+								"api",
+								"BlobFiles",
+								"AddFile"
+							],
+							"query": [
+								{
+									"key": "RequestId",
+									"value": "AAAA-1111-BBBB-2222"
+								},
+								{
+									"key": "CustomerName",
+									"value": "CustPM"
+								},
+								{
+									"key": "UserName",
+									"value": "Blinky"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local - ADP API - GetServiceUsage",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.collectionVariables.set(\"requestId\", \"aaaa-bbbb-cccc-dddd-2001\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44400/api/ServiceUsage/{{requestId}}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44400",
+							"path": [
+								"api",
+								"ServiceUsage",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local - ADP API - GetAnalyzeInstance",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.collectionVariables.set(\"requestId\", \"aaaa-bbbb-cccc-dddd-2002\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44400/api/Analyze/Instances/{{requestId}}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44400",
+							"path": [
+								"api",
+								"Analyze",
+								"Instances",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Azure - Scratch",
+			"item": [
+				{
+					"name": "Azure - ADP API - AddFile Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-pimss-adp.azurewebsites.net/api/BlobFiles/AddFile?RequestId=AAAA-1111-BBBB-2222&CustomerName=CustPM&UserName=Blinky",
+							"protocol": "https",
+							"host": [
+								"api-pimss-adp",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"BlobFiles",
+								"AddFile"
+							],
+							"query": [
+								{
+									"key": "RequestId",
+									"value": "AAAA-1111-BBBB-2222"
+								},
+								{
+									"key": "CustomerName",
+									"value": "CustPM"
+								},
+								{
+									"key": "UserName",
+									"value": "Blinky"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Azure - Dev",
+			"item": [
+				{
+					"name": "Azure- Dev - ADP API - AddFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api-pimss-adp-dev.azurewebsites.net/api/BlobFiles/AddFile?RequestId=AAAA-1111-BBBB-2222&CustomerName=CustPM&UserName=Blinky",
+							"protocol": "https",
+							"host": [
+								"api-pimss-adp-dev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"BlobFiles",
+								"AddFile"
+							],
+							"query": [
+								{
+									"key": "RequestId",
+									"value": "AAAA-1111-BBBB-2222"
+								},
+								{
+									"key": "CustomerName",
+									"value": "CustPM"
+								},
+								{
+									"key": "UserName",
+									"value": "Blinky"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Azure - Dev - ADP API - GetServiceUsage",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.collectionVariables.set(\"requestId\", \"Deploy-Test-AAAA-1111\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-pimss-adp-dev.azurewebsites.net/api/ServiceUsage/{{requestId}}",
+							"protocol": "https",
+							"host": [
+								"api-pimss-adp-dev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"ServiceUsage",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Azure - Dev - ADP API - GetAnalyzeInstance",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.collectionVariables.set(\"requestId\", \"Deploy-Test-AAAA-1111\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-pimss-adp-dev.azurewebsites.net/api/Analyze/Instances/{{requestId}}",
+							"protocol": "https",
+							"host": [
+								"api-pimss-adp-dev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Analyze",
+								"Instances",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "requestId",
+			"value": ""
+		}
+	]
+}
