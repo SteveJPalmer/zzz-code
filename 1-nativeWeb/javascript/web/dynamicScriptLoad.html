@@ -4,30 +4,25 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
   <script>
     /* 1) jq solution */
     $.getScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js', function(data, textStatus, jqxhr) {
-      //console.log(data); 					//data returned
+      //console.log(data); 				//data returned
       console.log(textStatus); 		//success
       console.log(jqxhr.status); 	//200
       console.log('lodash loaded');
-      //try some lodash
-      var myNumber = _.random(15, 20);
+      var myNumber = _.random(15, 20);  //try some lodash
       console.log('lodash ramdom number:' + myNumber);
     });
   </script>
-
   <script>
     /* 2a) native solution */
     var oScript = document.createElement('script');									  //create script node & dd attrs
     oScript.type = 'text/javascript';
     oScript.src  = 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js';
-
     var oHead   = document.getElementsByTagName('head').item(0);      //add to end of <head> tag
     oHead.appendChild(oScript);																				//add node to DOM
   </script>
-
 
   <script>
     /* 2b) native solution enhanced with cb */
@@ -48,28 +43,21 @@
           callback();
         };
       }
-
       document.getElementsByTagName("head")[0].appendChild(script);
     }
 
     //scripts to load
     loadScript("https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.js", function () {
       console.log('moment.js loaded');
-
-      //try some moment
       var mm = moment.duration(37250000);   //pass in time in ms
       console.log(mm.hours() + ':' + mm.minutes() + ':' + mm.seconds());
-
     });
-
   </script>
-
 
   <script>
     $(function(){
       /* check status of loaded files 'ready' event */
       console.log('ready event fired...  ** need callbacks - as ready event fires before dynamic script loading ');
-
       try {
         //try some moment
         var mm = moment.duration(37250000);   //pass in time in ms
@@ -78,7 +66,6 @@
       catch(err) {
         console.error('error: '+ err.message+ "\n");
       };
-
       try {
         //try some lodash
         var myNumber = _.random(15, 20);
@@ -86,16 +73,10 @@
       }
       catch(err) {
         console.error('error: '+ err.message+ "\n");
-      };
-
+      }
     });
   </script>
 
-
-
-  <!--[if lt IE 10]>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
   <script>
     /* load script based on matchMedia match (mediaQuery typically set to 400 for mobile) */
     /* respond loaded as contain matchMedia Polyfill (matchMedium in IE9, nothing IE8-) */
@@ -113,9 +94,6 @@
     }
   </script>
 
-
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <script>
     /* Modernizr add test for mobile */
@@ -132,12 +110,9 @@
       console.info('ismobile: false');
     };
   </script>
-
-  
 </head>
 <body>
   <h1>Dynamic Loading of Scripts: </h1>
   <p>jq, native & matchMedia condition(mobile)</p>
-
 </body>
 </html>

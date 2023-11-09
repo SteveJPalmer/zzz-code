@@ -21,7 +21,6 @@ import { MockXHRInterceptor } from './Services/mock-xhr-interceptor.service';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
 import { EticketComponent } from './eticket/eticket.component';
 import { PickupComponent } from './pickup/pickup.component';
 
@@ -56,7 +55,6 @@ export const protectedResourceMap: [string, string[]][] = prm;
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
     routableComponents,
     EticketComponent,
     PickupComponent,
