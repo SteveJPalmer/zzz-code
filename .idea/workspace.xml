@@ -9,13 +9,155 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/typescript/classes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/javascript/typescript/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/projects/ts/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/projects/ts/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/projects/ts/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/projects/ts/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/custom-directives/src/app/structural-directives/unless.directive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/custom-directives/src/app/structural-directives/unless.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-base/reactive-form-base.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-base/reactive-form-base.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-base/reactive-form-base.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-base/reactive-form-base.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-full/reactive-form-full.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-full/reactive-form-full.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-full/reactive-form-full.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-full/reactive-form-full.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-form-full/username.validator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-array/reactive-forms-array.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-array/reactive-forms-array.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-array/reactive-forms-array.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-array/reactive-forms-array.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-custom-quantity/reactive-forms-custom-quantity.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-custom-quantity/reactive-forms-custom-quantity.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-custom-quantity/reactive-forms-custom-quantity.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/reactive-forms-custom-quantity/reactive-forms-custom-quantity.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/test-host-custom-comps/test-host-custom-comps.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/test-host-custom-comps/test-host-custom-comps.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/test-host-custom-comps/test-host-custom-comps.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/app/test-host-custom-comps/test-host-custom-comps.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/reactive/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/template/baseTemplateForm/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/template/baseTemplateForm/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/template/baseTemplateForm/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/template/fullTemplateForm/hero-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/template/fullTemplateForm/hero-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/forms/template/fullTemplateForm/hero.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/eCheckInUI/src/app/Services/awb.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/projects/eCheckInUI/src/app/Services/awb.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/.angular-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_guards/auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_guards/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_helpers/error.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_helpers/fake-backend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_helpers/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_helpers/jwt.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_models/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_models/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_services/authentication.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_services/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/_services/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/app.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/home/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/login/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/app/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/src/typings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/projects/userLogin/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/QLNG - Unit tests guideline - Overview.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/lib/jasmine-3.5.0/boot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/lib/jasmine-3.5.0/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/lib/jasmine-3.5.0/jasmine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/lib/jasmine-3.5.0/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/lib/jasmine-3.5.0/jasmine_favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/myRunner-Setup-Teardown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/myRunner-Spy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/myRunner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/spec/mySpecs-Setup-Teardown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/spec/mySpecs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/spec/spyOn-Basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/spec/spyOn-callFake.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/jasmine/src/myCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/IOrder.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search.actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/1st.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.component-externalTemplate.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +178,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/1-nativeWeb/javascript/typescript/classes.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="vcs://C:/zzz-Repos/zzz-code/5-projects/angular/hermes/MembershipUI/ClientApp/src/app/Services/awb.service.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -82,18 +224,19 @@
   }
 }</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
-      <recent name="C:\zzz-code\5-projects\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\zzz-code\3-visualisation\SVG" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseReactiveForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\advTemplateForm" />
       <recent name="C:\zzz-code\2-frameworks\angular\view\forms\baseTemplateForm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\zzz-Repos\zzz-code\2-angular\testing\ng-TestBed\componentTests101" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\template" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\templateForms" />
+      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactiveForms" />
+      <recent name="C:\zzz-code\5-projects\angular" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,6 +407,28 @@
       <workItem from="1695910483868" duration="89000" />
       <workItem from="1695910586005" duration="2805000" />
       <workItem from="1695913430827" duration="3461000" />
+      <workItem from="1701719431921" duration="900000" />
+      <workItem from="1701790263164" duration="1552000" />
+      <workItem from="1701791883941" duration="18000" />
+      <workItem from="1702409282419" duration="4137000" />
+      <workItem from="1702473284583" duration="271000" />
+      <workItem from="1702473565543" duration="1918000" />
+      <workItem from="1702658314464" duration="2438000" />
+      <workItem from="1702740345838" duration="3049000" />
+      <workItem from="1702757868425" duration="1162000" />
+      <workItem from="1702827918035" duration="2383000" />
+      <workItem from="1702999201594" duration="3780000" />
+      <workItem from="1703006213281" duration="3061000" />
+      <workItem from="1703017820784" duration="3917000" />
+      <workItem from="1703091573454" duration="2222000" />
+      <workItem from="1703096104328" duration="4000" />
+      <workItem from="1703110980554" duration="1823000" />
+      <workItem from="1703177593584" duration="9000" />
+      <workItem from="1703177888379" duration="1626000" />
+      <workItem from="1703179539026" duration="452000" />
+      <workItem from="1703180318114" duration="1041000" />
+      <workItem from="1703187206643" duration="3191000" />
+      <workItem from="1703271249056" duration="2897000" />
     </task>
     <servers />
   </component>
@@ -271,59 +436,14 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.directive.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.module.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-item.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-profile.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/hero-job-ad.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/app.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad.service.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/app/ad-banner.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/main.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/modules-components/dynamic-component-loader/src/main.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/main.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/main.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/directives/baseDirectives/app/app.module.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/logger/logger.service.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/logger/logger.service.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/heroes.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/mock-heroes.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero-list.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.service.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/heroes/hero.service.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/main.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/main.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/nestedServices/app/app.module.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicles.component.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicles.component.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicle.service.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/vehicle.service.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/app/app.module.js" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/main.js.map" />
-        <option value="$PROJECT_DIR$/2-frameworks/angular/services/baseService/main.js" />
-        <option value="$PROJECT_DIR$/1-nativeWeb/javascript/typescript/types.js" />
+        <option value="$PROJECT_DIR$/1-nativeWeb/javascript/strings/string-utils.spec.js" />
+        <option value="$PROJECT_DIR$/1-nativeWeb/javascript/strings/string-utils.js" />
+        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.spec.js" />
+        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/main.js" />
+        <option value="$PROJECT_DIR$/2-angular/testing/TestBed/componentTests101/app/app.component.spec.js" />
+        <option value="$PROJECT_DIR$/2-angular/testing/TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.spec.js" />
       </list>
     </option>
   </component>

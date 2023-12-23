@@ -36,7 +36,7 @@ export class AwbService extends ServiceBase {
   }
 
   async searchPickupAWBs(awbPrefix: string, gh: string, httpOptions? ): Promise<any> {
-    const response = await this.http.get<string>(this._baseUrl + this._restUrl.awb.getpickupairwaybills + gh + '/' + awbPrefix, httpOptions )
+    const response = await this.http.get<string>(this._baseUrl + this._restUrl.awb.getpickupairwaybills   + gh + '/' + awbPrefix, httpOptions )
       //.do(resp => {
         //console.log(resp);
       //})
