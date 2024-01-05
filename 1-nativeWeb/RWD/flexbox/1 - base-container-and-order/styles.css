@@ -11,16 +11,20 @@ body {
 
 .flex-container {
 	display: flex;
-	/* display: inline-flex; */
-	/* flex-wrap: nowrap; */
-	flex-wrap: wrap;
-	/* flex-wrap: wrap-reverse; */
-	/* flex-direction: column; */
+	/*display: inline-flex;*/
+
+	/* flex-direction: row;    // default */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column;*/
 	/* flex-direction: column-reverse; */
+
+	flex-wrap: wrap;
+	 /*flex-wrap: nowrap;*/
+	/* flex-wrap: wrap-reverse; */
+
 	border: solid 2px #000;
 	/*width: 50%;*/
-	/* height: 20em; */
-
+	height: 10em;
 }
 
 .flex-item {
@@ -29,7 +33,9 @@ body {
 	border: solid 1px grey;
 	text-align: center;
 	opacity: 0.8;
+	/* change width setting to diff wrapping effects (fixed px or relative %) */
 	width: 25%;
+	/*width: 100px;*/
 }
 
 .flex-item-01 {
@@ -46,7 +52,7 @@ body {
 .flex-item-03 {
 	background-color: #675BA7;
 	order: 0;
-	/* order: 1; */
+	/*order: 1;*/
 	/*order: -1;*/
 }
 

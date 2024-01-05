@@ -15,18 +15,20 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-/*    flex-grow: 1;*/
-	width: 10em;
+	flex: 1;   /* aka flex-grow: 1; */
+	/*flex: 1 100px;*/
+	/*width: 200px;*/
 }
 
 .flex-item-01 {
 	background-color: #A62E5C;
+	/*flex: 1;*/
 }
 
 .flex-item-02 {
 	background-color: #9BC850;
-/*	flex-grow: 4;*/
-/*	flex-grow: 0;*/
+	/*flex: 1.5;    !* aka flex-grow: 1.5; *!*/
+	/*flex-grow: 2;*/
 /*	flex-shrink: 2;*/
 /*	flex-shrink: 0;*/
 /*	flex-basis: 10em;*/
@@ -38,6 +40,8 @@ body {
 
 .flex-item-04 {
 	background-color: #2A9FBC;
+	/*flex: 3;*/
+	flex: 0 0 50%;     /* taking 50% share */
 }
 
 .flex-item strong {

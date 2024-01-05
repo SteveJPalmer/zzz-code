@@ -10,11 +10,10 @@ body {
 	border: solid 4px #000;
     height: 36.72em;
 
-    flex-direction: row;
-/*	flex-direction: column;*/
+	/*flex-direction: column;*/
 
 /*  justify-content: flex-start;*/
-/*	justify-content: flex-end;*/
+/*  justify-content: flex-end;*/
 	justify-content: center;
 /*  justify-content: space-evenly;*/
 /*	justify-content: space-between;*/

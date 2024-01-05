@@ -10,11 +10,13 @@ body {
 	border: solid 4px #000;
     height: 36.72em;
     flex-wrap: wrap;
-/*    align-content: flex-start;*/
+    gap: 12px;
+	/* multi-row allignment */
+    /*align-content: flex-start;*/
 /*    align-content: flex-end;*/
-/*    align-content: center;*/
+    align-content: center;
 /*    align-content: space-between;*/
-    align-content: space-around;
+/*    align-content: space-around;*/
 /*    align-content: stretch;*/
 }
 
@@ -24,7 +26,11 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-    width: 33.33333%;
+    width: calc(33.3333% - 8px);
+	/*width: 100px;*/
+	/*max-width: 100px;*/
+	/*flex: 1 100px;*/
+	/*flex: 1 100px;*/
 }
 
 .flex-item-01,
