@@ -8,31 +8,30 @@ body {
 /* Grid Container */
 .container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  grid-template-areas:				  /* alternative, placement technique */
+  "header header"
+  "content sidebar"
+  "footer footer";
+  grid-template-columns: 3fr 1fr;      /* grid the same */
+gap: 20px;
 }
 
 /* Grid Items */
 header {
-  grid-column: 1 / 3;
-  grid-row: 1;
-
+  grid-area: header;
 }
 
 article {
-  grid-column: 1;
-  grid-row: 2;
+  grid-area: content;
   height: 300px;
 }
 
 aside {
-  grid-column: 2;
-  grid-row: 2;
+  grid-area: sidebar;
 }
 
 footer {
-  grid-column: 1 / 3;
-  grid-row: 3;
+  grid-area: footer;
 }
 
 /* general styling */

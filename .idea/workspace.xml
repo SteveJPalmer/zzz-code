@@ -9,31 +9,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aea1ab40-4cfd-421e-b3fc-1b8b05bc3fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/1 - base-grid-and-allignment/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/1 - base-grid-and-allignment/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/3 - Nested-Grids-Responsive/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/3 - Nested-Grids-Responsive/img/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/3 - Nested-Grids-Responsive/img/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/3 - Nested-Grids-Responsive/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/3 - Nested-Grids-Responsive/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.fleet/run.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/styles-template-areas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/fauxColumns.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/floatFauxColumns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/.fleet/run.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/.fleet/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - flexContainer - order/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - base-container-and-order/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - flexContainer - order/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/1 - base-container-and-order/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - justify-content - align-items/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - justify-and-align-items/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - justify-content - align-items/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2 - justify-and-align-items/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2b - align-content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2b - align-content - multi-row/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2b - align-content/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/2b - align-content - multi-row/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3 - flex-grow-shrink-basis/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/3 - flex-grow-shrink-basis/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4 - solution-equal-height-faux-cols/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4 - solution-equal-height-cols/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4 - solution-equal-height-faux-cols/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/4 - solution-equal-height-cols/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5 - the-Holy-Grail-layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5 - the-Holy-Grail-layout/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/flexbox/5 - the-Holy-Grail-layout/styles-original.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/1-nativeWeb/RWD/grid/2 - the-Holy-Grail-Responsive/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/1 - redux101/app-redux.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/1 - redux101/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/bs-config.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/bs-config.e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/bs-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/bs-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/e2e/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/e2e/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/e2e/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/karma-test-shim.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/karma-test-shim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/non-essential-files.osx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/non-essential-files.osx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/non-essential-files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/non-essential-files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/protractor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/protractor.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/courses/ICourse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/courses/ICourse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/courses/course-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/courses/course-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/courses/course-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/store/IAppState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/store/IAppState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/store/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/systemjs-angular-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/systemjs-angular-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/systemjs.config.extras.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/systemjs.config.extras.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/systemjs.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/systemjs.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/src/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/2 - angularNativeRedux101/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/bs-config.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/bs-config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/e2e/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/karma-test-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/non-essential-files.osx.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/non-essential-files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/protractor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/courses/ICourse.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/courses/course-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/courses/course-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/courses/course-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/courses/courses.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/courses/courses.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/store/IAppState.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/store/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/2-angular/redux/angularNativeRedux101/src/app/store/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/app/store/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/systemjs-angular-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/systemjs.config.extras.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/systemjs.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/src/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-angular/redux/3 - angularNativeRedux101-getDataService/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +127,7 @@
     <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="1UOBC6Q9Vz273KyUcRbP39gxJW6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,32 +135,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/zzz-Repos/zzz-code/1-nativeWeb/RWD/grid/3 - Nested-Grids-Responsive",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\steve\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/zzz-Scratch/prj-PIMSS-Source/Clarity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\steve\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\zzz-Repos\zzz-code\1-nativeWeb\RWD\grid\2 - the-Holy-Grail-Responsive" />
       <recent name="C:\zzz-Repos\zzz-code\1-nativeWeb\RWD\grid\3 - Nested-Grids-Responsive" />
       <recent name="C:\zzz-Repos\zzz-code\1-nativeWeb\RWD\grid\2 - the-Holy-Grail-layout" />
       <recent name="C:\zzz-Repos\zzz-code\1-nativeWeb\RWD\grid\1 - base-grid-and-allignment" />
       <recent name="C:\zzz-code\3-visualisation\SVG" />
-      <recent name="C:\zzz-code\2-frameworks\angular\view\forms\reactive\fullReactiveForm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\zzz-Repos\zzz-code\2-angular\testing\ng-TestBed\componentTests101" />
@@ -325,6 +378,28 @@
       <workItem from="1704379868858" duration="2468000" />
       <workItem from="1704390644887" duration="6147000" />
       <workItem from="1704467777535" duration="3515000" />
+      <workItem from="1704481174220" duration="339000" />
+      <workItem from="1704481575171" duration="41000" />
+      <workItem from="1704484275537" duration="5285000" />
+      <workItem from="1704560892017" duration="5429000" />
+      <workItem from="1704716612306" duration="3949000" />
+      <workItem from="1704811635789" duration="366000" />
+      <workItem from="1704979106349" duration="652000" />
+      <workItem from="1704996251981" duration="762000" />
+      <workItem from="1705771290582" duration="611000" />
+      <workItem from="1705860002446" duration="701000" />
+      <workItem from="1706203052469" duration="10000" />
+      <workItem from="1706203073164" duration="2000" />
+      <workItem from="1706203111001" duration="7000" />
+      <workItem from="1706203129009" duration="83000" />
+      <workItem from="1706203278472" duration="2000" />
+      <workItem from="1706203301900" duration="31000" />
+      <workItem from="1706203474551" duration="1000" />
+      <workItem from="1706203485734" duration="9000" />
+      <workItem from="1706203525250" duration="24000" />
+      <workItem from="1706203560886" duration="2000" />
+      <workItem from="1706284155054" duration="1717000" />
+      <workItem from="1706285888728" duration="1687000" />
     </task>
     <servers />
   </component>
@@ -332,14 +407,8 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/1-nativeWeb/javascript/strings/string-utils.spec.js" />
         <option value="$PROJECT_DIR$/1-nativeWeb/javascript/strings/string-utils.js" />
-        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.spec.js" />
-        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.module.js" />
-        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/app/app.component.js" />
-        <option value="$PROJECT_DIR$/2-angular/testing/ng-TestBed/componentTests101/src/main.js" />
-        <option value="$PROJECT_DIR$/2-angular/testing/TestBed/componentTests101/app/app.component.spec.js" />
-        <option value="$PROJECT_DIR$/2-angular/testing/TestBed/TissueTypingExamples/order-search-panel/order-search-panel.component.spec.js" />
+        <option value="$PROJECT_DIR$/1-nativeWeb/javascript/strings/string-utils.spec.js" />
       </list>
     </option>
   </component>
@@ -354,38 +423,8 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/zzz-code/1-html/tools" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State>

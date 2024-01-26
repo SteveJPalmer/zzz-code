@@ -3,17 +3,23 @@ import { Component, OnInit } from '@angular/core';
 import { store } from '../store/store';
 import { ICourse } from './ICourse';
 
+import { CoursesService } from './courses.service';
+
+
 @Component({
   selector: 'course-list',
-  templateUrl: './course-list.component.html'
+  templateUrl: './course-list.component.html',
+  providers: [ CoursesService ]
 })
 export class CourseListComponent implements OnInit {
+
+  constructor(private coursesService: CoursesService) { }
 
   title = 'app works!';
   courses: ICourse[];    //array of ICourse Interface (same as IAppState uses)
 
   /* populate from local component */
-  public coursesOriginal = [
+  public coursesOriginal: ICourse[] = [
     {
       id: 1,
       name: 'Original - Learning Flux',
@@ -30,6 +36,33 @@ export class CourseListComponent implements OnInit {
       topic: 'Angular2',
     }
   ];
+
+  /* replaced with service ( this.coursesService.getCourses() ) */
+  // getCourses() {
+  //   let coursesFetchedData = [
+  //     {
+  //       id: 1,
+  //       name: 'Learning Flux',
+  //       topic: 'Flux',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'Learning Angular2',
+  //       topic: 'Angular2',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'Using Redux with Angular2',
+  //       topic: 'Angular2',
+  //     }
+  //   ];
+  //
+  //   store.dispatch({
+  //     type: 'GET_COURSES_SUCCESS',
+  //     coursesFetchedData
+  //   });
+  //
+  // };
 
 
   /* add action event for a new Course*/
@@ -54,6 +87,8 @@ export class CourseListComponent implements OnInit {
 
   ngOnInit() {
     console.log('>> course-list - ngOnInit');
+    // this.getCourses();
+    this.coursesService.getCourses();
 
     //need bind to initial state
     this.updateFromState();            //runs once, sorts out initial state
@@ -62,7 +97,7 @@ export class CourseListComponent implements OnInit {
 
     //need bind to store - so comp gets notified of store state changes
     store.subscribe( () => {    //when state changes
-      this.updateFromState();
+        this.updateFromState();
     });
 
   };
