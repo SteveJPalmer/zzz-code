@@ -1,5 +1,8 @@
 #JetBrains IDE
-/.idea/
+.idea
+
+#VS Studio
+.vscode/*
 
 # Logs
 logs
